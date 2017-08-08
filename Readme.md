@@ -1,7 +1,7 @@
 # Личный проект «Девайс»
 
 * Студент: [Anton Kuznecov](https://up.htmlacademy.ru/htmlcss/18/user/467555).
-* Наставник: `Неизвестно`.
+* Наставник: [Артём Глуханько](https://htmlacademy.ru/profile/v1z).
 
 ---
 
