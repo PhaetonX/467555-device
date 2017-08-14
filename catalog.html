@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
 	<meta charset="UTF-8">
 	<title>Девайс: Каталог</title>
@@ -17,51 +17,54 @@
 					<input type="search" name="user-search" id="search" class="input-search" placeholder="Поиск по сайту">
 					<button type="submit" class="search-button">Найти</button>
 				</form>
-				<ul class="userMenu userMenu-black">
-					<li class="user-menu-item">
-						<button  class="userMenu-login">Войти</button>
+				<ul class="user-block">
+					<li class="user-block-item">
+						<a href="#" class="user-block-link user-name">Валентин Петухов</a>
 					</li>
-					<li class="user-menu-item">
-						<a href="#" class="userMenu-Compare">Сравнить</a>
+					<li class="user-block-item">
+						<button class="btn user-logout-buttton">Выйти</button>
 					</li>
-					<li class="user-menu-item">
-						<a href="#" class="userMenu-basket">Корзина</a>
+					<li class="user-block-item">
+						<a href="#" class="user-block-link user-compare">Сравнить</a>
+					</li>
+					<li class="user-block-item">
+						<a href="#" class="user-block-link user-basket">Корзина</a>
 					</li>
 				</ul>
 			</div>
 			<nav class="navigation">
 				<ul class="navigation-list">
-					<li class="navigation-catalog">
+					<li class="navigation-item navigation-catalog">
 						<a href="#" class="btn navigation-button">Каталог товаров</a> 
-						<ul class="navigation-goods">
-							<li class="goods-list">
-								<a href="" class="goods-vr">Виртуальная реальность
+						<ul class="navigation-goods-list">
+							<li class="goods-item">
+								<a href="" class="good-link">Виртуальная реальность
 								</a>
 							</li>
-							<li class="goods-list">
-								<a href="#" class="goods-monopods">Моноподы для селфи</a>
+							<li class="goods-item">
+								<a href="#" class="good-link">Моноподы для селфи</a>
 							</li>
-							<li class="goods-list">
-								<a href="#" class="goods-actionCams">Экшн-камеры</a>
+							<li class="goods-item">
+								<a href="#" class="good-link">Экшн-камеры</a>
 							</li>
-							<li class="goods-list">
-								<a href="#" class="goods-fitnessBar">Фитнес-браслеты</a>
+							<li class="goods-item">
+								<a href="#" class="good-link">Фитнес-браслеты</a>
 							</li>
-							<li class="goods-list">
-								<a href="#" class="goods-smartWatch">Умные часы</a>
+							<li class="goods-item">
+								<a href="#" class="good-link">Умные часы</a>
 							</li>
-							<li class="goods-list">
-								<a href="#" class="goods-quadrocopter">Квадрокоптеры</a>
+							<li class="goods-item">
+								<a href="#" class="good-link">Квадрокоптеры</a>
 							</li>
 						</ul>
 					</li>
-					<li class="navigation-delivery">
+					<li class="navigation-item">
 						<a href="#" class="btn navigation-button">Доставка</a>
 					</li>
-					<li class="navigation-warranty">
+					<li class="navigation-item">
 						<a href="#" class="btn navigation-button">Гарантия</a>
 					</li>
-					<li class="navigation-contacts">
+					<li class="navigation-item">
 						<a href="#" class="btn navigation-button">Контакты</a>
 					</li>
 				</ul>
@@ -73,16 +76,16 @@
 			<h1 class="catalog-title">Моноподы для селфи</h1>
 			<ul class="breadcrumbs">
 				<li class="breadcrumbs-item">
-					<a href="index.html" class="index">Главная</a>
+					<a href="index.html" class="breadcrumbs-link">Главная</a>
 				</li>
 				<li class="breadcrumbs-item">
-					<a href="#" class="catalog-main">Каталог товаров</a>
+					<a href="#" class="breadcrumbs-link">Каталог товаров</a>
 				</li>
 				<li class="breadcrumbs-item">
-					<a href="#" class="monopods">Моноподы для селфи</a>
+					<a href="#" class="breadcrumbs-link">Моноподы для селфи</a>
 				</li>
 			</ul>
-			<div class="catalog-left">
+			<section class="catalog-left">
 				<div class="catalog-filters">
 					<h2 class="catalog-filter">Фильтр:</h2>
 					<form action="get">
@@ -105,8 +108,8 @@
 						<button class="btn button-filter">Показать</button>
 					</form>
 				</div>
-			</div>
-			<div class="catalog-right">
+			</section>
+			<section class="catalog-right">
 				<div class="catalog-sort">
 					<h2 class="catalog-sort-title">Сортировка:</h2>
 					<button class="sortByPrice">По цене</button>
@@ -114,46 +117,46 @@
 					<button class="sortByPopular">По популярности</button>
 				</div>
 				<ul class="catalog-list">
-					<li class="catalog-item catalog-item-1">
+					<li class="catalog-item">
 						<img src="img/item-1.png" alt="Любительская селфи-палка" height="360" width="380">
 						<div class="item-info">
 							<h3 class="item-name">Любительская селфи-палка</h3>
 							<p class="item-price-value">500 руб</p>
 						</div>
 					</li>
-					<li class="catalog-item catalog-item-2">
+					<li class="catalog-item">
 						<img src="img/item-2.png" alt="Любительская селфи-палка" height="360" width="380">
 						<div class="item-info">
 							<h3 class="item-name">Непотопляемая селфи-палка</h3>
 							<p class="item-price-value">2 500 руб.</p>
 						</div>
 					</li>
-					<li class="catalog-item catalog-item-3">
+					<li class="catalog-item">
 						<img src="img/item-3.png" alt="Любительская селфи-палка" height="360" width="380">
 						<div class="item-info">
 							<h3 class="item-name">Профессиональная селфи-палка</h3>
 							<p class="item-price-value">1 500 руб.</p>
 						</div>
 					</li>
-					<div class="catalog-item catalog-item-4">
+					<li class="catalog-item">
 						<img src="img/item-4.png" alt="Любительская селфи-палка" height="360" width="380">
 						<div class="item-info">
 							<h3 class="item-name">Селфи-палка "Следуй за мной"</h3>
 							<p class="item-price-value">4 900 руб.</p>
 						</div>
-					</div>
+					</li>
 				</ul>
 				<div class="shape">
 					<button class="btn shape-tobasket-button">В корзину</button>
 					<button class="compare">Добавить к сравнению</button>
 				</div>
-			</div>
+			</section>
 			<section class="catalog-paginator">
 				<button class="previous">Назад</button>
 				<div class="paginator-pages">
-					<a href="#" class="first">1</a>
-					<a href="#" class="second">2</a>
-					<a href="#" class="third">3</a>
+					<button class="paginator-page">1</button>
+					<button class="paginator-page">2</button>
+					<button class="paginator-page">3</button>
 				</div>
 				<button class="forward">Вперед</button>
 			</section>
@@ -162,14 +165,20 @@
 	<footer class="footer">
 		<div class="footer-container">
 			<div class="footer-top">
-				<a  class="footer-logo">
+				<a class="footer-logo">
 					<img src="img/footer-logo.png" alt="DEVICE" width="163" height="36">
 				</a>
-				<div class="userMenu userMenu-Yellow">
-					<button class="userMenu-login">Войти</button>
-					<a href="#" class="userMenu-Compare">Сравнить</a>
-					<a href="#" class="userMenu-basket">Корзина</a>
-				</div>
+				<ul class="user-block">
+					<li class="user-block-item">
+						<button class="btn user-logout-buttton">Выйти</button>
+					</li>
+					<li class="user-block-item">
+						<a href="#" class="user-block-link user-compare">Сравнить</a>
+					</li>
+					<li class="user-block-item">
+						<a href="#" class="user-block-link user-basket">Корзина</a>
+					</li>
+				</ul>
 			</div>
 			<div class="footer-middle">
 				<p class="description footer-description">г. Москва, ул. Строителей, 15</p>
@@ -185,13 +194,13 @@
 			<div class="footer-bottom">
 				<ul class="social-list">
 					<li class="social-item">
-						<a href="#" class="social-item-fb">fb</a>
+						<a href="#" class="social-link social-link-fb">fb</a>
 					</li>
 					<li class="social-item">
-						<a href="#" class="social-item-inst">inst</a>
+						<a href="#" class="social-link social-link-inst">inst</a>
 					</li>
 					<li class="social-item">
-						<a href="#" class="social-item-tw">tw</a>
+						<a href="#" class="social-link social-link-tw">tw</a>
 					</li>
 				</ul>
 				<a href="" class="copyright-link">

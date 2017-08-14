@@ -17,51 +17,50 @@
 					<input type="search" name="user-search" id="search" class="input-search" placeholder="Поиск по сайту">
 					<button type="submit" class="search-button">Найти</button>
 				</form>
-				<ul class="userMenu userMenu-black">
-					<li class="user-menu-item">
-						<button  class="userMenu-login">Войти</button>
+				<ul class="user-block">
+					<li class="user-block-item">
+						<button class="btn user-logout-buttton">Войти</button>
 					</li>
-					<li class="user-menu-item">
-						<a href="#" class="userMenu-Compare">Сравнить</a>
+					<li class="user-block-item">
+						<a href="#" class="user-block-link user-compare">Сравнить</a>
 					</li>
-					<li class="user-menu-item">
-						<a href="#" class="userMenu-basket">Корзина</a>
+					<li class="user-block-item">
+						<a href="#" class="user-block-link user-basket">Корзина</a>
 					</li>
 				</ul>
 			</div>
 			<nav class="navigation">
 				<ul class="navigation-list">
-					<li class="navigation-catalog">
-						<a href="#" class="btn navigation-button">Каталог товаров</a> 
+					<li class="navigation-item navigation-catalog">Каталог товаров
 						<ul class="navigation-goods">
-							<li class="goods-list">
-								<a href="" class="goods-vr">Виртуальная реальность
+							<li class="goods-item">
+								<a href="" class="good-link">Виртуальная реальность
 								</a>
 							</li>
-							<li class="goods-list">
-								<a href="#" class="goods-monopods">Моноподы для селфи</a>
+							<li class="goods-item">
+								<a href="#" class="good-link">Моноподы для селфи</a>
 							</li>
-							<li class="goods-list">
-								<a href="#" class="goods-actionCams">Экшн-камеры</a>
+							<li class="goods-item">
+								<a href="#" class="good-link">Экшн-камеры</a>
 							</li>
-							<li class="goods-list">
-								<a href="#" class="goods-fitnessBar">Фитнес-браслеты</a>
+							<li class="goods-item">
+								<a href="#" class="good-link">Фитнес-браслеты</a>
 							</li>
-							<li class="goods-list">
-								<a href="#" class="goods-smartWatch">Умные часы</a>
+							<li class="goods-item">
+								<a href="#" class="good-link">Умные часы</a>
 							</li>
-							<li class="goods-list">
-								<a href="#" class="goods-quadrocopter">Квадрокоптеры</a>
+							<li class="goods-item">
+								<a href="#" class="good-link">Квадрокоптеры</a>
 							</li>
 						</ul>
 					</li>
-					<li class="navigation-delivery">
+					<li class="navigation-item">
 						<a href="#" class="btn navigation-button">Доставка</a>
 					</li>
-					<li class="navigation-warranty">
+					<li class="navigation-item">
 						<a href="#" class="btn navigation-button">Гарантия</a>
 					</li>
-					<li class="navigation-contacts">
+					<li class="navigation-item">
 						<a href="#" class="btn navigation-button">Контакты</a>
 					</li>
 				</ul>
@@ -75,12 +74,12 @@
 				<input type="radio" id="btn-2" name="toggle">
 				<input type="radio" id="btn-3" name="toggle">
 				<div class="slider-controls">
-					<label for="btn-1"></label>
-					<label for="btn-2"></label>
-					<label for="btn-3"></label>
+					<label class="slider-controls-btn" for="btn-1"></label>
+					<label class="slider-controls-btn" for="btn-2"></label>
+					<label class="slider-controls-btn" for="btn-3"></label>
 				</div>
 				<div class="slider-slides">
-					<div class="slider-slide-1">
+					<div class="slider-slide">
 						<img src="img/slider-1.png" alt="Монопод для селфи" class="slider-image" width="384" height="486">
 						<h2 class="title slider-title">Делай селфи,<br> как Бен Стиллер!</h2>
 						<p class="descripton slider-description">Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
@@ -98,9 +97,8 @@
 							</tr>
 						</table>
 					</div>
-					<div class="slider-slide-2">
-						<img src="img/slider-2.png" alt="Умные часы" class="slider-image" width="345"
-						height="485">
+					<div class="slider-slide">
+						<img src="img/slider-2.png" alt="Умные часы" class="slider-image" width="345" height="485">
 						<h2 class="title slider-title">Худеем <br> правильно</h2>
 						<p class="descripton slider-description">Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
 						<a href="#" class="btn slider-button">подробнее</a>
@@ -113,7 +111,7 @@
 							</tr>
 						</table>
 					</div>
-					<div class="slider-slide-2">
+					<div class="slider-slide">
 						<img src="img/slider-3.png" alt="Квадрокоптер" class="slider-image" width="526" height="334">
 						<h2 class="title slider-title">Порхает как бабочка,<br> жалит как пчела!</h2>
 						<p class="descripton slider-description">Этот обычный, на первый взгляд, квадрокоптер оснащён мощным лазером, замаскированным под стандартную камеру.</p>
@@ -146,41 +144,32 @@
 				<input type="radio" id="service-btn-2" name="toggle">
 				<input type="radio" id="service-btn-3" name="toggle">
 				<div class="slider-controls">
-					<label for="service-btn-1">
-						<a class="btn service-button service-button-active">Доставка</a>
-					</label>
-					<label for="service-btn-2">
-						<a class="btn service-button">Гарантия</a>
-					</label>
-					<label for="service-btn-3">
-						<a class="btn service-button">Кредит</a>
-					</label>
+					<label class="btn service-button" for="service-btn-1">Доставка</label>
+					<label class="btn service-button" for="service-btn-2">Гарантия</label>
+					<label class="btn service-button" for="service-btn-3">Кредит</label>
 				</div>
 				<div class="service-slides">
-					<div class="service-slide-1">
-						<h2 class="title services__title">Доставка</h2>
-						<p class="description services__description">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.
-						</p>
+					<div class="service-slide service-slide-1">
+						<h2 class="title services-title">Доставка</h2>
+						<p class="description services-description">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
 					</div>
-					<div class="service-slide-2">
-						<h2 class="title services__title">Гарантия</h2>
-						<p class="description services__description">Если из-за возгорания купленного у нас товара у вас сгорит дом - не переживайте, мы выдадим вам новый. Товар, не дом, конечно же.
-						</p>
+					<div class="service-slide service-slide-2">
+						<h2 class="title services-title">Гарантия</h2>
+						<p class="description services-description">Если из-за возгорания купленного у нас товара у вас сгорит дом - не переживайте, мы выдадим вам новый. Товар, не дом, конечно же.</p>
 					</div>
-					<div class="service-slide-3">
-						<h2 class="title services__title">Кредит</h2>
-						<p class="description services__description">Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные длч нашего банка, разумеется.
-						</p>
+					<div class="service-slide service-slide-3">
+						<h2 class="title services-title">Кредит</h2>
+						<p class="description services-description">Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные длч нашего банка, разумеется.</p>
 					</div>
 				</div>
 			</section>
 			<section class="brands">
 				<h2 class="visually-hidden">Бренды товаров</h2>
 				<ul class="brands-list">
-					<li class="brands-item"><a href="#">dju</a></li>
-					<li class="brands-item"><a href="#">spGadgets</a></li>
-					<li class="brands-item"><a href="#">GoPro</a></li>
-					<li class="brands-item"><a href="#">VIVE</a></li>
+					<li class="brands-item"><a href="#"><img src="" alt="DJI"></a></li>
+					<li class="brands-item"><a href="#"><img src="" alt="SP GADGETS"> </a></li>
+					<li class="brands-item"><a href="#"><img src="" alt="GoPro"></a></li>
+					<li class="brands-item"><a href="#"><img src="" alt="VIVE"></a></li>
 				</ul>
 			</section>
 			<section class="company-info">
@@ -212,13 +201,20 @@
 	<footer class="footer">
 		<div class="footer-container">
 			<div class="footer-top">
-				<a  class="footer-logo"><img src="img/footer-logo.png" alt="DEVICE" width="163" height="36">
+				<a class="footer-logo">
+					<img src="img/footer-logo.png" alt="DEVICE" width="163" height="36">
 				</a>
-				<div class="userMenu userMenu-Yellow">
-					<button class="userMenu-login">Войти</button>
-					<a href="#" class="userMenu-Compare">Сравнить</a>
-					<a href="#" class="userMenu-basket">Корзина</a>
-				</div>
+				<ul class="user-block">
+					<li class="user-block-item">
+						<button class="btn user-logout-buttton">Войти</button>
+					</li>
+					<li class="user-block-item">
+						<a href="#" class="user-block-link user-compare">Сравнить</a>
+					</li>
+					<li class="user-block-item">
+						<a href="#" class="user-block-link user-basket">Корзина</a>
+					</li>
+				</ul>
 			</div>
 			<div class="footer-middle">
 				<p class="description footer-description">г. Москва, ул. Строителей, 15</p>
@@ -234,16 +230,16 @@
 			<div class="footer-bottom">
 				<ul class="social-list">
 					<li class="social-item">
-						<a href="#" class="social-item-fb">fb</a>
+						<a href="#" class="social-link social-link-fb">fb</a>
 					</li>
 					<li class="social-item">
-						<a href="#" class="social-item-inst">inst</a>
+						<a href="#" class="social-link social-link-inst">inst</a>
 					</li>
 					<li class="social-item">
-						<a href="#" class="social-item-tw">tw</a>
+						<a href="#" class="social-link social-link-tw">tw</a>
 					</li>
 				</ul>
-				<a href="" class="copuright_link">
+				<a href="" class="copyright-link">
 					<img src="img/logo-html.png" alt="logo-HTML academy" width="27" height="35">
 				</a>
 			</div>
@@ -253,15 +249,17 @@
 	<!-- модальное окно feedback -->
 	<form action="get">
 		<div class="feedback-top">
-			<label for="name">Ваше имя:<input type="text" name="name" id="name" placeholder="Представьтесь, пожалуйста">
+			<label for="name">Ваше имя:
+				<input type="text" name="name" id="name" placeholder="Представьтесь, пожалуйста">
 			</label>
-
-			<label for="email">Ваш e-mail:<input type="email" name="email" id="email" placeholder="Для отправки ответа">
+			<label for="email">Ваш e-mail:
+				<input type="email" name="email" id="email" placeholder="Для отправки ответа">
 			</label>
 		</div>
-		<label for="message">Текст письма:<textarea name="message" id="message" cols="30" rows="10" placeholder="В свободной форме"></textarea>
+		<label for="message">Текст письма:
+			<textarea name="message" id="message" cols="30" rows="10" placeholder="В свободной форме"></textarea>
 		</label>
-		<button class="btn feedback-button">Отправить</button>
+		<input type="submit" name="submit" id="submit" class="btn feedback-button"></input>
 	</form>
 </body>
 </html>
