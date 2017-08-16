@@ -1,13 +1,11 @@
 <!DOCTYPE html>
 <html lang="ru">
-
 <head>
   <meta charset="UTF-8">
   <title>Девайс: Каталог</title>
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
-
 <body>
   <header class="header">
     <div class="header-container">
@@ -88,32 +86,34 @@
       </ul>
       <section class="catalog-left">
         <div class="catalog-filters">
-          <h2 class="catalog-filter">Фильтр:</h2>
+          <h2 class="catalog-filter-titel">Фильтр:</h2>
           <form action="get">
-            <h3 class="filter-price">Стоимость</h3>
+            <h3 class="filter-title">Стоимость</h3>
             <input type="range" id="price-range" name="price-range">
-            <h3 class="filter-color">Цвет</h3>
+            <h3 class="filter-title">Цвет</h3>
             <input type="checkbox" id="color_black" name="color_black">
-            <label for="color_black">Черный</label>
+            <label for="color_black" class="filter-color-title">Черный</label>
             <input type="checkbox" id="color_white" name="color_white">
-            <label for="color_white">Белый</label>
+            <label for="color_white" class="filter-color-title">Белый</label>
             <input type="checkbox" id="color_blue" name="color_blue">
-            <label for="color_blue">Синий</label>
+            <label for="color_blue" class="filter-color-title">Синий</label>
             <input type="checkbox" id="color_red" name="color_red">
-            <label for="color_red">Красный</label>
+            <label for="color_red" class="filter-color-title">Красный</label>
             <input type="checkbox" id="color_pink" name="color_pink">
-            <label for="color_pink">Розовыый</label>
-            <h3 class="filter-bluetooth">Bluetooth</h3>
+            <label for="color_pink" class="filter-color-title">Розовыый</label>
+            <h3 class="filter-title">Bluetooth</h3>
             <input type="radio" id="bluetooth_yes" name="bluetooth-btn" checked>
+            <label for="bluetooth_yes">Есть</label>
             <input type="radio" id="bluetooth_no" name="bluetooth-btn">
+            <label for="bluetooth_no">Нет</label>
             <button class="btn button-filter">Показать</button>
           </form>
         </div>
       </section>
       <section class="catalog-right">
         <div class="catalog-sort">
-          <h2 class="catalog-sort-title">Сортировка:</h2>
-          <button class="sort-btn">По цене</button>
+          <h2 class="catalog-filter-title">Сортировка:</h2>
+          <button class="sort-btn sort-btn-active">По цене</button>
           <button class="sort-btn">По типу</button>
           <button class="sort-btn">По популярности</button>
         </div>
@@ -163,16 +163,15 @@
             </div>
           </li>
         </ul>
-
       </section>
       <section class="catalog-paginator">
-        <button class="paginator-previous-page">Назад</button>
+        <button class="paginator-page-btn">Назад</button>
         <div class="paginator-pages">
           <button class="paginator-page">1</button>
           <button class="paginator-page">2</button>
           <button class="paginator-page">3</button>
         </div>
-        <button class="paginator-next-page">Вперед</button>
+        <button class="paginator-page-btn">Вперед</button>
       </section>
     </div>
   </main>
@@ -202,7 +201,7 @@
           <a href="" class="btn footer-button">Контакты</a>
         </div>
         <p class="description footer-description">
-          Тел.:<a href="#" class="number">+7 (495) 495-95-95</a>
+          Тел.:<a href="tel:+7 (495) 495-95-95" class="number">+7 (495) 495-95-95
         </p>
       </div>
       <div class="footer-bottom">
@@ -216,13 +215,12 @@
           <li class="social-item">
             <a href="#" class="social-link social-link-tw">tw</a>
           </li>
-        </ul>
-        <a href="" class="copyright-link">
+          </ul>
+          <a href="https://htmlacademy.ru" target="_blink" class="copyright-link">
 					<img src="img/logo-html.png" alt="HTML academy" width="27" height="35">
 				</a>
       </div>
     </div>
   </footer>
 </body>
-
 </html>
