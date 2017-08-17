@@ -1,31 +1,47 @@
 @font-face {
-	font-family: "Gilroy";
-	font-style: normal;
-	src:
-		local("Gilroy ExtraBold"),
-		url("../fonts/gilroyextrabold.woff") format("woff");
+  font-family: "Gilroy";
+  font-style: normal;
+  src: local("Gilroy ExtraBold"), url("../fonts/gilroyextrabold.woff") format("woff");
 }
 
 @font-face {
-	font-family: "Gilroy";
-	font-style: normal;
-	src:
-		local("Gilroy Light"),
-		url("../fonts/gilroylight.woff") format("woff");
+  font-family: "Gilroy";
+  font-style: normal;
+  src: local("Gilroy Light"), url("../fonts/gilroylight.woff") format("woff");
 }
 
 @font-face {
-	font-family: "Open Sans";
-	font-style: normal;
-	src:
-		local("Open Sans Regular"),
-		url("../fonts/opensans.woff") format("woff");
+  font-family: "Open Sans";
+  font-style: normal;
+  src: local("Open Sans Regular"), url("../fonts/opensans.woff") format("woff");
 }
 
 @font-face {
-	font-family: "Open Sans";
-	font-style: normal;
-	src:
-		local("Open Sans Light"),
-		url("../fonts/opensanslight.woff") format("woff");
+  font-family: "Open Sans";
+  font-style: normal;
+  src: local("Open Sans Light"), url("../fonts/opensanslight.woff") format("woff");
+}
+body{
+  font-size: 15px;
+  line-height: 30px;
+  font-family: "Open Sans","Arial", sans-serif;
+  font-weight: 300;
+  color: rgba(70, 70, 70, 1);
+}
+
+.title {
+  font-size: 47px;
+  font-family: "Gilroy ExtraBold";
+  color:rgba(0, 0, 0, 1);
+}
+
+.description {
+  font-size: 15px;
+  font-family: "Open Sans Light";
+}
+
+.btn {
+  font-size: 18px;
+  font-family: "Gilroy ExtraBold";
+  color:rgba(0, 0, 0, 1);
 }
