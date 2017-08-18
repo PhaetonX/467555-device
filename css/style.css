@@ -21,18 +21,21 @@
   font-style: normal;
   src: local("Open Sans Light"), url("../fonts/opensanslight.woff") format("woff");
 }
-body{
+
+body {
   font-size: 15px;
   line-height: 30px;
-  font-family: "Open Sans","Arial", sans-serif;
+  font-family: "Open Sans", "Arial", sans-serif;
   font-weight: 300;
-  color: rgba(70, 70, 70, 1);
+  color: #464646;
 }
 
 .title {
   font-size: 47px;
   font-family: "Gilroy ExtraBold";
-  color:rgba(0, 0, 0, 1);
+  color: #000000;
+  line-height: 1.2;
+  letter-spacing: 0.01em;
 }
 
 .description {
@@ -43,5 +46,6 @@ body{
 .btn {
   font-size: 18px;
   font-family: "Gilroy ExtraBold";
-  color:rgba(0, 0, 0, 1);
+  color: #000000;
+  letter-spacing: 0.2em;
 }
