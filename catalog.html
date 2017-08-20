@@ -9,11 +9,12 @@
 <body>
   <header class="header">
     <div class="header-container">
-      <a>
+      <a aria-label="Девайс-логотип">
 				<img class="header-logo" src="img/logo.png" alt="Девайс" width="164" height="36">
 			</a>
       <div class="header-userSettings">
         <form action="#" class="search-form" method="get">
+          <label class="visually-hidden" for="search">Поиск</label>
           <input type="search" name="user-search" id="search" class="input-search" placeholder="Поиск по сайту">
           <button type="submit" class="search-button">Найти</button>
         </form>
@@ -89,6 +90,7 @@
           <h2 class="catalog-filter-titel">Фильтр:</h2>
           <form action="get">
             <h3 class="filter-title">Стоимость</h3>
+            <label class="visually-hidden" for="price-range">Стоимость</label>
             <input type="range" id="price-range" name="price-range">
             <h3 class="filter-title">Цвет</h3>
             <input type="checkbox" id="color_black" name="color_black">
@@ -178,7 +180,7 @@
   <footer class="footer">
     <div class="footer-container">
       <div class="footer-top">
-        <a class="footer-logo">
+        <a class="footer-logo" aria-label="Девайс-логотип">
 					<img src="img/footer-logo.png" alt="Девайс" width="163" height="36">
 				</a>
         <ul class="user-block">
@@ -207,16 +209,16 @@
       <div class="footer-bottom">
         <ul class="social-list">
           <li class="social-item">
-            <a href="#" class="social-link social-link-fb">fb</a>
+            <a href="#" class="social-link social-link-fb" arial-label="Фейсбук">fb</a>
           </li>
           <li class="social-item">
-            <a href="#" class="social-link social-link-inst">inst</a>
+            <a href="#" class="social-link social-link-inst" arial-label="Инстаграмм">inst</a>
           </li>
           <li class="social-item">
-            <a href="#" class="social-link social-link-tw">tw</a>
+            <a href="#" class="social-link social-link-tw" arial-label="Твиттер">tw</a>
           </li>
           </ul>
-          <a href="https://htmlacademy.ru" target="_blink" class="copyright-link">
+          <a href="https://htmlacademy.ru" aria-label="HTML academy" target="_blink" class="copyright-link">
 					<img src="img/logo-html.png" alt="HTML academy" width="27" height="35">
 				</a>
       </div>
