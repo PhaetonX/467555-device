@@ -11,7 +11,7 @@
   <body>
     <header class="header">
       <div class="header-container">
-        <a>
+        <a href="#" class="header-logo-link">
           <img class="header-logo" src="img/header-logo.png" alt="Девайс" width="164" height="36">
         </a>
         <div class="header-userSettings">
@@ -22,7 +22,7 @@
           </form>
           <ul class="user-block">
             <li class="user-block-item">
-              <button class="btn user-logout-buttton">Войти</button>
+              <button class="btn user-login-button">Войти</button>
             </li>
             <li class="user-block-item">
               <a href="#" class="user-block-link user-compare">Сравнить</a>
@@ -34,10 +34,11 @@
         </div>
         <nav class="navigation">
           <ul class="navigation-list">
-            <li class="navigation-item navigation-catalog">Каталог товаров
-              <ul class="navigation-goods">
+            <li class="navigation-item navigation-catalog">
+              <a href="#" class="btn navigation-button">Каталог товаров</a>
+              <ul class="navigation-goods-list">
                 <li class="goods-item">
-                  <a href="" class="good-link">Виртуальная реальность</a>
+                  <a href="№" class="good-link">Виртуальная реальность</a>
                 </li>
                 <li class="goods-item">
                   <a href="#" class="good-link">Моноподы для селфи</a>
@@ -215,12 +216,12 @@
     <footer class="footer">
       <div class="footer-container">
         <div class="footer-top">
-          <a class="footer-logo">Девайс-логотип
+          <a href="#" class="footer-logo-link">Девайс-логотип
             <img src="img/footer-logo.png" alt="Девайс" width="163" height="36">
           </a>
           <ul class="user-block">
             <li class="user-block-item">
-              <button class="btn user-logout-buttton">Войти</button>
+              <button class="btn user-login-button">Войти</button>
             </li>
             <li class="user-block-item">
               <a href="#" class="user-block-link user-compare">Сравнить</a>
@@ -260,20 +261,20 @@
         </div>
       </footer>
       <!-- модальное окно feedback -->
-      <form action="get">
+      <form action="get" class="modal-window">
         <div class="feedback-top">
           <label for="name">Ваше имя:
-            <input type="text" name="name" id="name" placeholder="Представьтесь, пожалуйста">
+            <input type="text" name="name" class="modal-input" id="name" placeholder="Представьтесь, пожалуйста">
           </label>
           <label for="email">Ваш e-mail:
-            <input type="email" name="email" id="email" placeholder="Для отправки ответа">
+            <input type="email" name="email" class="modal-input" id="email" placeholder="Для отправки ответа">
           </label>
         </div>
         <label for="message">Текст письма:
-          <textarea name="message" id="message" cols="30" rows="10" placeholder="В свободной форме"></textarea>
+          <textarea name="message" class="modal-input" id="message" cols="30" rows="10" placeholder="В свободной форме"></textarea>
         </label>
         <label for="submit">Отправить
-          <button type="submit" name="submit" id="submit" class="btn feedback-button"></button>
+          <button type="submit" name="submit" class="modal-input" id="submit" class="btn feedback-button">Отправить</button>
         </label>
       </form>
     </body>
