@@ -31,16 +31,9 @@ body {
     line-height: 30px;
 }
 
-a {
-    text-decoration: none;
-}
-
-ul {
-    list-style: none;
-}
-
 .btn {
     color: #000;
+    text-decoration: none;
     text-transform: uppercase;
     letter-spacing: 0.2em;
     font-size: 18px;
@@ -48,6 +41,15 @@ ul {
     line-height: 36px;
 }
 
+.user-block-link,
+.good-link,
+.goods-item,
+.breadcrumbs-link,
+.footer-user-block-link,
+.social-link,
+.number {
+    text-decoration: none;
+}
 
 /*header*/
 
@@ -72,6 +74,12 @@ ul {
 
 
 /*user-block*/
+
+.user-block,
+.navigation-list,
+.navigation-goods-list {
+    list-style: none;
+}
 
 .search-button,
 .user-block-link,
@@ -248,6 +256,9 @@ ul {
 
 
 /*company-aboutUs*/
+.workingWith-list {
+    list-style: none;
+}
 
 .workingWith-item {
     color: #000;
@@ -293,7 +304,11 @@ ul {
     background-color: #464646;
 }
 
-.footer a {
+.social-link,
+.number,
+.user-block-,
+.footer-button,
+.footer-user-block-link {
     color: #fff;
 }
 
