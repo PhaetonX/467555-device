@@ -51,10 +51,26 @@ body {
     text-decoration: none;
 }
 
+
 /*header*/
 
 .header {
+    margin: 0 auto;
+    width: 1160px;
     background-color: #f7e296;
+}
+
+.header-container {
+    margin: 0 auto;
+    width: 1040px;
+}
+
+.header-userSettings {
+    display: -webkit-flex;
+    display:     -ms-flex;
+    display:         flex;
+    align-items: baseline;
+    justify-content: space-between;
 }
 
 
@@ -72,8 +88,23 @@ body {
     opacity: 0.3;
 }
 
+.header-logo-link {
+    margin-bottom: 40px;
+}
+
 
 /*user-block*/
+
+.user-block {
+    display: -webkit-inline-flex;
+    display:     -ms-inline-flex;
+    display:         inline-flex;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+
+    flex-basis: 500px;
+}
 
 .user-block,
 .navigation-list,
@@ -92,12 +123,21 @@ body {
     line-height: 36px;
 }
 
+.user-login-button {
+    margin-right: 200px;
+}
+
 .input-search {
+    width: 440px;
+    height: 50px;
+    border: none;
     background-color: #f7e296;
     opacity: 0.3;
 }
 
-.input-search:hover {
+.input-search:hover,
+.input-search:focus {
+    box-shadow: 0 2px 0 #000;
     opacity: 0.6;
 }
 
@@ -156,8 +196,30 @@ body {
     font-family: 'Gilroy ExtraBold';
 }
 
+.navigation-list {
+    display: -webkit-flex;
+    display:     -ms-flex;
+    display:         flex;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+}
+
 .navigation-catalog {
+    margin-right: 70px;
     text-transform: uppercase;
+
+    flex-basis: 400px;
+}
+
+.navigation-goods-list {
+    display: -webkit-flex;
+    display:     -ms-flex;
+    display:         flex;
+    margin: 0;
+    padding: 0;
+
+    flex-wrap: wrap;
 }
 
 .good-link {
@@ -185,15 +247,24 @@ body {
     opacity: 0.3;
 }
 
-
-/* nav */
-
 .good-link {
     color: #000;
     letter-spacing: 0.01em;
     font-size: 15px;
     font-family: 'Open Sans Light';
     line-height: 36px;
+}
+
+
+/*Main*/
+
+.slider-container,
+.company-info-container,
+.goods-container,
+.services-slider-container,
+.brands-conttainer {
+    margin: 0 auto;
+    width: 1040px;
 }
 
 
@@ -255,7 +326,25 @@ body {
 }
 
 
+/*brands-list*/
+
+.brands-list {
+    margin: 0;
+    padding: 0;
+}
+
+
+/*company-info*/
+
+.company-info-container {
+    display: -webkit-flex;
+    display:     -ms-flex;
+    display:         flex;
+}
+
+
 /*company-aboutUs*/
+
 .workingWith-list {
     list-style: none;
 }
@@ -304,11 +393,39 @@ body {
     background-color: #464646;
 }
 
+.footer-top {
+    display: -webkit-flex;
+    display:     -ms-flex;
+    display:         flex;
+    justify-content: space-between;
+}
+
+.footer-middle {
+    display: -webkit-flex;
+    display:     -ms-flex;
+    display:         flex;
+    align-items: baseline;
+    justify-content: space-between;
+}
+
+.footer-bottom {
+    display: -webkit-flex;
+    display:     -ms-flex;
+    display:         flex;
+    justify-content: space-between;
+}
+
+.footer-container {
+    margin: 0 auto;
+    width: 1040px;
+}
+
 .social-link,
 .number,
 .user-block-,
 .footer-button,
-.footer-user-block-link {
+.footer-user-block-link,
+.footer-description {
     color: #fff;
 }
 
@@ -365,6 +482,18 @@ body {
 
 /*Catalog */
 
+.main-container {
+    margin: 0 auto;
+    width: 1160px;
+}
+
+.catalog-container {
+    display: -webkit-flex;
+    display:     -ms-flex;
+    display:         flex;
+    justify-content: space-between;
+}
+
 .catalog-filter-title {
     color: #000;
     text-transform: uppercase;
@@ -419,6 +548,8 @@ body {
 
 .catalog-left {
     background-color: #eee;
+
+    flex-basis: 270px;
 }
 
 .catalog-filter {
@@ -427,6 +558,10 @@ body {
 
 
 /*catalog-right*/
+
+.catalog-right {
+    flex-basis: 830px;
+}
 
 .catalog-sort {
     background-color: #ebebeb;
@@ -454,8 +589,24 @@ body {
     opacity: 1;
 }
 
+.catalog-list {
+    display: -webkit-flex;
+    display:     -ms-flex;
+    display:         flex;
+    justify-content: space-around;
+    margin-top: 40px;
+    list-style: none;
+
+    flex-wrap: wrap;
+    flex-basis: 860px;
+}
+
 
 /*Item*/
+
+.catalog-item {
+    width: 360px;
+}
 
 .item-name {
     color: #000;
@@ -505,6 +656,13 @@ body {
 
 
 /*catalog-paginator*/
+
+.catalog-paginator {
+    display: -webkit-flex;
+    display:     -ms-flex;
+    display:         flex;
+    justify-content: center;
+}
 
 .paginator-page-btn {
     color: #000;
