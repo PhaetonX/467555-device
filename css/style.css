@@ -1,3 +1,13 @@
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+}
+
 @font-face {
     font-style: normal;
     font-family: 'Gilroy';
@@ -81,7 +91,7 @@ body {
 }
 
 .header-logo-link:active,
-.footer-footer-link:active {
+.footer-logo-link:active {
     opacity: 0.3;
 }
 
@@ -202,11 +212,11 @@ body {
     text-transform: uppercase;
 }
 
-.navigation-list > li:nth-child(2) {
+.navigation-item:nth-child(2) {
     margin-right: 35px;
 }
 
-.navigation-list > li:nth-child(3) {
+.navigation-item:nth-child(3) {
     margin-right: 105px;
 }
 
@@ -625,7 +635,7 @@ body {
     flex-wrap: wrap;
 }
 
-.catalog-list > li:nth-child(odd) {
+.catalog-item:nth-child(odd) {
     margin-right: 40px;
 }
 
