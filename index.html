@@ -71,8 +71,9 @@
       </div>
     </header>
     <main>
-      <div class="slider-container">
-        <section class="slider">
+
+      <section class="slider">
+        <div class="slider-container">
           <input type="radio" id="btn-1" name="toggle" checked>
           <input type="radio" id="btn-2" name="toggle">
           <input type="radio" id="btn-3" name="toggle">
@@ -248,45 +249,45 @@
             <a href="" class="btn footer-button">Гарантия</a>
             <a href="" class="btn footer-button">Контакты</a>
           </div>
-
-          Тел.:<a href="tel:+7 (495) 495-95-95" class="number">+7 (495) 495-95-95
-
-          </div>
-          <div class="footer-bottom">
-            <ul class="social-list">
-              <li class="social-item">
-                <a href="#" class="social-link social-link-fb">Фейсбук</a>
-              </li>
-              <li class="social-item">
-                <a href="#" class="social-link social-link-inst">Инстаграмм</a>
-              </li>
-              <li class="social-item">
-                <a href="#" class="social-link social-link-tw">Твиттер</a>
-              </li>
-            </ul>
-            <a href="https://htmlacademy.ru" target="_blank" class="copyright-link">
-              <img src="img/logo-html.png" alt="HTML academy" width="27" height="35">
-            </a>
-          </div>
+          <p class="description footer-description">
+            Тел.:<a href="tel:+7(495)495-95-95" class="number">+7 (495) 495-95-95</a>
+          </p>
         </div>
-      </footer>
-      <!-- модальное окно feedback -->
-      <form action="get" class="modal-window">
-        <div class="feedback-top">
-          <label for="name">Ваше имя:
-            <input type="text" name="name" class="modal-input" id="name" placeholder="Представьтесь, пожалуйста">
-          </label>
-          <label for="email">Ваш e-mail:
-            <input type="email" name="email" class="modal-input" id="email" placeholder="Для отправки ответа">
-          </label>
+        <div class="footer-bottom">
+          <ul class="social-list">
+            <li class="social-item">
+              <a href="#" class="social-link social-link-fb">Фейсбук</a>
+            </li>
+            <li class="social-item">
+              <a href="#" class="social-link social-link-inst">Инстаграмм</a>
+            </li>
+            <li class="social-item">
+              <a href="#" class="social-link social-link-tw">Твиттер</a>
+            </li>
+          </ul>
+          <a href="https://htmlacademy.ru" target="_blank" class="copyright-link">
+            <img src="img/logo-html.png" alt="HTML academy" width="27" height="35">
+          </a>
         </div>
-        <label for="message">Текст письма:
-          <textarea name="message" class="modal-input" id="message" cols="30" rows="10" placeholder="В свободной форме"></textarea>
+      </div>
+    </footer>
+    <!-- модальное окно feedback -->
+    <form action="get" class="modal-window">
+      <div class="feedback-top">
+        <label for="name">Ваше имя:
+          <input type="text" name="name" class="modal-input" id="name" placeholder="Представьтесь, пожалуйста">
         </label>
-        <label for="submit">Отправить
-          <button type="submit" name="submit" class="modal-input" id="submit" class="btn feedback-button">Отправить</button>
+        <label for="email">Ваш e-mail:
+          <input type="email" name="email" class="modal-input" id="email" placeholder="Для отправки ответа">
         </label>
-      </form>
-    </body>
+      </div>
+      <label for="message">Текст письма:
+        <textarea name="message" class="modal-input" id="message" cols="30" rows="10" placeholder="В свободной форме"></textarea>
+      </label>
+      <label for="submit">Отправить
+        <button type="submit" name="submit" id="submit" class="btn feedback-button modal-input">Отправить</button>
+      </label>
+    </form>
+  </body>
 
-  </html>
+</html>
