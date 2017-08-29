@@ -22,7 +22,7 @@
           </form>
           <ul class="user-block">
             <li class="user-block-item">
-              <button class="btn user-login-button">Войти</button>
+              <button class="btn user-login-button user-login-button-header">Войти</button>
             </li>
             <li class="user-block-item">
               <a href="#" class="user-block-link user-compare">Сравнить</a>
@@ -85,6 +85,7 @@
           <div class="slider-slides">
             <div class="slider-slide">
               <img src="img/slider-1.png" alt="Монопод для селфи" class="slider-image" width="384" height="486">
+              <span class="slider-slide-number">01</span>
               <h2 class="title slider-title">Делай селфи,<br>
                 как Бен Стиллер!</h2>
               <p class="descripton slider-description">Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
@@ -104,6 +105,7 @@
             </div>
             <div class="slider-slide">
               <img src="img/slider-2.png" alt="Умные часы" class="slider-image" width="345" height="485">
+              <span class="slider-slide-number">02</span>
               <h2 class="title slider-title">Худеем
                 <br>
                 правильно</h2>
@@ -120,6 +122,7 @@
             </div>
             <div class="slider-slide">
               <img src="img/slider-3.png" alt="Квадрокоптер" class="slider-image" width="526" height="334">
+              <span class="slider-slide-number">03</span>
               <h2 class="title slider-title">Порхает как бабочка,<br>
                 жалит как пчела!</h2>
               <p class="descripton slider-description">Этот обычный, на первый взгляд, квадрокоптер оснащён мощным лазером, замаскированным под стандартную камеру.</p>
@@ -141,153 +144,201 @@
       <section class="goods">
         <div class="goods-container">
           <h2 class="visually-hidden">Товары</h2>
-          <a href="#" class="goods-item">Виртуальная реальность</a>
-          <a href="#" class="goods-item">Моноподы для селфи</a>
-          <a href="#" class="goods-item">Экшн-камеры</a>
-          <a href="#" class="goods-item">Фитнес-браслеты</a>
-          <a href="#" class="goods-item">Умные часы</a>
-          <a href="#" class="goods-item">Квадрокоптеры</a>
-        </div>
-      </section>
-      <section class="services-slider">
-        <div class="services-slider-container">
-          <input type="radio" id="service-btn-1" name="toggle" checked>
-          <input type="radio" id="service-btn-2" name="toggle">
-          <input type="radio" id="service-btn-3" name="toggle">
-          <div class="slider-controls">
-            <label class="btn service-button" for="service-btn-1">Доставка</label>
-            <label class="btn service-button" for="service-btn-2">Гарантия</label>
-            <label class="btn service-button" for="service-btn-3">Кредит</label>
-          </div>
-          <div class="service-slides">
-            <div class="service-slide service-slide-1">
-              <h2 class="title services-title">Доставка</h2>
-              <p class="description services-description">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
-            </div>
-            <div class="service-slide service-slide-2">
-              <h2 class="title services-title">Гарантия</h2>
-              <p class="description services-description">Если из-за возгорания купленного у нас товара у вас сгорит дом - не переживайте, мы выдадим вам новый. Товар, не дом, конечно же.</p>
-            </div>
-            <div class="service-slide service-slide-3">
-              <h2 class="title services-title">Кредит</h2>
-              <p class="description services-description">Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные длч нашего банка, разумеется.</p>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="brands">
-        <div class="brands-conttainer">
-          <h2 class="visually-hidden">Бренды товаров</h2>
-          <ul class="brands-list">
-            <li class="brands-item">
-              <a href="#"><img src="" alt="DJI" width="260" height="100">DJI</a>
+          <ul class="goods-catalog-list">
+            <li class="goods-catalog-item">
+              <a href="#" class="goods-catalog-link">
+                <span class="visually-hidden">Виртуальная реальность</span>
+                <img src="../img/virtual-reality.png" alt="Виртуальная реальность" class="goods-catalog-img" width="97" height="55">
+                <b class="goods-catalog-title">Виртуальная реальность</b>
+              </a>
             </li>
-            <li class="brands-item">
-              <a href="#">
-                <img src="" alt="SP GADGETS" width="260" height="100">spGADGETS</a>
+            <li class="goods-catalog-item">
+              <a href="#" class="goods-catalog-link">
+                <span class="visually-hidden">Моноподы для селфи</span>
+                <img src="../img/monopods.png" alt="Моноподы для селфи" class="goods-catalog-img">
+                <b class="goods-catalog-title">Моноподы <br> для селфи</b>
+              </a>
             </li>
-            <li class="brands-item">
-              <a href="#"><img src="" alt="GoPro" width="260" height="100">GoPro</a>
+            <li class="goods-catalog-item">
+              <a href="#" class="goods-catalog-link">
+                <span class="visually-hidden">Экшн-камеры</span>
+                <img src="../img/action-cam.png" alt="Экшн-камеры" class="goods-catalog-img">
+                <b class="goods-catalog-title">Экшн-камеры</b>
+              </a>
             </li>
-            <li class="brands-item">
-              <a href="#"><img src="" alt="VIVE" width="260" height="100">VIVE</a>
+            <li class="goods-catalog-item">
+              <a href="#" class="goods-catalog-link">
+                <span class="visually-hidden">Фитнес-браслеты</span>
+                <img src="../img/fitness-bracelets.png" alt="Фитнес-браслеты" class="goods-catalog-img">
+                <b class="goods-catalog-title">Фитнес-браслеты</b>
+              </a>
+            </li>
+            <li class="goods-catalog-item">
+              <a href="#" class="goods-catalog-link">
+                <span class="visually-hidden">Умные часы</span>
+                <img src="../img/smart-watch.png" alt="Умные часы" class="goods-catalog-img">
+                <b class="goods-catalog-title">Умные часы</b>
+              </a>
+            </li>
+            <li class="goods-catalog-item">
+              <a href="#" class="goods-catalog-link">
+                <span class="visually-hidden">Квадрокоптеры</span>
+                <img src="../img/quadrocopter.png" alt="Квадрокоптеры" class="goods-catalog-img">
+                <b class="goods-catalog-title">Квадрокоптеры</b>
+              </a>
             </li>
           </ul>
-        </div>
-      </section>
-      <section class="company-info">
-        <div class="company-info-container">
-          <div class="company-aboutUs">
-            <h2 class="title company-title">О нас</h2>
-            <p class="description company-description">
-              Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.
-            </p>
-            <p class="description company-description">
-              Мы можем доставить ваш товар в самые отдаленные точки России! DEVICE работает со многими транспортными компаниями:
-            </p>
-            <ul class="workingWith-list">
-              <li class="workingWith-item">Деловые Линии</li>
-              <li class="workingWith-item">Автотрейдинг</li>
-              <li class="workingWith-item">ЖелДорЭкспедиция</li>
+        </section>
+        <section class="services-slider">
+          <div class="services-slider-container">
+            <input type="radio" id="service-btn-1" name="toggle" checked>
+            <input type="radio" id="service-btn-2" name="toggle">
+            <input type="radio" id="service-btn-3" name="toggle">
+            <div class="slider-controls">
+              <label class="btn service-button" for="service-btn-1">Доставка</label>
+              <label class="btn service-button" for="service-btn-2">Гарантия</label>
+              <label class="btn service-button" for="service-btn-3">Кредит</label>
+            </div>
+            <div class="service-slides">
+              <div class="service-slide service-slide-1">
+                <h2 class="title services-title">Доставка</h2>
+                <p class="description services-description">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
+              </div>
+              <div class="service-slide service-slide-2">
+                <h2 class="title services-title">Гарантия</h2>
+                <p class="description services-description">Если из-за возгорания купленного у нас товара у вас сгорит дом - не переживайте, мы выдадим вам новый. Товар, не дом, конечно же.</p>
+              </div>
+              <div class="service-slide service-slide-3">
+                <h2 class="title services-title">Кредит</h2>
+                <p class="description services-description">Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные длч нашего банка, разумеется.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="brands">
+          <div class="brands-conttainer">
+            <h2 class="visually-hidden">Бренды товаров</h2>
+            <ul class="brands-list">
+              <li class="brands-item">
+                <a class="brands-item-link brands-item-Dji">
+                  <img src="../img/111.jpg" class="brands-item-img" alt="DJI" width="260" height="100">
+                  <span class="visually-hidden">DJI</span>
+                </a>
+              </li>
+              <li class="brands-item">
+                <a class="brands-item-link brands-item-spGadgets">
+                  <img src="../img/spGadgets-bg.jpg" class="brands-item-img" alt="SP GADGETS" width="260" height="100">
+                  <span class="visually-hidden">spGADGETS</span>
+                </a>
+              </li>
+              <li class="brands-item">
+                <a class="brands-item-link brands-item-goPro">
+                  <img src="../img/GoPro-bg.jpg" class="brands-item-img" alt="" width="260" height="100">
+                  <span class="visually-hidden">GoPro</span>
+                </a>
+              </li>
+              <li class="brands-item">
+                <a class="brands-item-link brands-item-vive">
+                  <img src="../img/VIVE-bg.jpg" class="brands-item-img" alt="" width="260" height="100">
+                  <span class="visually-hidden">VIVE</span>
+                </a>
+              </li>
             </ul>
-            <a href="#" class="btn aboutUs-button">Подробнее о нас</a>
           </div>
-          <div class="contacts">
-            <h2 class="title contacts-title">Контакты</h2>
-            <p class="description contacts-description">
-              Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.
+        </section>
+        <section class="company-info">
+          <div class="company-info-container">
+            <div class="company-aboutUs">
+              <h2 class="title company-title">О нас</h2>
+              <p class="description company-description">
+                Огромный выбор гаджетов не оставит равнодушным гика,<br> который есть в каждом из нас.
+              </p>
+              <p class="description company-description">
+                Мы можем доставить ваш товар в самые отдаленные точки <br> России! DEVICE работает со многими транспортными компаниями:
+              </p>
+              <ul class="workingWith-list">
+                <li class="workingWith-item">Деловые Линии</li>
+                <li class="workingWith-item">Автотрейдинг</li>
+                <li class="workingWith-item">ЖелДорЭкспедиция</li>
+              </ul>
+              <a href="#" class="btn aboutUs-button">Подробнее о нас</a>
+            </div>
+            <div class="contacts">
+              <h2 class="title contacts-title">Контакты</h2>
+              <p class="description contacts-description">
+                Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.
+              </p>
+              <a href="" class="btn contscts-button">Напишите нам</a>
+            </div>
+          </div>
+        </section>
+
+      </main>
+      <footer class="footer">
+        <div class="footer-container">
+          <div class="footer-top">
+            <a href="#" class=" footer-logo-link">
+              <span class="visually-hidden">Девайс-логотип</span>
+              <img src="img/footer-logo.png" alt="Девайс" width="163" height="36">
+            </a>
+            <ul class="user-block-footer">
+              <li class="user-block-item">
+                <button class="btn user-login-button user-login-button-footer">Войти</button>
+              </li>
+              <li class="user-block-item">
+                <a href="#" class="user-block-link user-compare footer-user-block-link">Сравнить</a>
+              </li>
+              <li class="user-block-item">
+                <a href="#" class="user-block-link user-basket footer-user-block-link">Корзина</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer-middle">
+            <p class="description footer-description">г. Москва, ул. Строителей, 15</p>
+            <div class="footer-services">
+              <a href="" class="btn footer-button">Доставка</a>
+              <a href="" class="btn footer-button">Гарантия</a>
+              <a href="" class="btn footer-button">Контакты</a>
+            </div>
+            <p class="description footer-description">
+              Тел.:<a href="tel:+7(495)495-95-95" class="number">+7 (495) 495-95-95</a>
             </p>
-            <a href="" class="btn contscts-button">Напишите нам</a>
+          </div>
+          <div class="footer-bottom">
+            <ul class="social-list">
+              <li class="social-item">
+                <a href="#" class="social-link social-link-fb">Фейсбук</a>
+              </li>
+              <li class="social-item">
+                <a href="#" class="social-link social-link-inst">Инстаграмм</a>
+              </li>
+              <li class="social-item">
+                <a href="#" class="social-link social-link-tw">Твиттер</a>
+              </li>
+            </ul>
+            <a href="https://htmlacademy.ru" target="_blank" class="copyright-link">
+              <img src="img/logo-html.png" alt="HTML academy" width="27" height="35">
+            </a>
           </div>
         </div>
-      </section>
-
-    </main>
-    <footer class="footer">
-      <div class="footer-container">
-        <div class="footer-top">
-          <a href="#" class=" footer-logo-link">
-            <span class="visually-hidden">Девайс-логотип</span>
-            <img src="img/footer-logo.png" alt="Девайс" width="163" height="36">
-          </a>
-          <ul class="user-block">
-            <li class="user-block-item">
-              <button class="btn user-login-button">Войти</button>
-            </li>
-            <li class="user-block-item">
-              <a href="#" class="user-block-link user-compare footer-user-block-link">Сравнить</a>
-            </li>
-            <li class="user-block-item">
-              <a href="#" class="user-block-link user-basket footer-user-block-link">Корзина</a>
-            </li>
-          </ul>
+      </footer>
+      <!-- модальное окно feedback -->
+      <form action="get" class="modal-window">
+        <div class="feedback-top">
+          <label for="name">Ваше имя:
+            <input type="text" name="name" class="modal-input" id="name" placeholder="Представьтесь, пожалуйста">
+          </label>
+          <label for="email">Ваш e-mail:
+            <input type="email" name="email" class="modal-input" id="email" placeholder="Для отправки ответа">
+          </label>
         </div>
-        <div class="footer-middle">
-          <p class="description footer-description">г. Москва, ул. Строителей, 15</p>
-          <div class="footer-services">
-            <a href="" class="btn footer-button">Доставка</a>
-            <a href="" class="btn footer-button">Гарантия</a>
-            <a href="" class="btn footer-button">Контакты</a>
-          </div>
-          <p class="description footer-description">
-            Тел.:<a href="tel:+7(495)495-95-95" class="number">+7 (495) 495-95-95</a>
-          </p>
-        </div>
-        <div class="footer-bottom">
-          <ul class="social-list">
-            <li class="social-item">
-              <a href="#" class="social-link social-link-fb">Фейсбук</a>
-            </li>
-            <li class="social-item">
-              <a href="#" class="social-link social-link-inst">Инстаграмм</a>
-            </li>
-            <li class="social-item">
-              <a href="#" class="social-link social-link-tw">Твиттер</a>
-            </li>
-          </ul>
-          <a href="https://htmlacademy.ru" target="_blank" class="copyright-link">
-            <img src="img/logo-html.png" alt="HTML academy" width="27" height="35">
-          </a>
-        </div>
-      </div>
-    </footer>
-    <!-- модальное окно feedback -->
-    <form action="get" class="modal-window">
-      <div class="feedback-top">
-        <label for="name">Ваше имя:
-          <input type="text" name="name" class="modal-input" id="name" placeholder="Представьтесь, пожалуйста">
+        <label for="message">Текст письма:
+          <textarea name="message" class="modal-input" id="message" cols="30" rows="10" placeholder="В свободной форме"></textarea>
         </label>
-        <label for="email">Ваш e-mail:
-          <input type="email" name="email" class="modal-input" id="email" placeholder="Для отправки ответа">
+        <label for="submit">Отправить
+          <button type="submit" name="submit" id="submit" class="btn feedback-button modal-input">Отправить</button>
         </label>
-      </div>
-      <label for="message">Текст письма:
-        <textarea name="message" class="modal-input" id="message" cols="30" rows="10" placeholder="В свободной форме"></textarea>
-      </label>
-      <label for="submit">Отправить
-        <button type="submit" name="submit" id="submit" class="btn feedback-button modal-input">Отправить</button>
-      </label>
-    </form>
-  </body>
+      </form>
+    </body>
 
-</html>
+  </html>
