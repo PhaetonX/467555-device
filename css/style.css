@@ -30,7 +30,7 @@ html {
 }
 
 @font-face {
-    font-weight: 300;
+    font-weight: 500;
     font-style: normal;
     font-family: 'Open Sans';
     src: local('Open Sans Light'), url('../fonts/opensanslight.woff') format('woff');
@@ -46,6 +46,10 @@ body {
 }
 
 .btn {
+    margin: 0;
+    padding: 0;
+    border: none;
+    background-color: transparent;
     color: #000;
     text-decoration: none;
     text-transform: uppercase;
@@ -53,6 +57,7 @@ body {
     font-size: 18px;
     font-family: 'Gilroy ExtraBold';
     line-height: 36px;
+    cursor: pointer;
 }
 
 .user-block-link,
@@ -69,12 +74,13 @@ body {
 /*header*/
 
 .header {
+    position: relative;
     margin: 0 auto;
     margin-top: 40px;
     padding-right: 60px;
+    padding-bottom: 157px;
     padding-left: 60px;
     width: 1160px;
-    height: 299px;
     background-color: #f7e296;
 }
 
@@ -114,21 +120,26 @@ body {
     display: -webkit-flex;
     display:     -ms-flex;
     display:         flex;
-    justify-content: space-between;
     margin: 0;
     padding: 0;
 
     flex-basis: 500px;
 }
 
-.user-block-item:nth-child(2) {
-    margin-left: 175px;
+.user-block-header {
+    padding-left: 26px;
 }
 
-.user-compare {
-    color: #000;
+.user-block-header .user-block-item:first-child {
+    margin-right: auto;
 }
 
+.user-block-header .user-block-item:nth-child(2) {
+    margin-right: 63px;
+}
+
+
+.user-compare,
 .user-basket {
     color: #000;
 }
@@ -139,7 +150,6 @@ body {
     right: 0;
     visibility: hidden;
     padding: 5px 20px;
-    max-width: 85px;
     border: 2px solid #000;
     background-color: #f7e296;
 }
@@ -161,15 +171,6 @@ body {
     line-height: 36px;
 }
 
-.user-login-button {
-    margin: 0;
-    margin-left: 26px;
-    padding: 0;
-    border: none;
-    background-color: transparent;
-    cursor: pointer;
-}
-
 .search-form {
     position: relative;
 }
@@ -183,7 +184,7 @@ body {
 }
 
 .input-search:focus {
-    outline: 2px solid lightblue;
+    outline: none;
     box-shadow: 0 2px 0 #000;
     opacity: 0.6;
 }
@@ -258,7 +259,6 @@ body {
 .navigation-catalog {
     position: relative;
     margin-right: auto;
-    text-transform: uppercase;
 }
 
 .navigation-catalog:hover  .navigation-goods-list {
@@ -277,38 +277,32 @@ body {
 
 .navigation-goods-list {
     position: absolute;
+    left: -60px;
     z-index: 1;
     display: -webkit-flex;
     display:     -ms-flex;
     display:         flex;
+    /*justify-content: space-between;*/
     visibility: hidden;
-    justify-content: space-between;
     margin: 0;
-    padding: 0;
-    width: 545px;
-    height: 157px;
+    padding-top: 23px;
+    padding-right: 440px;
+    padding-bottom: 26px;
+    padding-left: 57px;
+    width: 1160px;
     background-color: #f7e296;
+    font-weight: 300;
 
     align-content: center;
     flex-wrap: wrap;
 }
 
-
-.goods-item:nth-child(4) {
-    flex-basis: 245px;
-}
-
-.goods-item:nth-child(5) {
-    flex-basis: 300px;
+.goods-item {
+    flex-basis: 33.33%;
 }
 
 .goods-item:nth-child(6) {
-    flex-basis: 545px;
-}
-
-
-.good-link {
-    text-transform: capitalize;
+    flex-basis: 100%;
 }
 
 .good-link:hover {
@@ -319,14 +313,10 @@ body {
     color: #000;
 }
 
-.navigation-item:nth-child(2) {
-    position: relative;
-}
-
-.navigation-item:nth-child(2)::after {
+.header::after {
     position: absolute;
-    top: 119px;
-    right: 24px;
+    top: 225px;
+    right: 460px;
     display: block;
     width: 100px;
     height: 7px;
@@ -350,8 +340,9 @@ body {
 .good-link {
     color: #000;
     letter-spacing: 0.01em;
+    font-weight: 300;
     font-size: 15px;
-    font-family: 'Open Sans Light';
+    font-family: 'Open Sans';
     line-height: 36px;
 }
 
@@ -419,50 +410,42 @@ body {
     display: -webkit-flex;
     display:     -ms-flex;
     display:         flex;
-    justify-content: space-between;
     margin: 0;
     padding: 0;
     width: 1160px;
-    list-style: none;
     list-style: none;
 
     flex-wrap: wrap;
 }
 
 .goods-catalog-link {
+    position: relative;
+    display: -webkit-flex;
+    display:     -ms-flex;
+    display:         flex;
+    flex-direction: column;
+    width: 160px;
+    height: 160px;
     color: #000;
     text-decoration: none;
     letter-spacing: 0.01em;
     font-size: 18px;
     font-family: 'Gilroy ExtraBold';
-    line-height: 36px;
+    line-height: 22px;
+
+    align-content: center;
 }
 
 .goods-catalog-item {
-    position: relative;
     margin-right: 40px;
-    width: 160px;
-    height: 160px;
+    background-color: #f7e296;
 }
 
-.goods-catalog-item:last-child {
+.goods-catalog-item:nth-child(6n) {
     margin-right: 0;
 }
 
-
-
-.goods-catalog-link::before {
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: -1;
-    width: 160px;
-    height: 160px;
-    background-color: #f7e296;
-    content: '';
-}
-
-.goods-catalog-link:hover::before {
+.goods-catalog-item:hover {
     background-color: #f0c52e;
 }
 
@@ -483,11 +466,10 @@ body {
 
 
 .goods-catalog-title {
-    display: block;
-    margin-top: 194px;
-    vertical-align: top;
-    line-height: 22px;
+    margin-top: 170px;
 }
+
+
 
 
 
@@ -510,7 +492,7 @@ body {
 /*brands-list*/
 
 .brands {
-    margin-bottom: 103px;
+    padding-bottom: 103px;
 }
 
 .brands-list {
@@ -541,49 +523,21 @@ body {
 }
 
 .brands-item-Dji:hover::before {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 260px;
-    height: 100px;
     background-image: url('../img/dji.jpg');
-    content: '';
 }
 
 .brands-item-spGadgets:hover::before {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 260px;
-    height: 100px;
     background-image: url('../img/spGadgets.jpg');
-    content: '';
 }
 
 .brands-item-goPro:hover::before {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 260px;
-    height: 100px;
     background-image: url('../img/goPro.jpg');
-    content: '';
 }
 
 .brands-item-vive:hover::before {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 260px;
-    height: 100px;
     background-image: url('../img/vive.jpg');
-    content: '';
 }
 
-.brands-item::before:hover {
-    position: absolute;
-    background-image: url('../img/dji.jpg');
-}
 
 /*company-info*/
 
@@ -702,9 +656,6 @@ body {
     border-top: 1px solid transparent;
 }
 
-.footer-container {
-    margin-top: 360px;
-}
 
 .user-block-footer {
     display: -webkit-flex;
@@ -713,16 +664,12 @@ body {
     align-items: flex-start;
     justify-content: space-between;
 
-    flex-basis: 300px;
-}
-
-.user-block-footer {
-    margin-left: auto;
+    flex-basis: 339px;
 }
 
 .footer-logo-link {
-    margin-top: 4px;
-    margin-bottom: 8px;
+    margin-top: 19px;
+    margin-bottom: 6px;
 }
 
 .footer-container {
@@ -742,8 +689,9 @@ body {
     display:         flex;
     align-items: flex-start;
     justify-content: space-between;
-    margin-top: 60px;
+    margin-top: 45px;
 }
+
 
 .footer-middle {
     display: -webkit-flex;
@@ -758,7 +706,8 @@ body {
     display:     -ms-flex;
     display:         flex;
     justify-content: space-between;
-    width: 420px;
+
+    flex-basis: 460px;
 }
 
 .footer-bottom {
@@ -774,7 +723,8 @@ body {
 .user-block-,
 .footer-button,
 .footer-user-block-link,
-.footer-description {
+.footer-description,
+.user-login-button-footer {
     color: #fff;
 }
 
@@ -1014,7 +964,7 @@ body {
     letter-spacing: 0.01em;
     font-weight: 300;
     font-size: 13px;
-    font-family: 'Open Sans';
+    font-family: 'Open Sans Light';
     line-height: 36px;
     opacity: 0.5;
 }
