@@ -7,8 +7,26 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
   </head>
-
   <body>
+    <svg class="visually-hidden">
+      <symbol id="search-icon" viewBox="0 0 16 16">
+        <path d="M15.7 14.3l-3.104-3.104A6.979 6.979 0 0 0 14 7a7 7 0 1 0-7 7 6.963 6.963 0 0 0 4.193-1.404L14.3 15.7c.185.184.38.3.7.3a1 1 0 0 0 1-1 .93.93 0 0 0-.3-.7zM2 7c0-2.762 2.238-5 5-5s5 2.238 5 5-2.238 5-5 5-5-2.238-5-5z"/>
+      </symbol>
+      <symbol id="user-icon" viewBox="0 0 13 12">
+        <path d="M.032 12h12.937c-.163-2.643-2.074-4.837-4.671-5.543a3.47 3.47 0 0 0 1.687-2.972 3.485 3.485 0 0 0-6.97 0c0 1.264.68 2.361 1.688 2.972C2.106 7.163.194 9.357.032 12z"/>
+      </symbol>
+      <symbol id="compare-icon" viewBox="0 0 10 10">
+        <path d="M8 2h1.984v8H8zM0 3h1.984v7H0zM4 0h2v10H4z"/>
+      </symbol>
+      <symbol id="basket-icon" viewBox="0 0 12 12">
+        <path
+          d="M11.864 3.017a.429.429 0 0 0-.327-.154H9.225V4.09c0 .563-.484 1.022-1.08 1.022-.594 0-1.078-.458-1.078-1.022V2.863H4.909V4.09c0 .563-.485 1.022-1.08 1.022-.595 0-1.078-.458-1.078-1.022V2.863H.438a.43.43 0 0 0-.327.154.472.472 0 0 0-.108.358l.776 7.134c.015.806.642 1.455 1.411 1.455h7.595c.77 0 1.396-.649 1.411-1.455l.776-7.134a.476.476 0 0 0-.108-.358z"/><path
+          d="M3.829 4.499c.239 0 .433-.184.433-.409V1.84c0-.632.672-1.022 1.295-1.022h1.079c.655 0 1.078.401 1.078 1.022v2.25c0 .225.194.409.431.409.239 0 .433-.184.433-.409V1.84C8.577.773 7.761 0 6.636 0H5.557c-1.19 0-2.159.826-2.159 1.84v2.25c0 .225.194.409.431.409z"/>
+      </symbol>
+      <symbol id="plus-icon" viewBox="0 0 16 16">
+        <path d="M16 7H9V0H7v7H0v2h7v7h2V9h7z"/>
+      </symbol>
+    </svg>
     <header class="header">
       <div class="header-container">
         <a href="#" class="header-logo-link">
@@ -17,25 +35,44 @@
         <div class="header-userSettings">
           <label class="visually-hidden" for="search">Поиск</label>
           <form action="#" class="search-form" method="get">
+            <svg class="user-serch-icon" width="16" height="16">
+              <use xlink:href="#search-icon"></use>
+            </svg>
             <input type="search" name="user-search" id="search" class="input-search" placeholder="Поиск по сайту">
             <button type="submit" class="search-button">Найти</button>
           </form>
           <ul class="user-block user-block-header">
-            <li class="user-block-item">
-              <button class="btn user-login-button user-login-button-header">Войти</button>
+            <li class="user-block-item user-login-button-header">
+              <button class="btn user-login-button">Войти
+                <svg class="user-login-icon-header" width="13" height="12">
+                  <use xlink:href="#user-icon"></use>
+                </svg>
+              </button>
             </li>
             <li class="user-block-item">
-              <a href="#" class="user-block-link user-compare">Сравнить</a>
+              <a href="#" class="user-block-link user-compare user-compare-header">Сравнить
+                <svg class="user-compare-icon-header" width="10" height="10">
+                  <use xlink:href="#compare-icon"></use>
+                </svg>
+              </a>
             </li>
             <li class="user-block-item">
-              <a href="#" class="user-block-link user-basket">Корзина</a>
+              <a href="#" class="user-block-link user-basket user-basket-header">Корзина
+                <svg class="user-basket-icon-header" width="12" height="12">
+                  <use xlink:href="#basket-icon"></use>
+                </svg>
+              </a>
             </li>
           </ul>
         </div>
         <nav class="navigation">
           <ul class="navigation-list">
             <li class="navigation-item navigation-catalog">
-              <a href="#" class="btn navigation-button">Каталог товаров</a>
+              <a href="#" class="btn navigation-button">Каталог товаров
+                <svg class="navaigation-catalog-icon">
+                  <use xlink:href="#plus-icon" width="16" height="16"></use>
+                </svg>
+              </a>
               <ul class="navigation-goods-list">
                 <li class="goods-item">
                   <a href="№" class="good-link">Виртуальная реальность</a>
@@ -83,7 +120,7 @@
             <label class="slider-controls-btn" for="btn-3"></label>
           </div>
           <div class="slider-slides">
-            <div class="slider-slide">
+            <div class="slider-slide slider-monopod">
               <img src="img/slider-1.png" alt="Монопод для селфи" class="slider-image" width="384" height="486">
               <span class="slider-slide-number">01</span>
               <h2 class="title slider-title">Делай селфи,<br>
@@ -103,7 +140,7 @@
                 </tr>
               </table>
             </div>
-            <div class="slider-slide">
+            <div class="slider-slide slider-fitness-bracelet">
               <img src="img/slider-2.png" alt="Умные часы" class="slider-image" width="345" height="485">
               <span class="slider-slide-number">02</span>
               <h2 class="title slider-title">Худеем
@@ -120,7 +157,7 @@
                 </tr>
               </table>
             </div>
-            <div class="slider-slide">
+            <div class="slider-slide slider-quadrocopter">
               <img src="img/slider-3.png" alt="Квадрокоптер" class="slider-image" width="526" height="334">
               <span class="slider-slide-number">03</span>
               <h2 class="title slider-title">Порхает как бабочка,<br>
@@ -148,42 +185,56 @@
             <li class="goods-catalog-item">
               <a href="#" class="goods-catalog-link">
                 <span class="visually-hidden">Виртуальная реальность</span>
-              <img src="../img/virtual-reality.png" alt="Виртуальная реальность" class="goods-catalog-img" width="97" height="55">
+                <div class="goods-catalog-img-container">
+                  <img src="../img/virtual-reality.svg" alt="Моноподы для селфи" class="goods-catalog-img" width="86" height="117">
+                </div>
                 <b class="goods-catalog-title">Виртуальная реальность</b>
               </a>
             </li>
             <li class="goods-catalog-item">
               <a href="#" class="goods-catalog-link">
                 <span class="visually-hidden">Моноподы для селфи</span>
-                <img src="../img/monopods.png" alt="Моноподы для селфи" class="goods-catalog-img" width="86" height="117">
-                <b class="goods-catalog-title">Моноподы <br> для селфи</b>
+                <div class="goods-catalog-img-container">
+                  <img src="../img/monopods.svg" alt="Моноподы для селфи" class="goods-catalog-img monopod-icon" width="86" height="117">
+                </div>
+                <b class="goods-catalog-title">Моноподы
+                  <br>
+                  для селфи</b>
               </a>
             </li>
             <li class="goods-catalog-item">
               <a href="#" class="goods-catalog-link">
                 <span class="visually-hidden">Экшн-камеры</span>
-                <img src="../img/action-cam.png" alt="Экшн-камеры" class="goods-catalog-img" width="71" height="87">
+                <div class="goods-catalog-img-container">
+                  <img src="../img/action-cam.svg" alt="Экшн-камеры" class="goods-catalog-img" width="71" height="87">
+                </div>
                 <b class="goods-catalog-title">Экшн-камеры</b>
               </a>
             </li>
             <li class="goods-catalog-item">
               <a href="#" class="goods-catalog-link">
                 <span class="visually-hidden">Фитнес-браслеты</span>
-                <img src="../img/fitness-bracelets.png" alt="Фитнес-браслеты" class="goods-catalog-img" width="107" height="65">
+                <div class="goods-catalog-img-container">
+                  <img src="../img/fitness-bracelets.svg" alt="Фитнес-браслеты" class="goods-catalog-img" width="107" height="65">
+                </div>
                 <b class="goods-catalog-title">Фитнес-браслеты</b>
               </a>
             </li>
             <li class="goods-catalog-item">
               <a href="#" class="goods-catalog-link">
                 <span class="visually-hidden">Умные часы</span>
-                <img src="../img/smart-watch.png" alt="Умные часы" class="goods-catalog-img" width="56" height="98">
+                <div class="goods-catalog-img-container">
+                  <img src="../img/smart-watch.svg" alt="Умные часы" class="goods-catalog-img" width="56" height="98">
+                </div>
                 <b class="goods-catalog-title">Умные часы</b>
               </a>
             </li>
             <li class="goods-catalog-item">
               <a href="#" class="goods-catalog-link">
                 <span class="visually-hidden">Квадрокоптеры</span>
-                <img src="../img/quadrocopter.png" alt="Квадрокоптеры" class="goods-catalog-img" width="132" height="69">
+                <div class="goods-catalog-img-container">
+                  <img src="../img/quadrocopter.svg" alt="Квадрокоптеры" class="goods-catalog-img" width="132" height="69">
+                </div>
                 <b class="goods-catalog-title">Квадрокоптеры</b>
               </a>
             </li>
@@ -194,7 +245,7 @@
             <input type="radio" id="service-btn-1" name="toggle" checked>
             <input type="radio" id="service-btn-2" name="toggle">
             <input type="radio" id="service-btn-3" name="toggle">
-            <div class="slider-controls">
+            <div class="services-slider-controls">
               <label class="btn service-button" for="service-btn-1">Доставка</label>
               <label class="btn service-button" for="service-btn-2">Гарантия</label>
               <label class="btn service-button" for="service-btn-3">Кредит</label>
@@ -251,10 +302,10 @@
             <div class="company-aboutUs">
               <h2 class="title company-title">О нас</h2>
               <p class="description company-description">
-                Огромный выбор гаджетов не оставит равнодушным гика,<br> который есть в каждом из нас.
+                Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.
               </p>
               <p class="description company-description">
-                Мы можем доставить ваш товар в самые отдаленные точки <br> России! DEVICE работает со многими транспортными компаниями:
+                Мы можем доставить ваш товар в самые отдаленные точки России! DEVICE работает со многими транспортными компаниями:
               </p>
               <ul class="workingWith-list">
                 <li class="workingWith-item">Деловые Линии</li>
@@ -277,28 +328,40 @@
       <footer class="footer">
         <div class="footer-container">
           <div class="footer-top">
-            <a href="#" class=" footer-logo-link">
+            <a href="#" class="footer-logo-link">
               <span class="visually-hidden">Девайс-логотип</span>
               <img src="img/footer-logo.png" alt="Девайс" width="163" height="36">
             </a>
             <ul class="user-block-footer">
               <li class="user-block-item">
-                <button class="btn user-login-button user-login-button-footer">Войти</button>
+                <button class="btn user-login-button user-login-button-footer">Войти
+                  <svg class="user-login-icon-footer" width="13" height="12">
+                    <use xlink:href="#user-icon"></use>
+                  </svg>
+                </button>
               </li>
               <li class="user-block-item">
-                <a href="#" class="user-block-link user-compare footer-user-block-link">Сравнить</a>
+                <a href="#" class="user-block-link user-compare footer-user-block-link">Сравнить
+                  <svg class="user-compare-icon-footer" width="10" height="10">
+                    <use xlink:href="#compare-icon"></use>
+                  </svg>
+                </a>
               </li>
               <li class="user-block-item">
-                <a href="#" class="user-block-link user-basket footer-user-block-link">Корзина</a>
+                <a href="#" class="user-block-link user-basket footer-user-block-link">Корзина
+                  <svg class="user-basket-icon-footer" width="12" height="12">
+                    <use xlink:href="#basket-icon"></use>
+                  </svg>
+                </a>
               </li>
             </ul>
           </div>
           <div class="footer-middle">
-            <p class="description footer-description">г. Москва, ул. Строителей, 15</p>
+            <p class="description footer-description">г. Москва,ул. Строителей, 15</p>
             <div class="footer-services">
-              <a href="" class="btn footer-button">Доставка</a>
-              <a href="" class="btn footer-button">Гарантия</a>
-              <a href="" class="btn footer-button">Контакты</a>
+              <a href="#" class="btn footer-button">Доставка</a>
+              <a href="#" class="btn footer-button">Гарантия</a>
+              <a href="#" class="btn footer-button">Контакты</a>
             </div>
             <p class="description footer-description">
               Тел.:<a href="tel:+7(495)495-95-95" class="number">+7 (495) 495-95-95</a>
@@ -307,17 +370,26 @@
           <div class="footer-bottom">
             <ul class="social-list">
               <li class="social-item">
-                <a href="#" class="social-link social-link-fb">Фейсбук</a>
+                <a href="#" class="social-link social-link-fb">
+                  <span class="visually-hidden">Фейсбук</span>
+                  <img src="../img/fb.svg" alt="facebook" class="social-img" width="32" height="32">
+                </a>
               </li>
               <li class="social-item">
-                <a href="#" class="social-link social-link-inst">Инстаграмм</a>
+                <a href="#" class="social-link social-link-inst">
+                  <span class="visually-hidden">Инстаграмм</span>
+                  <img src="../img/instagram.svg" alt="instagram" class="social-img" width="32" height="32">
+                </a>
               </li>
               <li class="social-item">
-                <a href="#" class="social-link social-link-tw">Твиттер</a>
+                <a href="#" class="social-link social-link-tw">
+                  <span class="visually-hidden">Твиттер</span>
+                  <img src="../img/twitter.svg" alt="twitter" width="32" height="32" class="social-img">
+                </a>
               </li>
             </ul>
             <a href="https://htmlacademy.ru" target="_blank" class="copyright-link">
-              <img src="img/logo-html.png" alt="HTML academy" width="27" height="35">
+              <img src="img/logo-html.svg" alt="HTML academy" width="27" height="35">
             </a>
           </div>
         </div>
