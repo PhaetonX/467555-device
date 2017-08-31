@@ -43,7 +43,7 @@
           </form>
           <ul class="user-block user-block-header">
             <li class="user-block-item user-login-button-header">
-              <button class="btn user-login-button">Войти
+              <button class="user-block-btn user-login-button">Войти
                 <svg class="user-login-icon-header" width="13" height="12">
                   <use xlink:href="#user-icon"></use>
                 </svg>
@@ -111,27 +111,29 @@
 
       <section class="slider">
         <div class="slider-container">
-          <input type="radio" id="btn-1" name="toggle" checked>
-          <input type="radio" id="btn-2" name="toggle">
-          <input type="radio" id="btn-3" name="toggle">
+          <input type="radio" id="btn-1" name="slider-toggle" checked>
+          <input type="radio" id="btn-2" name="slider-toggle">
+          <input type="radio" id="btn-3" name="slider-toggle">
           <div class="slider-controls">
             <label class="slider-controls-btn" for="btn-1"></label>
             <label class="slider-controls-btn" for="btn-2"></label>
             <label class="slider-controls-btn" for="btn-3"></label>
           </div>
           <div class="slider-slides">
-            <div class="slider-slide slider-monopod">
-              <img src="img/slider-1.png" alt="Монопод для селфи" class="slider-image" width="384" height="486">
+            <div class="slider-slide">
+              <img src="img/slider-1.png" alt="Монопод для селфи" class="slider-image slider-monopod-img" width="384" height="486">
               <span class="slider-slide-number">01</span>
               <h2 class="title slider-title">Делай селфи,<br>
                 как Бен Стиллер!</h2>
-              <p class="descripton slider-description">Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
+              <p class="descripton slider-description">Самая длинная палка для селфи доступна в нашем магазине.
+                <br>
+                Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
               <a href="#" class="btn slider-button">подробнее</a>
               <table class="slider-info">
                 <tr class="slider-parametrs-value-row">
-                  <td class="slider-parametrs-value">8,5 м</td>
-                  <td class="slider-parametrs-value">5 кг</td>
-                  <td class="slider-parametrs-value">Карбон</td>
+                  <td class="slider-parametrs-value slider-parametrs-value-monopod">8,5 м</td>
+                  <td class="slider-parametrs-value slider-parametrs-value-monopod">5 кг</td>
+                  <td class="slider-parametrs-value slider-parametrs-value-monopod">Карбон</td>
                 </tr>
                 <tr class="slider-parametrs-name-row">
                   <td class="slider-parametrs-name">Длина палки</td>
@@ -140,13 +142,15 @@
                 </tr>
               </table>
             </div>
-            <div class="slider-slide slider-fitness-bracelet">
-              <img src="img/slider-2.png" alt="Умные часы" class="slider-image" width="345" height="485">
+            <div class="slider-slide">
+              <img src="img/slider-2.png" alt="Умные часы" class="slider-image slider-fitness-bracelet-img" width="345" height="485">
               <span class="slider-slide-number">02</span>
               <h2 class="title slider-title">Худеем
                 <br>
-                правильно</h2>
-              <p class="descripton slider-description">Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
+                правильно!</h2>
+              <p class="descripton slider-description">Мотивирующие фитнес-браслеты помогут найти в себе силы
+                <br>
+                не пропускать занятия и соблюдать диету.</p>
               <a href="#" class="btn slider-button">подробнее</a>
               <table class="slider-info">
                 <tr class="slider-parametrs-value-row">
@@ -157,12 +161,13 @@
                 </tr>
               </table>
             </div>
-            <div class="slider-slide slider-quadrocopter">
-              <img src="img/slider-3.png" alt="Квадрокоптер" class="slider-image" width="526" height="334">
+            <div class="slider-slide">
+              <img src="img/slider-3.png" alt="Квадрокоптер" class="slider-image slider-quadrocopter-img" width="526" height="334">
               <span class="slider-slide-number">03</span>
-              <h2 class="title slider-title">Порхает как бабочка,<br>
-                жалит как пчела!</h2>
-              <p class="descripton slider-description">Этот обычный, на первый взгляд, квадрокоптер оснащён мощным лазером, замаскированным под стандартную камеру.</p>
+              <h2 class="title slider-title">Порхает как бабочка, жалит как пчела!</h2>
+              <p class="descripton slider-description slider-description-quadrocopter">Этот обычный, на первый взгляд, квадрокоптер оснащён
+                <br>
+                мощным лазером, замаскированным под стандартную камеру.</p>
               <a href="#" class="btn slider-button">подробнее</a>
               <table class="slider-info">
                 <tr class="slider-parametrs-value-row">
@@ -186,7 +191,7 @@
               <a href="#" class="goods-catalog-link">
                 <span class="visually-hidden">Виртуальная реальность</span>
                 <div class="goods-catalog-img-container">
-                  <img src="../img/virtual-reality.svg" alt="Моноподы для селфи" class="goods-catalog-img" width="86" height="117">
+                  <img src="img/virtual-reality.svg" alt="Моноподы для селфи" class="goods-catalog-img" width="97" height="55">
                 </div>
                 <b class="goods-catalog-title">Виртуальная реальность</b>
               </a>
@@ -195,7 +200,7 @@
               <a href="#" class="goods-catalog-link">
                 <span class="visually-hidden">Моноподы для селфи</span>
                 <div class="goods-catalog-img-container">
-                  <img src="../img/monopods.svg" alt="Моноподы для селфи" class="goods-catalog-img monopod-icon" width="86" height="117">
+                  <img src="img/monopods.svg" alt="Моноподы для селфи" class="goods-catalog-img monopod-icon" width="86" height="117">
                 </div>
                 <b class="goods-catalog-title">Моноподы
                   <br>
@@ -206,7 +211,7 @@
               <a href="#" class="goods-catalog-link">
                 <span class="visually-hidden">Экшн-камеры</span>
                 <div class="goods-catalog-img-container">
-                  <img src="../img/action-cam.svg" alt="Экшн-камеры" class="goods-catalog-img" width="71" height="87">
+                  <img src="img/action-cam.svg" alt="Экшн-камеры" class="goods-catalog-img" width="71" height="87">
                 </div>
                 <b class="goods-catalog-title">Экшн-камеры</b>
               </a>
@@ -215,7 +220,7 @@
               <a href="#" class="goods-catalog-link">
                 <span class="visually-hidden">Фитнес-браслеты</span>
                 <div class="goods-catalog-img-container">
-                  <img src="../img/fitness-bracelets.svg" alt="Фитнес-браслеты" class="goods-catalog-img" width="107" height="65">
+                  <img src="img/fitness-bracelets.svg" alt="Фитнес-браслеты" class="goods-catalog-img" width="107" height="65">
                 </div>
                 <b class="goods-catalog-title">Фитнес-браслеты</b>
               </a>
@@ -224,7 +229,7 @@
               <a href="#" class="goods-catalog-link">
                 <span class="visually-hidden">Умные часы</span>
                 <div class="goods-catalog-img-container">
-                  <img src="../img/smart-watch.svg" alt="Умные часы" class="goods-catalog-img" width="56" height="98">
+                  <img src="img/smart-watch.svg" alt="Умные часы" class="goods-catalog-img" width="56" height="98">
                 </div>
                 <b class="goods-catalog-title">Умные часы</b>
               </a>
@@ -233,7 +238,7 @@
               <a href="#" class="goods-catalog-link">
                 <span class="visually-hidden">Квадрокоптеры</span>
                 <div class="goods-catalog-img-container">
-                  <img src="../img/quadrocopter.svg" alt="Квадрокоптеры" class="goods-catalog-img" width="132" height="69">
+                  <img src="img/quadrocopter.svg" alt="Квадрокоптеры" class="goods-catalog-img" width="132" height="69">
                 </div>
                 <b class="goods-catalog-title">Квадрокоптеры</b>
               </a>
@@ -242,9 +247,9 @@
         </section>
         <section class="services-slider">
           <div class="services-slider-container">
-            <input type="radio" id="service-btn-1" name="toggle" checked>
-            <input type="radio" id="service-btn-2" name="toggle">
-            <input type="radio" id="service-btn-3" name="toggle">
+            <input type="radio" id="service-btn-1" name="service-slider-toggle" checked>
+            <input type="radio" id="service-btn-2" name="service-slider-toggle">
+            <input type="radio" id="service-btn-3" name="service-slider-toggle">
             <div class="services-slider-controls">
               <label class="btn service-button" for="service-btn-1">Доставка</label>
               <label class="btn service-button" for="service-btn-2">Гарантия</label>
@@ -253,15 +258,27 @@
             <div class="service-slides">
               <div class="service-slide service-slide-1">
                 <h2 class="title services-title">Доставка</h2>
-                <p class="description services-description">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
+                <p class="description services-description">Мы с удовольствием доставим ваш товар прямо к вашему
+                  <br>
+                  подъезду совершенно бесплатно! Ведь мы неплохо
+                  <br>
+                  заработаем, поднимая его на ваш этаж.</p>
               </div>
               <div class="service-slide service-slide-2">
                 <h2 class="title services-title">Гарантия</h2>
-                <p class="description services-description">Если из-за возгорания купленного у нас товара у вас сгорит дом - не переживайте, мы выдадим вам новый. Товар, не дом, конечно же.</p>
+                <p class="description services-description">Если из-за возгорания купленного у нас товара у вас
+                  <br>
+                  сгорит дом - не переживайте, мы выдадим вам новый.
+                  <br>
+                  Товар, не дом, конечно же.</p>
               </div>
               <div class="service-slide service-slide-3">
                 <h2 class="title services-title">Кредит</h2>
-                <p class="description services-description">Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные длч нашего банка, разумеется.</p>
+                <p class="description services-description">Залезть в долговую яму стало проще! Кредитные
+                  <br>
+                  консультанты подберут для вас наиболее выгодные
+                  <br>
+                  условия кредита. Выгодные длч нашего банка, разумеется.</p>
               </div>
             </div>
           </div>
@@ -272,25 +289,25 @@
             <ul class="brands-list">
               <li class="brands-item brands-item-Dji">
                 <a class="brands-item-link">
-                  <img src="../img/111.jpg" class="brands-item-img" alt="DJI" width="260" height="100">
+                  <img src="img/111.jpg" class="brands-item-img" alt="DJI" width="260" height="100">
                   <span class="visually-hidden">DJI</span>
                 </a>
               </li>
               <li class="brands-item brands-item-spGadgets">
                 <a class="brands-item-link">
-                  <img src="../img/spGadgets-bg.jpg" class="brands-item-img" alt="SP GADGETS" width="260" height="100">
+                  <img src="img/spGadgets-bg.jpg" class="brands-item-img" alt="SP GADGETS" width="260" height="100">
                   <span class="visually-hidden">spGADGETS</span>
                 </a>
               </li>
               <li class="brands-item brands-item-goPro">
                 <a class="brands-item-link">
-                  <img src="../img/GoPro-bg.jpg" class="brands-item-img" alt="" width="260" height="100">
+                  <img src="img/GoPro-bg.jpg" class="brands-item-img" alt="" width="260" height="100">
                   <span class="visually-hidden">GoPro</span>
                 </a>
               </li>
               <li class="brands-item brands-item-vive">
                 <a class="brands-item-link">
-                  <img src="../img/VIVE-bg.jpg" class="brands-item-img" alt="" width="260" height="100">
+                  <img src="img/VIVE-bg.jpg" class="brands-item-img" alt="" width="260" height="100">
                   <span class="visually-hidden">VIVE</span>
                 </a>
               </li>
@@ -319,7 +336,10 @@
               <p class="description contacts-description">
                 Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.
               </p>
-              <a href="" class="btn contscts-button">Напишите нам</a>
+              <a href="#" class="map_link">
+                <img src="img/map.jpg" alt="Улица Строителей,15" class="map">
+              </a>
+              <a href="" class="btn contacts-button">Напишите нам</a>
             </div>
           </div>
         </section>
@@ -334,7 +354,7 @@
             </a>
             <ul class="user-block-footer">
               <li class="user-block-item">
-                <button class="btn user-login-button user-login-button-footer">Войти
+                <button class="user-block-btn user-login-button user-login-button-footer">Войти
                   <svg class="user-login-icon-footer" width="13" height="12">
                     <use xlink:href="#user-icon"></use>
                   </svg>
@@ -372,19 +392,19 @@
               <li class="social-item">
                 <a href="#" class="social-link social-link-fb">
                   <span class="visually-hidden">Фейсбук</span>
-                  <img src="../img/fb.svg" alt="facebook" class="social-img" width="32" height="32">
+                  <img src="img/fb.svg" alt="facebook" class="social-img" width="32" height="32">
                 </a>
               </li>
               <li class="social-item">
                 <a href="#" class="social-link social-link-inst">
                   <span class="visually-hidden">Инстаграмм</span>
-                  <img src="../img/instagram.svg" alt="instagram" class="social-img" width="32" height="32">
+                  <img src="img/instagram.svg" alt="instagram" class="social-img" width="32" height="32">
                 </a>
               </li>
               <li class="social-item">
                 <a href="#" class="social-link social-link-tw">
                   <span class="visually-hidden">Твиттер</span>
-                  <img src="../img/twitter.svg" alt="twitter" width="32" height="32" class="social-img">
+                  <img src="img/twitter.svg" alt="twitter" width="32" height="32" class="social-img">
                 </a>
               </li>
             </ul>

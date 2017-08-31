@@ -48,15 +48,27 @@ body {
 .btn {
     margin: 0;
     padding: 0;
+    padding-top: 12px;
+    padding-bottom: 12px;
     border: none;
     background-color: transparent;
     color: #000;
+    text-align: center;
     text-decoration: none;
     text-transform: uppercase;
     letter-spacing: 0.2em;
     font-size: 18px;
     font-family: 'Gilroy ExtraBold';
     line-height: 36px;
+    cursor: pointer;
+}
+
+.user-block-btn {
+    margin: 0;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    letter-spacing: 0.01em;
     cursor: pointer;
 }
 
@@ -238,11 +250,6 @@ body {
 }
 
 
-/*.goods-catalog-vr-icon{
-  position: absolute;
-}*/
-
-
 /****************************************/
 
 .input-search {
@@ -346,16 +353,15 @@ body {
 .navigation-goods-list {
     position: absolute;
     left: -60px;
-    z-index: 1;
+    z-index: 3;
     display: -webkit-flex;
     display:     -ms-flex;
     display:         flex;
-    /*justify-content: space-between;*/
     visibility: hidden;
     margin: 0;
     padding-top: 23px;
     padding-right: 440px;
-    padding-bottom: 26px;
+    padding-bottom: 28px;
     padding-left: 57px;
     width: 1160px;
     background-color: #f7e296;
@@ -429,11 +435,15 @@ body {
 
 /*slider*/
 
+.slider {
+    margin-top: -113px;
+    margin-bottom: 74px;
+}
+
 .slider-container {
     position: relative;
     width: 1160px;
     height: 520px;
-    border: 1px solid red;
 }
 
 .slider input[type=radio] {
@@ -443,17 +453,21 @@ body {
 .slider-controls {
     position: absolute;
     top: 327px;
-    right: 62px;
-    z-index: 2;
+    right: 80px;
 }
 
 .slider-slide {
-    position: absolute;
-    overflow: hidden;
+    display: -webkit-flex;
+    display:     -ms-flex;
+    display:         flex;
+    flex-direction: column;
+    padding-top: 81px;
+    padding-left: 599px;
 }
 
 .slider-controls-btn {
     position: relative;
+    z-index: 2;
     display: inline-block;
     margin-right: 18px;
     width: 12px;
@@ -471,16 +485,59 @@ body {
 .slider-slide {
     position: relative;
     display: none;
-    justify-content: space-between;
 }
 
-.slider-monopod {
-    margin-left: 89px;
+.slider-image {
+    position: absolute;
 }
 
-.slider-fitness-bracelet {
-    margin-top: 65px;
-    margin-left: 31px;
+.slider-monopod-img {
+    position: absolute;
+    top: 0;
+    left: 90px;
+}
+
+.slider-fitness-bracelet-img {
+    top: 11px;
+    left: 115px;
+}
+
+.slider-quadrocopter-img {
+    top: 65px;
+    left: 30px;
+}
+
+.slider-slide-number {
+    position: absolute;
+    top: -12px;
+    right: 49px;
+    z-index: 1;
+    color: #fff;
+    font-size: 179.2px;
+    font-family: 'Gilroy ExtraBold';
+    line-height: 179.2px;
+}
+
+.slider-title {
+    z-index: 2;
+    margin: 0;
+    margin-bottom: 20px;
+    line-height: 56px;
+}
+
+.slider-description {
+    margin: 0;
+    margin-bottom: 44px;
+    letter-spacing: 0.01em;
+    font-size: 15px;
+    line-height: 30px;
+}
+
+.slider-button {
+    margin-bottom: 53px;
+    padding: 2px 42px;
+
+    align-self: flex-start;
 }
 
 #btn-1:checked ~ .slider-controls .slider-controls-btn[for='btn-1']::before,
@@ -506,10 +563,18 @@ body {
 }
 
 .slider-parametrs-value {
+    margin: 0;
+    padding: 0;
+    padding-right: 60px;
+    padding-bottom: 12px;
     letter-spacing: 0.01em;
     font-size: 36px;
     font-family: 'Gilroy Light';
     line-height: 36px;
+}
+
+.slider-parametrs-value-monopod {
+    padding-right: 74px;
 }
 
 .slider-parametrs-name {
@@ -518,16 +583,6 @@ body {
     font-size: 13px;
     font-family: 'Open Sans';
     line-height: 20px;
-}
-
-.slider-slide-number {
-    position: absolute;
-    top: -1px;
-    right: -12px;
-    color: #000;
-    font-size: 179.2px;
-    font-family: 'Gilroy ExtraBold';
-    line-height: 179.2px;
 }
 
 .slider-button:hover {
@@ -543,7 +598,7 @@ body {
 /*goods*/
 
 .goods {
-    margin-bottom: 85px;
+    margin-bottom: 183px;
 }
 
 .goods-container {
@@ -617,30 +672,94 @@ body {
 }
 
 .goods-catalog-title {
-    margin-top: 26px;
+    margin-top: 35px;
 }
 
 
 /*Service slider*/
 
 .services-slider {
+    margin-bottom: 94px;
+}
+
+.services-slider-container {
+    display: -webkit-flex;
+    display:     -ms-flex;
+    display:         flex;
+}
+
+.services-slider-controls {
+    position: relative;
+    display: -webkit-flex;
+    display:     -ms-flex;
+    display:         flex;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    align-items: flex-start;
+}
+
+.services-slider input[type=radio] {
+    display: none;
+}
+
+.services-slider-controls::after {
+    position: absolute;
+    top: -80px;
+    left: 277px;
+    width: 7px;
+    height: 319px;
+    background-color: #000;
+    content: '';
+    ;
+}
+
+.service-slide {
+    display: none;
+    height: 288px;
+}
+
+#service-btn-1:checked ~ .service-slides .service-slide:nth-child(1),
+#service-btn-2:checked ~ .service-slides .service-slide:nth-child(2),
+#service-btn-3:checked ~ .service-slides .service-slide:nth-child(3) {
+    display: flex;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+}
+
+#service-btn-1:checked ~ .services-slider-controls label[for='service-btn-1'],
+#service-btn-2:checked ~ .services-slider-controls label[for='service-btn-2'],
+#service-btn-3:checked ~ .services-slider-controls label[for='service-btn-3'] {
+    background-color: #000;
+    color: #f7e184;
+}
+
+.services-slider {
     background-color: #e5e5e5;
+}
+
+.service-button {
+    margin-bottom: 24px;
+    padding: 2px 140px 2px 19px;
+    width: 280px;
 }
 
 .service-button:hover {
     background-color: #f0c52e;
 }
 
-.service-button:active {
+
+/*.service-button:active {
     background-color: #000;
     color: #f7e184;
-}
+}*/
 
 
 /*brands-list*/
 
 .brands {
-    padding-bottom: 103px;
+    padding-bottom: 102px;
 }
 
 .brands-list {
@@ -702,10 +821,17 @@ body {
 
 .company-description,
 .contacts-description {
-    margin-bottom: 30px;
     letter-spacing: 0;
     font-family: 'Open Sans';
     line-height: 30px;
+}
+
+.company-description {
+    margin-bottom: 30px;
+}
+
+.contacts-description {
+    margin-bottom: 39px;
 }
 
 .company-info-container {
@@ -781,14 +907,24 @@ body {
 }
 
 .aboutUs-button {
-    padding: 12px 22px;
+    padding-right: 22px;
+    padding-left: 22px;
 }
 
-.aboutUs-button:hover {
+.contacts-button {
+    padding-right: 40px;
+    padding-left: 40px;
+}
+
+.aboutUs-button:hover,
+.aboutUs-button:focus,
+.contacts-button:hover,
+.contacts-button :focus {
     background-color: #f0c52e;
 }
 
-.aboutUs-button:active {
+.aboutUs-button:active,
+.contacts-button:active {
     background-color: #000;
     color: #f7e184;
 }
@@ -813,6 +949,11 @@ body {
     color: #f7e184;
 }
 
+.map_link {
+    display: block;
+    margin-bottom: 62px;
+}
+
 
 /*footer*/
 
@@ -834,7 +975,7 @@ body {
 }
 
 .footer {
-    padding-top: 14px;
+    padding-top: 17px;
     background-color: #464646;
 }
 
@@ -859,10 +1000,14 @@ body {
     display: -webkit-flex;
     display:     -ms-flex;
     display:         flex;
-    justify-content: space-around;
-    border: 1px solid red;
+}
 
-    flex-basis: 460px;
+.footer-button {
+    margin-right: 34px;
+}
+
+.footer-services:last-child {
+    margin-right: 0;
 }
 
 .footer-bottom {
@@ -979,6 +1124,14 @@ body {
 
 
 /*Catalog */
+
+.user-name {
+    margin-right: 20px;
+}
+
+.user-login-button-out {
+    opacity: 0.3;
+}
 
 .catalog-container {
     display: -webkit-flex;
