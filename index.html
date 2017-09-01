@@ -266,9 +266,9 @@
               </div>
               <div class="service-slide service-slide-2">
                 <h2 class="title services-title">Гарантия</h2>
-                <p class="description services-description">Если из-за возгорания купленного у нас товара у вас
+                <p class="description services-description">Если из-за возгорания купленного у нас товара у вас сгорит
                   <br>
-                  сгорит дом - не переживайте, мы выдадим вам новый.
+                  дом — не переживайте, мы выдадим вам новый.
                   <br>
                   Товар, не дом, конечно же.</p>
               </div>
@@ -415,22 +415,32 @@
         </div>
       </footer>
       <!-- модальное окно feedback -->
-      <form action="get" class="modal-window">
-        <div class="feedback-top">
-          <label for="name">Ваше имя:
-            <input type="text" name="name" class="modal-input" id="name" placeholder="Представьтесь, пожалуйста">
+      <section class="modal modal-feedback">
+        <form action="get" class="modal-window">
+          <button class="modal-close">
+            <span class="visually-hidden">Закрыть</span>
+          </button>
+          <div class="feedback-top">
+            <label for="name">Ваше имя:
+              <input type="text" name="name" class="modal-input" id="name" placeholder="Представьтесь, пожалуйста">
+            </label>
+
+            <label for="email">Ваш e-mail:
+              <input type="email" name="email" class="modal-input" id="email" placeholder="Для отправки ответа"></label>
+
+          </div>
+          <div class="feedback-write">
+            <label for="message">Текст письма:
+              <textarea name="message" class="modal-input-write" id="message" cols="30" rows="10" placeholder="В свободной форме"></textarea>
+            </label>
+          </div>
+
+          <label for="submit">
+            <span class="visually-hidden">Отправить</span>
+            <button type="submit" name="submit" id="submit" class="btn feedback-button">Отправить</button>
           </label>
-          <label for="email">Ваш e-mail:
-            <input type="email" name="email" class="modal-input" id="email" placeholder="Для отправки ответа">
-          </label>
-        </div>
-        <label for="message">Текст письма:
-          <textarea name="message" class="modal-input" id="message" cols="30" rows="10" placeholder="В свободной форме"></textarea>
-        </label>
-        <label for="submit">Отправить
-          <button type="submit" name="submit" id="submit" class="btn feedback-button modal-input">Отправить</button>
-        </label>
-      </form>
+        </form>
+      </section>
     </body>
 
   </html>
