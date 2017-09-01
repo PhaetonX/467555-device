@@ -395,7 +395,8 @@ body {
     opacity: 0.6;
 }
 
-.navigation-button {
+.navigation-button,
+.footer-button {
     color: #000;
     text-decoration: none;
     text-transform: uppercase;
@@ -530,7 +531,6 @@ body {
     position: absolute;
     top: -12px;
     right: 49px;
-    z-index: 1;
     color: #fff;
     font-size: 179.2px;
     font-family: 'Gilroy ExtraBold', 'Arial', sans-serif;
@@ -695,8 +695,7 @@ body {
 /*Service slider*/
 
 .services-slider {
-    z-index: -2;
-    margin-bottom: 113px;
+    margin-bottom: 95px;
     background: linear-gradient(to bottom, transparent 39px, #e5e5e5 39px);
 }
 
@@ -704,7 +703,7 @@ body {
     display: -webkit-flex;
     display:     -ms-flex;
     display:         flex;
-    height: 308px;
+    height: 325px;
 }
 
 .services-slider-controls {
@@ -749,11 +748,11 @@ body {
     background-repeat: no-repeat;
 }
 
-
 .service-slide-2 {
     background-image: url(../img/warranty.svg);
     background-position: 662px 0;
-    background-repeat: no-repeat;;
+    background-repeat: no-repeat;
+    ;
 }
 
 .service-slide-3 {
@@ -766,14 +765,11 @@ body {
 .services-description {
     margin: 0;
     margin-bottom: 20px;
-    margin-left: 242px;
+    margin-left: 126px;
     padding: 0;
     padding-top: 18px;
     letter-spacing: 0.01em;
 }
-
-
-
 
 #service-btn-1:checked ~ .service-slides .service-slide:nth-child(1),
 #service-btn-2:checked ~ .service-slides .service-slide:nth-child(2),
@@ -787,12 +783,10 @@ body {
 #service-btn-1:checked ~ .services-slider-controls label[for='service-btn-1'],
 #service-btn-2:checked ~ .services-slider-controls label[for='service-btn-2'],
 #service-btn-3:checked ~ .services-slider-controls label[for='service-btn-3'] {
-    z-index: 11;
     width: 277px;
     background-color: #000;
     color: #f7e184;
 }
-
 
 #service-btn-1:checked ~ .services-slider-controls label[for='service-btn-1']::before,
 #service-btn-2:checked ~ .services-slider-controls label[for='service-btn-2']::before,
@@ -800,14 +794,12 @@ body {
 #service-btn-1:checked ~ .services-slider-controls label[for='service-btn-1']::after,
 #service-btn-2:checked ~ .services-slider-controls label[for='service-btn-2']::after,
 #service-btn-3:checked ~ .services-slider-controls label[for='service-btn-3']::after,
-.service-slider-controls label:active::before,
-.service-slider-controls label:active::after {
+.service-slider-controls label:active::before {
     display: none;
 }
 
-
 .service-button {
-    z-index: 10;
+    z-index: 2;
     margin-bottom: 24px;
     padding: 2px 140px 2px 22px;
     width: 160px;
@@ -823,11 +815,9 @@ body {
     content: '';
 }
 
-
 .service-button:hover {
     background-color: #f0c52e;
 }
-
 
 
 /*brands-list*/
@@ -999,8 +989,8 @@ body {
 
 .aboutUs-button:active,
 .contacts-button:active {
-    background-color: #000;
-    color: #f7e184;
+    background-color: #f0c52e;
+    color: rgba(0, 0, 0, 0.3);
 }
 
 
@@ -1190,9 +1180,9 @@ body {
 }
 
 .modal-feedback {
-    /*position: absolute;
-    top: 160px;
-    right: 470px;*/
+    position: fixed;
+    top: 50%;
+    left: 50%;
     z-index: 10;
     display: -webkit-flex;
     display:     -ms-flex;
@@ -1203,6 +1193,8 @@ body {
     width: 960px;
     background-color: #fff;
     box-shadow: 0 10px 20px rgba(4, 6, 6, 0.2);
+    transform: translate(-50%, -50%);
+    ;
 }
 
 .feedback-top {
@@ -1214,16 +1206,16 @@ body {
 
 .modal-input-write {
     margin-top: 12px;
-    margin-bottom: 21px;
+    margin-bottom: 32px;
     padding-top: 15px;
-    padding-left: 15px;
+    padding-left: 17px;
     width: 760px;
     height: 160px;
     border: none;
     background-color: #f2f2f2;
     letter-spacing: 0;
     font-size: 14px;
-    font-family: 'Open Sans Regular','Arial', sans-serif;
+    font-family: 'Open Sans Regular', 'Arial', sans-serif;
     line-height: 18px;
     resize: none;
 }
@@ -1247,15 +1239,15 @@ body {
     background-color: #f2f2f2;
     letter-spacing: 0;
     font-size: 14px;
-    font-family: 'Open Sans Regular','Arial', sans-serif;
+    font-family: 'Open Sans Regular', 'Arial', sans-serif;
     line-height: 18px;
 }
 
-
-
 .feedback-button {
-    margin-bottom: 72px;
-    padding: 12px 22px;
+    margin-bottom: 81px;
+    padding: 0;
+    padding-right: 32px;
+    padding-left: 32px;
 }
 
 .modal-input:hover,
