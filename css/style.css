@@ -108,6 +108,10 @@ body {
     background-color: #f7e296;
 }
 
+.header-container {
+    padding-top: 33px;
+}
+
 .header-userSettings {
     display: -webkit-flex;
     display:     -ms-flex;
@@ -121,8 +125,9 @@ body {
 /*Logo*/
 
 .header-logo {
-    margin-top: -19px;
-    margin-bottom: 7px;
+    position: absolute;
+    top: -17px;
+    left: 59px;
 }
 
 .header-logo-link:hover,
@@ -157,7 +162,7 @@ body {
 }
 
 .user-block-header {
-    padding-left: 26px;
+    padding-left: 1px;
 }
 
 .user-login-button-header {
@@ -165,8 +170,17 @@ body {
     margin-right: auto;
 }
 
+
+.user-login-button {
+    padding-left: 26px;
+}
 .user-compare-header {
-    margin-right: 63px;
+    margin-right: 39px;
+    padding-left: 25px;
+}
+
+.user-basket-header {
+    padding-left: 25px;
 }
 
 
@@ -391,13 +405,14 @@ body {
     padding-left: 57px;
     width: 1160px;
     background-color: #f7e296;
-    font-weight: 300;
 
     align-content: center;
     flex-wrap: wrap;
 }
 
 .goods-item {
+    padding-right: 10px;
+
     flex-basis: 33.33%;
 }
 
@@ -423,8 +438,9 @@ body {
 
 .header::after {
     position: absolute;
-    top: 225px;
     right: 460px;
+    bottom: -46px;
+    z-index: 1;
     display: block;
     width: 100px;
     height: 7px;
@@ -486,7 +502,7 @@ body {
 
 .slider-controls {
     position: absolute;
-    top: 327px;
+    top: 328px;
     right: 80px;
 }
 
@@ -503,7 +519,7 @@ body {
     position: relative;
     z-index: 2;
     display: inline-block;
-    margin-right: 18px;
+    margin-right: 19px;
     width: 12px;
     height: 12px;
     border: 1px solid #000;
@@ -512,7 +528,7 @@ body {
     cursor: pointer;
 }
 
-.slider-controls-btn:nth-of-type(3n) {
+.slider-controls-btn:last-child {
     margin-right: 0;
 }
 
@@ -526,7 +542,6 @@ body {
 }
 
 .slider-monopod-img {
-    position: absolute;
     top: 0;
     left: 90px;
 }
@@ -555,6 +570,7 @@ body {
     z-index: 2;
     margin: 0;
     margin-bottom: 20px;
+    font-size: 47px;
     line-height: 56px;
 }
 
@@ -567,7 +583,7 @@ body {
 }
 
 .slider-button {
-    margin-bottom: 53px;
+    margin-bottom: 50px;
     padding: 2px 42px;
 
     align-self: flex-start;
@@ -595,19 +611,22 @@ body {
     display: flex;
 }
 
+.slider-info {
+    padding-right: 100px;
+    width: 100%;
+}
+
+
 .slider-parametrs-value {
     margin: 0;
     padding: 0;
-    padding-right: 60px;
-    padding-bottom: 12px;
+    padding-bottom: 6px;
+    width: 27.33%;
+    /*width: 160px;*/
     letter-spacing: 0.01em;
     font-size: 36px;
     font-family: 'Gilroy Light', 'Arial', sans-serif;
-    line-height: 36px;
-}
-
-.slider-parametrs-value-monopod {
-    padding-right: 74px;
+    line-height: 43px;
 }
 
 .slider-parametrs-name {
@@ -664,7 +683,6 @@ body {
     font-size: 18px;
     font-family: 'Gilroy ExtraBold', 'Arial', sans-serif;
     line-height: 22px;
-    ;
 }
 
 .goods-catalog-img-container {
@@ -732,7 +750,7 @@ body {
     padding-top: 19px;
 }
 
-.services-slider input[type=radio] {
+.slider-input[type=radio] {
     display: none;
 }
 
@@ -778,10 +796,10 @@ body {
 .services-title,
 .services-description {
     margin: 0;
-    margin-bottom: 20px;
     margin-left: 126px;
     padding: 0;
     padding-top: 18px;
+    padding-bottom: 20px;
     letter-spacing: 0.01em;
 }
 
@@ -820,13 +838,7 @@ body {
 }
 
 .service-button::after {
-    position: absolute;
-    top: 17px;
-    z-index: -1;
     width: 160px;
-    height: 8px;
-    background-color: #f0c52e;
-    content: '';
 }
 
 .service-button:hover {
@@ -857,7 +869,7 @@ body {
     position: relative;
 }
 
-.brands-item:hover::before {
+.brands-item-link:hover::before {
     position: absolute;
     top: 0;
     left: 0;
@@ -866,19 +878,21 @@ body {
     content: '';
 }
 
-.brands-item-Dji:hover::before {
+
+
+.brands-item-Dji .brands-item-link:hover::before {
     background-image: url('../img/dji.jpg');
 }
 
-.brands-item-spGadgets:hover::before {
+.brands-item-spGadgets .brands-item-link:hover::before {
     background-image: url('../img/spGadgets.jpg');
 }
 
-.brands-item-goPro:hover::before {
+.brands-item-goPro .brands-item-link:hover::before {
     background-image: url('../img/goPro.jpg');
 }
 
-.brands-item-vive:hover::before {
+.brands-item-vive .brands-item-link:hover::before {
     background-image: url('../img/vive.jpg');
 }
 
@@ -899,7 +913,7 @@ body {
 
 .company-description,
 .contacts-description {
-    letter-spacing: 0;
+    font-size: 15px;
     font-family: 'Open Sans', 'Arial', sans-serif;
     line-height: 30px;
 }
@@ -917,32 +931,19 @@ body {
     display:     -ms-flex;
     display:         flex;
     justify-content: space-between;
-
-    flex-wrap: wrap;
 }
 
-.company-title::before {
-    position: absolute;
-    top: -19px;
-    right: 395px;
-    display: block;
-    width: 80px;
-    height: 7px;
-    background-color: #000;
-    content: '';
-}
-
+.company-title::before,
 .contacts-title::before {
     position: absolute;
-    top: -19px;
-    right: 480px;
+    top: -17px;
+    left: 0;
     display: block;
     width: 80px;
     height: 7px;
     background-color: #000;
     content: '';
 }
-
 
 /*company-aboutUs*/
 
@@ -959,8 +960,8 @@ body {
     margin: 0;
     margin-top: 67px;
     margin-bottom: 55px;
-    margin-left: 35px;
     padding: 0;
+    padding-left: 35px;
     list-style: none;
 }
 
@@ -1039,22 +1040,29 @@ body {
     display: -webkit-flex;
     display:     -ms-flex;
     display:         flex;
-    justify-content: space-between;
     margin: 0;
     padding: 0;
-
-    flex-basis: 300px;
 }
+
+.user-block-item-footer {
+    margin-right: 63px;
+}
+
+.user-block-item-footer:last-child {
+    margin-right: 0;
+}
+
 
 .footer-container {
     margin: 0 auto;
-    padding-top: 45px;
+    padding-top: 46px;
     width: 1160px;
 }
 
 .footer {
     padding-top: 16px;
     padding-bottom: 43px;
+    padding-bottom: 45px;
     background-color: #464646;
 }
 
@@ -1072,7 +1080,7 @@ body {
     display:         flex;
     align-items: center;
     justify-content: space-between;
-    padding-bottom: 32px;
+    margin-bottom: 32px;
 }
 
 .footer-services {
@@ -1082,12 +1090,15 @@ body {
 }
 
 .footer-button {
-    margin-right: 34px;
+    margin: 0;
+    margin-right: 35px;
+    padding: 0;
 }
 
-.footer-services:last-child {
+.footer-button:last-child {
     margin-right: 0;
 }
+
 
 .footer-bottom {
     position: relative;
@@ -1110,7 +1121,6 @@ body {
 .footer-description {
     letter-spacing: 0;
     line-height: 30px;
-    ;
 }
 
 .user-login-button-footer,
@@ -1152,8 +1162,14 @@ body {
     display:         flex;
     justify-content: space-between;
     margin-left: 470px;
+}
 
-    flex-basis: 180px;
+.social-item {
+    margin-right: 22px;
+}
+
+.social-item:last-child {
+    margin-right: 0;
 }
 
 .social-img {
@@ -1194,29 +1210,23 @@ body {
 }
 
 .modal-feedback {
-    /*position: fixed;
+    position: fixed;
     top: 50%;
-    left: 50%;*/
+    left: 50%;
     z-index: 10;
     display: -webkit-flex;
     display:     -ms-flex;
     display:         flex;
     align-items: center;
+    padding-top: 78px;
     padding-right: 100px;
     padding-left: 100px;
     width: 960px;
     background-color: #fff;
     box-shadow: 0 10px 20px rgba(4, 6, 6, 0.2);
     transform: translate(-50%, -50%);
-    ;
 }
 
-.feedback-top {
-    display: -webkit-flex;
-    display:     -ms-flex;
-    display:         flex;
-    margin-top: 100px;
-}
 
 .modal-input-write {
     margin-top: 12px;
@@ -1234,8 +1244,15 @@ body {
     resize: none;
 }
 
-.modal-window {
-    width: 100%;
+.feedback-top {
+    display: -webkit-flex;
+    display:     -ms-flex;
+    display:         flex;
+    justify-content: space-between;
+    padding-top: 20px;
+}
+
+.modal-form {
     color: #000;
     letter-spacing: 0;
     font-size: 18px;
@@ -1243,12 +1260,16 @@ body {
     line-height: 18px;
 }
 
+.modal-label {
+    width: calc(50% - 20px);
+}
+
+
 .modal-input {
     margin-top: 6px;
-    margin-right: 40px;
     margin-bottom: 40px;
     padding: 16px 18px;
-    width: 360px;
+    width: 100%;
     border: none;
     background-color: #f2f2f2;
     letter-spacing: 0;
@@ -1279,7 +1300,7 @@ body {
     background-color: #f0c52e;
 }
 
-.feedback-button:hover {
+.feedback-button:active {
     color: rgba(0, 0, 0, 0.3);
 }
 

@@ -111,9 +111,9 @@
 
       <section class="slider">
         <div class="slider-container">
-          <input type="radio" id="btn-1" name="slider-toggle" checked>
-          <input type="radio" id="btn-2" name="slider-toggle">
-          <input type="radio" id="btn-3" name="slider-toggle">
+          <input class="slider-input" type="radio" id="btn-1" name="slider-toggle" checked>
+          <input class="slider-input" type="radio" id="btn-2" name="slider-toggle">
+          <input class="slider-input" type="radio" id="btn-3" name="slider-toggle">
           <div class="slider-controls">
             <label class="slider-controls-btn" for="btn-1"></label>
             <label class="slider-controls-btn" for="btn-2"></label>
@@ -131,9 +131,9 @@
               <a href="#" class="btn slider-button">подробнее</a>
               <table class="slider-info">
                 <tr class="slider-parametrs-value-row">
-                  <td class="slider-parametrs-value slider-parametrs-value-monopod">8,5 м</td>
-                  <td class="slider-parametrs-value slider-parametrs-value-monopod">5 кг</td>
-                  <td class="slider-parametrs-value slider-parametrs-value-monopod">Карбон</td>
+                  <td class="slider-parametrs-value">8,5 м</td>
+                  <td class="slider-parametrs-value">5 кг</td>
+                  <td class="slider-parametrs-value">Карбон</td>
                 </tr>
                 <tr class="slider-parametrs-name-row">
                   <td class="slider-parametrs-name">Длина палки</td>
@@ -155,9 +155,11 @@
               <table class="slider-info">
                 <tr class="slider-parametrs-value-row">
                   <td class="slider-parametrs-value">48 часов</td>
+                  <td class="slider-parametrs-value"></td>
                 </tr>
                 <tr class="slider-parametrs-name-row">
                   <td class="slider-parametrs-name">Без подзарядки</td>
+                  <td class="slider-parametrs-value"></td>
                 </tr>
               </table>
             </div>
@@ -173,10 +175,12 @@
                 <tr class="slider-parametrs-value-row">
                   <td class="slider-parametrs-value">800 м</td>
                   <td class="slider-parametrs-value">50 м</td>
+                  <td class="slider-parametrs-value"></td>
                 </tr>
                 <tr class="slider-parametrs-name-row">
                   <td class="slider-parametrs-name">Дальность полета</td>
                   <td class="slider-parametrs-name">Радиус поражения</td>
+                  <td class="slider-parametrs-value"></td>
                 </tr>
               </table>
             </div>
@@ -247,9 +251,9 @@
         </section>
         <section class="services-slider">
           <div class="services-slider-container">
-            <input type="radio" id="service-btn-1" name="service-slider-toggle" checked>
-            <input type="radio" id="service-btn-2" name="service-slider-toggle">
-            <input type="radio" id="service-btn-3" name="service-slider-toggle">
+            <input class="slider-input" type="radio" id="service-btn-1" name="service-slider-toggle" checked>
+            <input class="slider-input" type="radio" id="service-btn-2" name="service-slider-toggle">
+            <input class="slider-input" type="radio" id="service-btn-3" name="service-slider-toggle">
             <div class="services-slider-controls">
               <label class="btn service-button" for="service-btn-1">Доставка</label>
               <label class="btn service-button" for="service-btn-2">Гарантия</label>
@@ -350,24 +354,24 @@
           <div class="footer-top">
             <a href="#" class="footer-logo-link">
               <span class="visually-hidden">Девайс-логотип</span>
-              <img src="img/footer-logo.png" alt="Девайс" width="163" height="36">
+              <img src="img/footer-logo.png" alt="Девайс" width="164" height="36">
             </a>
             <ul class="user-block-footer">
-              <li class="user-block-item">
-                <button class="user-block-btn user-login-button user-login-button-footer">Войти
+              <li class="user-block-item user-block-item-footer">
+                <button class="user-block-btn user-login-button user-login-button-footer footer-user-block-link">Войти
                   <svg class="user-login-icon-footer" width="13" height="12">
                     <use xlink:href="#user-icon"></use>
                   </svg>
                 </button>
               </li>
-              <li class="user-block-item">
+              <li class="user-block-item user-block-item-footer">
                 <a href="#" class="user-block-link user-compare footer-user-block-link">Сравнить
                   <svg class="user-compare-icon-footer" width="10" height="10">
                     <use xlink:href="#compare-icon"></use>
                   </svg>
                 </a>
               </li>
-              <li class="user-block-item">
+              <li class="user-block-item user-block-item-footer">
                 <a href="#" class="user-block-link user-basket footer-user-block-link">Корзина
                   <svg class="user-basket-icon-footer" width="12" height="12">
                     <use xlink:href="#basket-icon"></use>
@@ -384,7 +388,8 @@
               <a href="#" class="footer-button">Контакты</a>
             </div>
             <p class="description footer-description">
-              Тел.:<a href="tel:+7(495)495-95-95" class="number">+7 (495) 495-95-95</a>
+              Тел.:
+              <a href="tel:+7(495)495-95-95" class="number">+7 (495) 495-95-95</a>
             </p>
           </div>
           <div class="footer-bottom">
@@ -416,18 +421,17 @@
       </footer>
       <!-- модальное окно feedback -->
       <section class="modal modal-feedback">
-        <form action="get" class="modal-window">
+        <form action="get" class="modal-form">
           <button class="modal-close">
             <span class="visually-hidden">Закрыть</span>
           </button>
           <div class="feedback-top">
-            <label for="name">Ваше имя:
+            <label class="modal-label" for="name">Ваше имя:
               <input type="text" name="name" class="modal-input" id="name" placeholder="Представьтесь, пожалуйста">
             </label>
-
-            <label for="email">Ваш e-mail:
-              <input type="email" name="email" class="modal-input" id="email" placeholder="Для отправки ответа"></label>
-
+            <label class="modal-label" for="email">Ваш e-mail:
+              <input type="email" name="email" class="modal-input" id="email" placeholder="Для отправки ответа">
+            </label>
           </div>
           <div class="feedback-write">
             <label for="message">Текст письма:
