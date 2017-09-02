@@ -45,7 +45,7 @@
     </svg>
     <header class="header">
       <div class="header-container">
-        <a href="#" class="header-logo-link">
+        <a href="index.html" class="header-logo-link">
           <img class="header-logo" src="img/header-logo.png" alt="Девайс" width="164" height="36">
         </a>
         <div class="header-userSettings">
@@ -59,11 +59,15 @@
           </form>
           <ul class="user-block user-block-header">
             <li class="user-block-item">
-              <a href="#" class="user-block-link user-name">Валентин Петухов</a>
+              <a href="#" class="user-block-link user-name">Валентин Петухов
+                <svg class="user-login-icon-header user-logged-icon-header" width="13" height="12">
+                  <use xlink:href="#user-icon"></use>
+                </svg>
+              </a>
             </li>
-            <li class="user-block-item">
-              <button class="btn user-login-button user-login-button-out">Выйти</button>
-            </li>
+            <li class="user-block-item user-login-button-header">
+              <button class="user-block-btn user-login-button">Выйти
+              </button>
             </li>
             <li class="user-block-item">
               <a href="#" class="user-block-link user-compare user-compare-header">Сравнить
@@ -84,7 +88,7 @@
         <nav class="navigation">
           <ul class="navigation-list">
             <li class="navigation-item navigation-catalog">
-              <a href="#" class="btn navigation-button">Каталог товаров
+              <a href="#" class="navigation-button">Каталог товаров
                 <svg class="navaigation-catalog-icon">
                   <use xlink:href="#plus-icon" width="16" height="16"></use>
                 </svg>
@@ -111,13 +115,13 @@
               </ul>
             </li>
             <li class="navigation-item">
-              <a href="#" class="btn navigation-button">Доставка</a>
+              <a href="#" class="navigation-button">Доставка</a>
             </li>
             <li class="navigation-item">
-              <a href="#" class="btn navigation-button">Гарантия</a>
+              <a href="#" class="navigation-button">Гарантия</a>
             </li>
             <li class="navigation-item">
-              <a href="#" class="btn navigation-button">Контакты</a>
+              <a href="#" class="navigation-button">Контакты</a>
             </li>
           </ul>
         </nav>
@@ -240,24 +244,36 @@
             <span class="visually-hidden">Девайс-логотип</span>
             <img src="img/footer-logo.png" alt="Девайс" width="163" height="36">
           </a>
-          <ul class="user-block">
+          <ul class="user-block-footer">
             <li class="user-block-item">
-              <button class="btn user-login-button">Войти</button>
+              <button class="user-block-btn user-login-button user-login-button-footer">Выйти
+                <svg class="user-login-icon-footer" width="13" height="12">
+                  <use xlink:href="#user-icon"></use>
+                </svg>
+              </button>
             </li>
             <li class="user-block-item">
-              <a href="#" class="user-block-link user-compare footer-user-block-link">Сравнить</a>
+              <a href="#" class="user-block-link user-compare footer-user-block-link">Сравнить
+                <svg class="user-compare-icon-footer" width="10" height="10">
+                  <use xlink:href="#compare-icon"></use>
+                </svg>
+              </a>
             </li>
             <li class="user-block-item">
-              <a href="#" class="user-block-link user-basket footer-user-block-link">Корзина</a>
+              <a href="#" class="user-block-link user-basket footer-user-block-link">Корзина
+                <svg class="user-basket-icon-footer" width="12" height="12">
+                  <use xlink:href="#basket-icon"></use>
+                </svg>
+              </a>
             </li>
           </ul>
         </div>
         <div class="footer-middle">
-          <p class="description footer-description">г. Москва, ул. Строителей, 15</p>
+          <p class="description footer-description">г. Москва,ул. Строителей, 15</p>
           <div class="footer-services">
-            <a href="" class="btn footer-button">Доставка</a>
-            <a href="" class="btn footer-button">Гарантия</a>
-            <a href="" class="btn footer-button">Контакты</a>
+            <a href="#" class="footer-button">Доставка</a>
+            <a href="#" class="footer-button">Гарантия</a>
+            <a href="#" class="footer-button">Контакты</a>
           </div>
           <p class="description footer-description">
             Тел.:<a href="tel:+7(495)495-95-95" class="number">+7 (495) 495-95-95</a>
@@ -266,17 +282,26 @@
         <div class="footer-bottom">
           <ul class="social-list">
             <li class="social-item">
-              <a href="#" class="social-link social-link-fb">Фейсбук</a>
+              <a href="#" class="social-link social-link-fb">
+                <span class="visually-hidden">Фейсбук</span>
+                <img src="img/fb.svg" alt="facebook" class="social-img" width="32" height="32">
+              </a>
             </li>
             <li class="social-item">
-              <a href="#" class="social-link social-link-inst">Инстаграмм</a>
+              <a href="#" class="social-link social-link-inst">
+                <span class="visually-hidden">Инстаграмм</span>
+                <img src="img/instagram.svg" alt="instagram" class="social-img" width="32" height="32">
+              </a>
             </li>
             <li class="social-item">
-              <a href="#" class="social-link social-link-tw">Твиттер</a>
+              <a href="#" class="social-link social-link-tw">
+                <span class="visually-hidden">Твиттер</span>
+                <img src="img/twitter.svg" alt="twitter" width="32" height="32" class="social-img">
+              </a>
             </li>
           </ul>
           <a href="https://htmlacademy.ru" target="_blank" class="copyright-link">
-            <img src="img/logo-html.png" alt="HTML academy" width="27" height="35">
+            <img src="img/logo-html.svg" alt="HTML academy" width="27" height="35">
           </a>
         </div>
       </div>

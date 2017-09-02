@@ -102,7 +102,7 @@ body {
     margin: 0 auto;
     margin-top: 40px;
     padding-right: 60px;
-    padding-bottom: 157px;
+    padding-bottom: 44px;
     padding-left: 60px;
     width: 1160px;
     background-color: #f7e296;
@@ -150,6 +150,12 @@ body {
     flex-basis: 500px;
 }
 
+
+.user-name {
+    position: relative;
+    padding-right: 20px;
+}
+
 .user-block-header {
     padding-left: 26px;
 }
@@ -159,17 +165,20 @@ body {
     margin-right: auto;
 }
 
-.user-block-header .user-block-item:nth-child(2) {
+.user-compare-header {
     margin-right: 63px;
 }
+
 
 .user-compare-header,
 .user-basket-header {
     position: relative;
 }
 
+
 .user-compare,
-.user-basket {
+.user-basket,
+.user-name {
     color: #000;
 }
 
@@ -218,6 +227,11 @@ body {
     right: 56px;
     bottom: 11px;
     fill: #272525;
+}
+
+.user-logged-icon-header {
+    top: 5px;
+    right: 145px;
 }
 
 .user-compare-icon-header {
@@ -456,7 +470,6 @@ body {
 /*slider*/
 
 .slider {
-    margin-top: -113px;
     margin-bottom: 74px;
 }
 
@@ -464,6 +477,7 @@ body {
     position: relative;
     width: 1160px;
     height: 520px;
+    background-image: linear-gradient(#f7e296 113px, transparent 113px);
 }
 
 .slider input[type=radio] {
@@ -1089,7 +1103,7 @@ body {
     top: 29px;
     width: 80px;
     height: 6px;
-    background-color: #fff;
+    background-color: #ffc600;
     content: '';
 }
 
@@ -1180,9 +1194,9 @@ body {
 }
 
 .modal-feedback {
-    position: fixed;
+    /*position: fixed;
     top: 50%;
-    left: 50%;
+    left: 50%;*/
     z-index: 10;
     display: -webkit-flex;
     display:     -ms-flex;
@@ -1272,9 +1286,6 @@ body {
 
 /*Catalog */
 
-.user-name {
-    margin-right: 20px;
-}
 
 .user-login-button-out {
     opacity: 0.3;
@@ -1329,7 +1340,16 @@ body {
     display:         flex;
     margin: 0;
     padding: 0;
+    padding-left: 61px;
     list-style: none;
+}
+
+.breadcrumbs-link {
+    padding-right: 36px;
+    letter-spacing: 0.01em;
+    font-size: 14px;
+    font-family: 'Open Sans', 'Arial', sans-serif;
+    line-height: 36px;
 }
 
 .breadcrumbs-link {
@@ -1350,7 +1370,15 @@ body {
 
 .catalog-top {
     margin: 0 auto;
+    margin-top: 42px;
     width: 1160px;
+}
+
+.catalog-title {
+    margin: 0;
+    margin-bottom: 27px;
+    padding: 0;
+    padding-left: 61px;
 }
 
 
