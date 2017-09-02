@@ -47,6 +47,7 @@ body {
 
 .btn {
     position: relative;
+    z-index: 1;
     margin: 0;
     padding: 0;
     padding-top: 12px;
@@ -205,6 +206,7 @@ body {
     padding: 5px 20px;
     border: 2px solid #000;
     background-color: #f7e296;
+    cursor: pointer;
 }
 
 .user-block,
@@ -1245,7 +1247,8 @@ body {
     display:     -ms-flex;
     display:         flex;
     justify-content: space-between;
-    padding-top: 20px;
+    margin-top: 20px;
+    margin-bottom: 40px;
 }
 
 .modal-form {
@@ -1262,7 +1265,6 @@ body {
 
 .modal-input {
     margin-top: 6px;
-    margin-bottom: 40px;
     padding: 16px 18px;
     width: 100%;
     border: none;
@@ -1281,6 +1283,16 @@ body {
 }
 
 .modal-input:hover,
+.modal-input-write:hover {
+    background-color: #eaeaea;
+}
+
+.modal-input:invalid,
+.modal-input-write:invalid {
+    background-color: #f6dada;
+}
+
+.modal-input,
 .modal-input-write {
     outline-color: none;
 }
@@ -1324,6 +1336,7 @@ body {
 }
 
 .filter-title {
+    margin-bottom: 0;
     color: #000;
     letter-spacing: 0.01em;
     font-size: 18px;
@@ -1331,12 +1344,78 @@ body {
     line-height: 36px;
 }
 
-.filter-color-title {
-    letter-spacing: 0.01;
+.filter-title-cost-range {
+    margin-bottom: 30px;
+}
+
+.filter-title-color {
+    margin-bottom: 10px;
+}
+
+.bluetooth-filter-title {
+    margin-bottom: 14px;
+}
+
+.filter-color-label,
+.filter-bluetooth-label {
+    position: relative;
+    padding-left: 40px;
+    letter-spacing: 0.01em;
     font-weight: 300;
     font-size: 14px;
     font-family: 'Open Sans', 'Arial', sans-serif;
     line-height: 40px;
+    cursor: pointer;
+}
+
+.filter-color-label::before {
+    position: absolute;
+    top: 8px;
+    left: 0;
+    width: 23px;
+    height: 23px;
+    background-image: url(../img/checkbox-off.svg);
+    content: '';
+}
+
+.color-input:checked ~ .filter-color-label::after {
+    position: absolute;
+    top: 8px;
+    left: 0;
+    width: 27px;
+    height: 23px;
+    background-image: url(../img/checkbox-on.svg);
+    content: '';
+}
+
+
+.filter-bluetooth-label::before {
+    position: absolute;
+    top: 6px;
+    left: 0;
+    width: 25px;
+    height: 25px;
+    background-image: url(../img/radio-off.svg);
+    content: '';
+}
+
+
+#bluetooth_yes:checked ~ .filter-bluetooth-label[for=bluetooth_yes]::after,
+#bluetooth_no:checked ~ .filter-bluetooth-label[for=bluetooth_no]::after {
+    position: absolute;
+    top: 6px;
+    left: 0;
+    width: 25px;
+    height: 25px;
+    background-image: url(../img/radio-on.svg);
+    content: '';
+}
+
+.button-filter {
+    margin: 0;
+    padding: 0;
+    padding-right: 38px;
+    padding-left: 38px;
 }
 
 .button-filter:hover,
@@ -1347,6 +1426,7 @@ body {
 .button-filter:active {
     color: rgba(0, 0, 0, 0.3);
 }
+
 
 
 /*breadcrumbs*/
@@ -1428,6 +1508,7 @@ body {
 }
 
 .catalog-filter {
+    margin-bottom: 72px;
     background-color: #dbdbdb;
 }
 
@@ -1445,6 +1526,13 @@ body {
     display:         flex;
     align-items: center;
     background-color: #ebebeb;
+}
+
+.bluetooth-filter {
+    display: -webkit-flex;
+    display:     -ms-flex;
+    display:         flex;
+    margin-bottom: 31px;
 }
 
 .sort-btn {
@@ -1520,10 +1608,15 @@ body {
 
 /*cost-range*/
 
-
 .cost-range {
+    margin-bottom: 25px;
+}
+
+
+.cost-range,
+.color-filter,
+.bluetooth-filter {
     position: relative;
-    margin: 0;
     padding: 0;
     width: 200px;
     border: none;
@@ -1549,12 +1642,12 @@ body {
 }
 
 .toggle-min {
-    top: 62px;
+    top: 72px;
     left: -5px;
 }
 
 .toggle-max {
-    top: 62px;
+    top: 72px;
     left: 108px;
 }
 
@@ -1574,7 +1667,9 @@ body {
     background-color: transparent;
 }
 
-.cost-range::before {
+.cost-range::before,
+.color-filter::before,
+.bluetooth-filter::before {
     position: absolute;
     top: 13px;
     display: block;
@@ -1584,10 +1679,49 @@ body {
     content: '';
 }
 
+
+/*color-filter*/
+
+.color-filter {
+    display: -webkit-flex;
+    display:     -ms-flex;
+    display:         flex;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.color-input[type=checkbox] {
+    display: none;
+}
+
+.bluetooth-input[type=radio] {
+    display: none;
+}
+
 /*Item*/
 
 .catalog-item {
     width: 360px;
+}
+
+.catalog-item-img {
+    width: 360px;
+    height: 380px;
+}
+
+.catalog-item-container {
+    position: relative;
+}
+
+.catalog-item-shape {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(238,238,238,0.7);
 }
 
 .item-name {

@@ -148,7 +148,7 @@
             <h2 class="catalog-filter-title catalog-filter">Фильтр:</h2>
             <form action="get">
               <fieldset class="cost-range">
-                <h3 class="filter-title">Стоимость</h3>
+                <h3 class="filter-title filter-title-cost-range">Стоимость</h3>
                 <div class="range-controls">
                   <div class="scale">
                     <div class="bar"></div>
@@ -157,26 +157,32 @@
                   <div class="toggle toggle-max"></div>
                 </div>
                 <div class="price-controls">
-                  <label class="price-label min-price">от <input class="price-input" name="min-price" type="text" value="0"></label>
-                   <label class="price-label max-price">до <input class="price-input" name="max-price" type="text" value="5000"></label>
+                  <label class="price-label min-price">от
+                    <input class="price-input" name="min-price" type="text" value="0"></label>
+                  <label class="price-label max-price">до
+                    <input class="price-input" name="max-price" type="text" value="5000"></label>
                 </div>
               </fieldset>
-              <h3 class="filter-title">Цвет</h3>
-              <input type="checkbox" id="color_black" name="color_black">
-              <label for="color_black" class="filter-color-title">Черный</label>
-              <input type="checkbox" id="color_white" name="color_white">
-              <label for="color_white" class="filter-color-title">Белый</label>
-              <input type="checkbox" id="color_blue" name="color_blue">
-              <label for="color_blue" class="filter-color-title">Синий</label>
-              <input type="checkbox" id="color_red" name="color_red">
-              <label for="color_red" class="filter-color-title">Красный</label>
-              <input type="checkbox" id="color_pink" name="color_pink">
-              <label for="color_pink" class="filter-color-title">Розовый</label>
-              <h3 class="filter-title">Bluetooth</h3>
-              <input type="radio" id="bluetooth_yes" name="bluetooth-btn" checked>
-              <label for="bluetooth_yes">Есть</label>
-              <input type="radio" id="bluetooth_no" name="bluetooth-btn">
-              <label for="bluetooth_no">Нет</label>
+              <fieldset class="color-filter">
+                <h3 class="filter-title filter-title-color">Цвет</h3>
+                <input class="color-input" type="checkbox" id="color_black" name="black" checked>
+                <label for="color_black" class="filter-color-label">Черный</label>
+                <input class="color-input" type="checkbox" id="color_white" name="white">
+                <label for="color_white" class="filter-color-label">Белый</label>
+                <input class="color-input" type="checkbox" id="color_blue" name="blue" checked>
+                <label for="color_blue" class="filter-color-label">Синий</label>
+                <input class="color-input" type="checkbox" id="color_red" name="red" checked>
+                <label for="color_red" class="filter-color-label">Красный</label>
+                <input class="color-input" type="checkbox" id="color_pink" name="pink">
+                <label for="color_pink" class="filter-color-label">Розовый</label>
+              </fieldset>
+              <fieldset class="bluetooth-filter">
+                <h3 class="filter-title bluetooth-filter-title">Bluetooth</h3>
+                <input class="bluetooth-input" type="radio" id="bluetooth_yes" value="yes" name="bluetooth-btn">
+                <label class="filter-bluetooth-label" for="bluetooth_yes">Есть</label>
+                <input class="bluetooth-input" type="radio" id="bluetooth_no" value="no" name="bluetooth-btn">
+                <label class="filter-bluetooth-label" for="bluetooth_no">Нет</label>
+              </fieldset>
               <button class="btn button-filter">Показать</button>
             </form>
           </div>
@@ -194,32 +200,40 @@
           </div>
           <ul class="catalog-list">
             <li class="catalog-item">
-              <img src="img/item-1.png" alt="Любительская селфи-палка" height="360" width="380">
-              <div class="catalog-item-shape">
-                <button class="btn shape-toBasket-button">В корзину</button>
-                <button class="shape-compare">Добавить к сравнению</button>
+              <div class="catalog-item-container">
+                <img class="catalog-item-img" src="img/item-1.png" alt="Любительская селфи-палка" height="360" width="380">
+                <div class="catalog-item-shape">
+                  <button class="btn shape-toBasket-button">В корзину</button>
+                  <button class="shape-compare">Добавить к сравнению</button>
+                </div>
               </div>
               <div class="item-info">
                 <h3 class="item-name">Любительская селфи-палка</h3>
                 <span class="item-price-value">500 руб</span>
               </div>
+
             </li>
             <li class="catalog-item">
-              <img src="img/item-2.png" alt="Непотопляемая селфи-палка" height="360" width="380">
-              <div class="catalog-item-shape">
-                <button class="btn shape-toBasket-button">В корзину</button>
-                <button class="shape-compare">Добавить к сравнению</button>
+              <div class="catalog-item-container">
+                <img class="catalog-item-img" src="img/item-2.png" alt="Непотопляемая селфи-палка" height="360" width="380">
+                <div class="catalog-item-shape">
+                  <button class="btn shape-toBasket-button">В корзину</button>
+                  <button class="shape-compare">Добавить к сравнению</button>
+                </div>
               </div>
               <div class="item-info">
                 <h3 class="item-name">Непотопляемая селфи-палка</h3>
                 <span class="item-price-value">2 500 руб.</span>
               </div>
+
             </li>
             <li class="catalog-item">
-              <img src="img/item-3.png" alt="Профессиональная селфи-палка" height="360" width="380">
-              <div class="catalog-item-shape">
-                <button class="btn shape-toBasket-button">В корзину</button>
-                <button class="shape-compare">Добавить к сравнению</button>
+              <div class="catalog-item-container">
+                <img class="catalog-item-img" src="img/item-3.png" alt="Профессиональная селфи-палка" height="360" width="380">
+                <div class="catalog-item-shape">
+                  <button class="btn shape-toBasket-button">В корзину</button>
+                  <button class="shape-compare">Добавить к сравнению</button>
+                </div>
               </div>
               <div class="item-info">
                 <h3 class="item-name">Профессиональная селфи-палка</h3>
@@ -227,10 +241,11 @@
               </div>
             </li>
             <li class="catalog-item">
-              <img src="img/item-4.png" alt="Селфи-палка Следуй за мной" height="360" width="380">
-              <div class="catalog-item-shape">
-                <button class="btn shape-toBasket-button">В корзину</button>
-                <button class="shape-compare">Добавить к сравнению</button>
+              <div class="catalog-item-container"><img class="catalog-item-img" src="img/item-4.png" alt="Селфи-палка Следуй за мной" height="360" width="380">
+                <div class="catalog-item-shape">
+                  <button class="btn shape-toBasket-button">В корзину</button>
+                  <button class="shape-compare">Добавить к сравнению</button>
+                </div>
               </div>
               <div class="item-info">
                 <h3 class="item-name">Селфи-палка "Следуй за мной"</h3>
