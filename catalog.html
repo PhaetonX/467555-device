@@ -58,7 +58,7 @@
             <button type="submit" class="search-button">Найти</button>
           </form>
           <ul class="user-block user-block-header">
-            <li class="user-block-item">
+            <li class="user-block-item user-name-item">
               <a href="#" class="user-block-link user-name">Валентин Петухов
                 <svg class="user-login-icon-header user-logged-icon-header" width="13" height="12">
                   <use xlink:href="#user-icon"></use>
@@ -66,7 +66,7 @@
               </a>
             </li>
             <li class="user-block-item user-login-button-header">
-              <button class="user-block-btn user-login-button">Выйти
+              <button class="user-block-btn user-login-button user-logout-button">Выйти
               </button>
             </li>
             <li class="user-block-item">
@@ -147,9 +147,20 @@
           <div class="catalog-filters">
             <h2 class="catalog-filter-title catalog-filter">Фильтр:</h2>
             <form action="get">
-              <h3 class="filter-title">Стоимость</h3>
-              <label class="visually-hidden" for="price-range">Стоимость</label>
-              <input type="range" id="price-range" name="price-range">
+              <fieldset class="cost-range">
+                <h3 class="filter-title">Стоимость</h3>
+                <div class="range-controls">
+                  <div class="scale">
+                    <div class="bar"></div>
+                  </div>
+                  <div class="toggle toggle-min"></div>
+                  <div class="toggle toggle-max"></div>
+                </div>
+                <div class="price-controls">
+                  <label class="price-label min-price">от <input class="price-input" name="min-price" type="text" value="0"></label>
+                   <label class="price-label max-price">до <input class="price-input" name="max-price" type="text" value="5000"></label>
+                </div>
+              </fieldset>
               <h3 class="filter-title">Цвет</h3>
               <input type="checkbox" id="color_black" name="color_black">
               <label for="color_black" class="filter-color-title">Черный</label>
@@ -176,6 +187,10 @@
             <button class="sort-btn sort-btn-active">По цене</button>
             <button class="sort-btn">По типу</button>
             <button class="sort-btn">По популярности</button>
+            <div class="sort-tabs">
+              <button class="sort-tab sort-to-less"></button>
+              <button class="sort-tab sort-to-more"></button>
+            </div>
           </div>
           <ul class="catalog-list">
             <li class="catalog-item">
@@ -246,7 +261,7 @@
           </a>
           <ul class="user-block-footer">
             <li class="user-block-item user-block-item-footer">
-              <button class="user-block-btn user-login-button user-login-button-footer footer-user-block-link">Войти
+              <button class="user-block-btn user-login-button user-login-button-footer footer-user-block-link">Выйти
                 <svg class="user-login-icon-footer" width="13" height="12">
                   <use xlink:href="#user-icon"></use>
                 </svg>

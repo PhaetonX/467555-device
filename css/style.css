@@ -155,25 +155,28 @@ body {
     flex-basis: 500px;
 }
 
-
 .user-name {
     position: relative;
-    padding-right: 20px;
+    padding-left: 27px;
 }
 
-.user-block-header {
-    padding-left: 1px;
-}
 
 .user-login-button-header {
     position: relative;
     margin-right: auto;
 }
 
-
 .user-login-button {
-    padding-left: 26px;
+    padding-left: 24px;
 }
+
+.user-logout-button {
+    margin: 0;
+    margin-left: 20px;
+    padding: 0;
+    opacity: 0.3;
+}
+
 .user-compare-header {
     margin-right: 39px;
     padding-left: 25px;
@@ -183,12 +186,10 @@ body {
     padding-left: 25px;
 }
 
-
 .user-compare-header,
 .user-basket-header {
     position: relative;
 }
-
 
 .user-compare,
 .user-basket,
@@ -616,7 +617,6 @@ body {
     width: 100%;
 }
 
-
 .slider-parametrs-value {
     margin: 0;
     padding: 0;
@@ -878,8 +878,6 @@ body {
     content: '';
 }
 
-
-
 .brands-item-Dji .brands-item-link:hover::before {
     background-image: url('../img/dji.jpg');
 }
@@ -944,6 +942,7 @@ body {
     background-color: #000;
     content: '';
 }
+
 
 /*company-aboutUs*/
 
@@ -1052,7 +1051,6 @@ body {
     margin-right: 0;
 }
 
-
 .footer-container {
     margin: 0 auto;
     padding-top: 46px;
@@ -1098,7 +1096,6 @@ body {
 .footer-button:last-child {
     margin-right: 0;
 }
-
 
 .footer-bottom {
     position: relative;
@@ -1227,7 +1224,6 @@ body {
     transform: translate(-50%, -50%);
 }
 
-
 .modal-input-write {
     margin-top: 12px;
     margin-bottom: 32px;
@@ -1263,7 +1259,6 @@ body {
 .modal-label {
     width: calc(50% - 20px);
 }
-
 
 .modal-input {
     margin-top: 6px;
@@ -1307,7 +1302,6 @@ body {
 
 /*Catalog */
 
-
 .user-login-button-out {
     opacity: 0.3;
 }
@@ -1320,15 +1314,17 @@ body {
 }
 
 .catalog-filter-title {
+    padding-right: 55px;
     color: #000;
     text-transform: uppercase;
     letter-spacing: 0.2em;
     font-size: 16px;
     font-family: 'Gilroy ExtraBold', 'Arial', sans-serif;
-    line-height: 36px;
+    line-height: 43px;
 }
 
 .filter-title {
+    color: #000;
     letter-spacing: 0.01em;
     font-size: 18px;
     font-family: 'Gilroy ExtraBold', 'Arial', sans-serif;
@@ -1365,8 +1361,27 @@ body {
     list-style: none;
 }
 
+.breadcrumbs-item {
+    position: relative;
+}
+
+.breadcrumbs-item::after {
+    position: absolute;
+    top: 14px;
+    right: 17px;
+    width: 4px;
+    height: 7px;
+    background-image: url(../img/nav-arrow.svg);
+    content: '';
+}
+
+.breadcrumbs-item:last-child::after {
+    display: none;
+}
+
 .breadcrumbs-link {
-    padding-right: 36px;
+    margin-right: 36px;
+    color: #000;
     letter-spacing: 0.01em;
     font-size: 14px;
     font-family: 'Open Sans', 'Arial', sans-serif;
@@ -1428,16 +1443,26 @@ body {
     display: -webkit-flex;
     display:     -ms-flex;
     display:         flex;
+    align-items: center;
     background-color: #ebebeb;
 }
 
 .sort-btn {
+    margin: 0;
+    margin-right: 32px;
+    padding: 0;
+    border: none;
+    background-color: transparent;
     letter-spacing: 0;
     font-weight: 800;
     font-size: 14px;
     font-family: 'Open Sans', 'Arial', sans-serif;
     line-height: 18px;
     opacity: 0.3;
+}
+
+.sort-btn:last-child {
+    margin-right: 0;
 }
 
 .sort-btn:hover,
@@ -1453,6 +1478,33 @@ body {
     opacity: 1;
 }
 
+.sort-tabs {
+    margin-left: auto;
+}
+
+.sort-tab {
+    margin: 0;
+    margin-right: 15px;
+    padding: 0;
+    width: 11px;
+    height: 10px;
+    border: none;
+    background-color: transparent;
+}
+
+.sort-tab:last-child {
+    margin-right: 0;
+}
+
+.sort-to-more {
+    background-image: url(../img/icon-down-dir.svg);
+}
+
+.sort-to-less {
+    background-image: url(../img/icon-up-dir.svg);
+}
+
+
 .catalog-list {
     display: -webkit-flex;
     display:     -ms-flex;
@@ -1466,6 +1518,71 @@ body {
     margin-right: 40px;
 }
 
+/*cost-range*/
+
+
+.cost-range {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    border: none;
+}
+
+.scale {
+    height: 2px;
+    background-color: #dbdbdb;
+}
+
+.bar {
+    width: 60%;
+    height: 2px;
+    background-color: #91c92f;
+}
+
+.toggle {
+    position: absolute;
+    width: 20px;
+    height: 23px;
+    background-image: url(../img/filter-button.svg);
+    cursor: pointer;
+}
+
+.toggle-min {
+    top: 62px;
+    left: -5px;
+}
+
+.toggle-max {
+    top: 62px;
+    left: 108px;
+}
+
+.price-label {
+    padding-right: 15px;
+    background-color: transparent;
+    color: #000;
+    letter-spacing: 0;
+    font-size: 14px;
+    line-height: 22.27px;
+    opacity: 0.2;
+}
+
+.price-input {
+    width: 50px;
+    border: none;
+    background-color: transparent;
+}
+
+.cost-range::before {
+    position: absolute;
+    top: 13px;
+    display: block;
+    width: 200px;
+    height: 2px;
+    background-color: #000;
+    content: '';
+}
 
 /*Item*/
 
