@@ -1483,6 +1483,7 @@ body {
 .catalog-top {
     margin: 0 auto;
     margin-top: 42px;
+    margin-bottom: 40px;
     width: 1160px;
 }
 
@@ -1497,7 +1498,7 @@ body {
 /*catalog-left*/
 
 .catalog-left {
-    /*padding-left: 200px;*/
+    padding-left: 61px;
     background-color: #eee;
 
     flex-basis: 330px;
@@ -1521,6 +1522,7 @@ body {
     display:     -ms-flex;
     display:         flex;
     align-items: center;
+    padding-left: 70px;
     background-color: #ebebeb;
 }
 
@@ -1595,8 +1597,9 @@ body {
     display: -webkit-flex;
     display:     -ms-flex;
     display:         flex;
-    /*margin: 0;
-    padding: 0;*/
+    margin: 0;
+    padding-top: 70px;
+    padding-left: 70px;
     list-style: none;
 
     flex-wrap: wrap;
@@ -1703,6 +1706,7 @@ body {
 /*Item*/
 
 .catalog-item {
+    margin-bottom: 26px;
     width: 360px;
 }
 
@@ -1712,6 +1716,7 @@ body {
     display:         flex;
     align-items: baseline;
     justify-content: space-between;
+    margin-top: 5px;
 }
 
 .catalog-item:hover .catalog-item-shape {
@@ -1722,6 +1727,33 @@ body {
     position: relative;
 }
 
+.item-new::before {
+    position: absolute;
+    top: 30px;
+    right: 28px;
+    visibility: visible;
+    width: 58px;
+    height: 58px;
+    border: 2px solid #000;
+    border-radius: 50%;
+    content: '';
+    opacity: 0.2;
+}
+
+.item-new::after {
+    position: absolute;
+    top: 50px;
+    right: 40px;
+    visibility: visible;
+    color: #000;
+    content: 'NEW';
+    letter-spacing: 0.05em;
+    font-size: 14px;
+    font-family: 'Gilroy ExtraBold';
+    line-height: 17px;
+    opacity: 0.2;
+}
+
 .catalog-item-shape {
     position: absolute;
     top: 0;
@@ -1729,7 +1761,7 @@ body {
     display: -webkit-flex;
     display:     -ms-flex;
     display:         flex;
-    /*visibility: hidden;*/
+    visibility: hidden;
     -webkit-flex-direction: column;
         -ms-flex-direction: column;
             flex-direction: column;
@@ -1745,7 +1777,7 @@ body {
     letter-spacing: 0.01em;
     font-size: 18px;
     font-family: 'Gilroy ExtraBold', 'Arial', sans-serif;
-    line-height: 36px;
+    line-height: 22px;
 }
 
 .item-price-value {
@@ -1809,15 +1841,39 @@ body {
     display:     -ms-flex;
     display:         flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
+    margin-bottom: 75px;
+    margin-left: 70px;
+    background-color: #ebebeb;
+}
+
+.paginator-pages {
+    display: -webkit-flex;
+    display:     -ms-flex;
+    display:         flex;
+    margin-left: 10px;
+}
+.paginator-page {
+    margin: 0;
+    padding: 0;
+    width: 38px;
 }
 
 .paginator-page-btn {
+    padding: 25px 30px;
+}
+
+
+.paginator-page-btn,
+.paginator-page {
+    border: none;
+    background-color: transparent;
     color: #000;
-    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
     font-size: 16px;
     font-family: 'Gilroy ExtraBold', 'Arial', sans-serif;
-    line-height: 36px;
+    line-height: 19px;
 }
 
 .paginator-page-btn:hover,
