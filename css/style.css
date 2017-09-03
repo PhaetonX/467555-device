@@ -50,8 +50,6 @@ body {
     z-index: 1;
     margin: 0;
     padding: 0;
-    padding-top: 12px;
-    padding-bottom: 12px;
     border: none;
     background-color: transparent;
     color: #000;
@@ -987,13 +985,11 @@ body {
 }
 
 .aboutUs-button {
-    padding-right: 22px;
-    padding-left: 22px;
+    padding: 12px 22px;
 }
 
 .contacts-button {
-    padding-right: 40px;
-    padding-left: 40px;
+    padding: 12px 40px;
 }
 
 .aboutUs-button:hover,
@@ -1578,6 +1574,7 @@ body {
     height: 10px;
     border: none;
     background-color: transparent;
+    cursor: pointer;
 }
 
 .sort-tab:last-child {
@@ -1590,6 +1587,7 @@ body {
 
 .sort-to-less {
     background-image: url(../img/icon-up-dir.svg);
+    opacity: 0.2;
 }
 
 
@@ -1597,6 +1595,8 @@ body {
     display: -webkit-flex;
     display:     -ms-flex;
     display:         flex;
+    /*margin: 0;
+    padding: 0;*/
     list-style: none;
 
     flex-wrap: wrap;
@@ -1706,9 +1706,16 @@ body {
     width: 360px;
 }
 
-.catalog-item-img {
-    width: 360px;
-    height: 380px;
+.item-info {
+    display: -webkit-flex;
+    display:     -ms-flex;
+    display:         flex;
+    align-items: baseline;
+    justify-content: space-between;
+}
+
+.catalog-item:hover .catalog-item-shape {
+    visibility: visible;
 }
 
 .catalog-item-container {
@@ -1719,8 +1726,17 @@ body {
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
-    height: 100%;
+    display: -webkit-flex;
+    display:     -ms-flex;
+    display:         flex;
+    /*visibility: hidden;*/
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 360px;
+    height: 380px;
     background-color: rgba(238,238,238,0.7);
 }
 
@@ -1743,6 +1759,13 @@ body {
 
 /*shape*/
 
+
+.shape-toBasket-button {
+    margin: 0;
+    padding: 0;
+    padding: 4px 38px;
+}
+
 .shape-toBasket-button:hover,
 .shape-toBasket-button:focus {
     background-color: #f0c52e;
@@ -1753,13 +1776,21 @@ body {
 }
 
 .shape-compare {
+    position: absolute;
+    top: 220px;
+    margin: 0;
+    padding: 0;
+    border: none;
+    background-color: transparent;
     letter-spacing: 0.01em;
     font-weight: 300;
     font-size: 13px;
     font-family: 'Open Sans Light', 'Arial', sans-serif;
     line-height: 36px;
-    opacity: 0.5;
+    opacity: 0.5;;
 }
+
+
 
 .shape-compare:hover,
 .shape-compare:focus {
