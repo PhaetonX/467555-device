@@ -1386,7 +1386,9 @@ body {
     content: '';
 }
 
-.color-input:checked ~ .filter-color-label::after {
+
+
+.color-input:checked + .filter-color-label::after {
     position: absolute;
     top: 8px;
     left: 0;
@@ -1394,6 +1396,10 @@ body {
     height: 23px;
     background-image: url(../img/checkbox-on.svg);
     content: '';
+}
+
+.color-input:checked + .filter-color-label:hover::after {
+    opacity: 0.6;
 }
 
 .filter-bluetooth-label::before {
@@ -1404,6 +1410,11 @@ body {
     height: 25px;
     background-image: url(../img/radio-off.svg);
     content: '';
+}
+
+.filter-color-label:hover::before,
+.filter-bluetooth-label:hover::before {
+    opacity: 0.6;
 }
 
 #bluetooth_yes:checked ~ .filter-bluetooth-label[for=bluetooth_yes]::after,
@@ -1593,6 +1604,14 @@ body {
     border: none;
     background-color: transparent;
     cursor: pointer;
+}
+
+.sort-tab:hover {
+    opacity: 0.4;
+}
+
+.sort-tab:active {
+    opacity: 1;
 }
 
 .sort-tab:last-child {
@@ -1888,6 +1907,7 @@ body {
     font-size: 16px;
     font-family: 'Gilroy ExtraBold', 'Arial', sans-serif;
     line-height: 19px;
+    cursor: pointer;
 }
 
 .paginator-page-btn:hover,
@@ -1903,11 +1923,15 @@ body {
     opacity: 0.3;
 }
 
-.paginator-page-active {
+.paginator-page:active {
     opacity: 1;
 }
 
-.paginator-page:hover,
-.paginator-page:focus {
-    background-color: #d9d9d9;
+.paginator-page:hover {
+    background-color: transparent;
+    opacity: 0.6;
+}
+
+.paginator-page-active {
+    opacity: 1;
 }
