@@ -146,7 +146,7 @@
         <section class="catalog-left">
           <div class="catalog-filters">
             <h2 class="catalog-filter-title catalog-filter">Фильтр:</h2>
-            <form action="get">
+            <form action="get" class="catalog-form">
               <fieldset class="cost-range">
                 <h3 class="filter-title filter-title-cost-range">Стоимость</h3>
                 <div class="range-controls">
@@ -213,130 +213,134 @@
               </div>
             </li>
 
-            </li>
-            <li class="catalog-item">
-              <div class="catalog-item-container">
-                <img class="catalog-item-img" src="img/item-3.png" alt="Профессиональная селфи-палка" height="380" width="360">
-                <div class="catalog-item-shape">
-                  <button class="btn shape-toBasket-button">В корзину</button>
-                  <button class="shape-compare">Добавить к сравнению</button>
-                </div>
+          </li>
+          <li class="catalog-item">
+            <div class="catalog-item-container">
+              <img class="catalog-item-img" src="img/item-3.png" alt="Профессиональная селфи-палка" height="380" width="360">
+              <div class="catalog-item-shape">
+                <button class="btn shape-toBasket-button">В корзину</button>
+                <button class="shape-compare">Добавить к сравнению</button>
               </div>
-              <div class="item-info">
-                <h3 class="item-name">Профессиональная <br> селфи-палка</h3>
-                <span class="item-price-value">1 500 руб.</span>
-              </div>
-            </li>
-            <li class="catalog-item">
-              <div class="catalog-item-container">
-                <img class="catalog-item-img" src="img/item-2.png" alt="Непотопляемая селфи-палка" height="380" width="360">
-                <div class="catalog-item-shape">
-                  <button class="btn shape-toBasket-button">В корзину</button>
-                  <button class="shape-compare">Добавить к сравнению</button>
-                </div>
-              </div>
-              <div class="item-info">
-                <h3 class="item-name">Непотопляемая селфи-палка</h3>
-                <span class="item-price-value">2 500 руб.</span>
-              </div>
-            <li class="catalog-item">
-              <div class="catalog-item-container"><img class="catalog-item-img" src="img/item-4.png" alt="Селфи-палка Следуй за мной" height="380" width="360">
-                <div class="catalog-item-shape">
-                  <button class="btn shape-toBasket-button">В корзину</button>
-                  <button class="shape-compare">Добавить к сравнению</button>
-                  <span class="item-new"></span>
-                </div>
-              </div>
-              <div class="item-info">
-                <h3 class="item-name">Селфи-палка «Следуй за <br> мной»</h3>
-                <span class="item-price-value">4 900 руб.</span>
-              </div>
-            </li>
-          </ul>
-          <section class="catalog-paginator">
-            <h2 class="visually-hidden">Переключатель страниц</h2>
-            <button class="paginator-page-btn">Назад</button>
-            <div class="paginator-pages">
-              <button class="paginator-page paginator-page-active">1</button>
-              <button class="paginator-page">2</button>
-              <button class="paginator-page">3</button>
             </div>
-            <button class="paginator-page-btn">Вперед</button>
-          </section>
-        </section>
-
-      </div>
-    </main>
-    <footer class="footer">
-      <div class="footer-container">
-        <div class="footer-top">
-          <a href="#" class="footer-logo-link">
-            <span class="visually-hidden">Девайс-логотип</span>
-            <img src="img/footer-logo.png" alt="Девайс" width="164" height="36">
-          </a>
-          <ul class="user-block-footer">
-            <li class="user-block-item user-block-item-footer">
-              <button class="user-block-btn user-login-button user-login-button-footer footer-user-block-link">Выйти
-                <svg class="user-login-icon-footer" width="13" height="12">
-                  <use xlink:href="#user-icon"></use>
-                </svg>
-              </button>
-            </li>
-            <li class="user-block-item user-block-item-footer">
-              <a href="#" class="user-block-link user-compare footer-user-block-link">Сравнить
-                <svg class="user-compare-icon-footer" width="10" height="10">
-                  <use xlink:href="#compare-icon"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="user-block-item user-block-item-footer">
-              <a href="#" class="user-block-link user-basket footer-user-block-link">Корзина
-                <svg class="user-basket-icon-footer" width="12" height="12">
-                  <use xlink:href="#basket-icon"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
-        </div>
-        <div class="footer-middle">
-          <p class="description footer-description">г. Москва,ул. Строителей, 15</p>
-          <div class="footer-services">
-            <a href="#" class="footer-button">Доставка</a>
-            <a href="#" class="footer-button">Гарантия</a>
-            <a href="#" class="footer-button">Контакты</a>
+            <div class="item-info">
+              <h3 class="item-name">Профессиональная
+                <br>
+                селфи-палка</h3>
+              <span class="item-price-value">1 500 руб.</span>
+            </div>
+          </li>
+          <li class="catalog-item">
+            <div class="catalog-item-container">
+              <img class="catalog-item-img" src="img/item-2.png" alt="Непотопляемая селфи-палка" height="380" width="360">
+              <div class="catalog-item-shape">
+                <button class="btn shape-toBasket-button">В корзину</button>
+                <button class="shape-compare">Добавить к сравнению</button>
+              </div>
+            </div>
+            <div class="item-info">
+              <h3 class="item-name">Непотопляемая селфи-палка</h3>
+              <span class="item-price-value">2 500 руб.</span>
+            </div>
+          <li class="catalog-item">
+            <div class="catalog-item-container"><img class="catalog-item-img" src="img/item-4.png" alt="Селфи-палка Следуй за мной" height="380" width="360">
+              <div class="catalog-item-shape">
+                <button class="btn shape-toBasket-button">В корзину</button>
+                <button class="shape-compare">Добавить к сравнению</button>
+                <span class="item-new"></span>
+              </div>
+            </div>
+            <div class="item-info">
+              <h3 class="item-name">Селфи-палка «Следуй за
+                <br>
+                мной»</h3>
+              <span class="item-price-value">4 900 руб.</span>
+            </div>
+          </li>
+        </ul>
+        <section class="catalog-paginator">
+          <h2 class="visually-hidden">Переключатель страниц</h2>
+          <button class="paginator-page-btn">Назад</button>
+          <div class="paginator-pages">
+            <button class="paginator-page paginator-page-active">1</button>
+            <button class="paginator-page">2</button>
+            <button class="paginator-page">3</button>
           </div>
-          <p class="description footer-description">
-            Тел.:
-            <a href="tel:+7(495)495-95-95" class="number">+7 (495) 495-95-95</a>
-          </p>
-        </div>
-        <div class="footer-bottom">
-          <ul class="social-list">
-            <li class="social-item">
-              <a href="#" class="social-link social-link-fb">
-                <span class="visually-hidden">Фейсбук</span>
-                <img src="img/fb.svg" alt="facebook" class="social-img" width="32" height="32">
-              </a>
-            </li>
-            <li class="social-item">
-              <a href="#" class="social-link social-link-inst">
-                <span class="visually-hidden">Инстаграмм</span>
-                <img src="img/instagram.svg" alt="instagram" class="social-img" width="32" height="32">
-              </a>
-            </li>
-            <li class="social-item">
-              <a href="#" class="social-link social-link-tw">
-                <span class="visually-hidden">Твиттер</span>
-                <img src="img/twitter.svg" alt="twitter" width="32" height="32" class="social-img">
-              </a>
-            </li>
-          </ul>
-          <a href="https://htmlacademy.ru" target="_blank" class="copyright-link">
-            <img src="img/logo-html.svg" alt="HTML academy" width="27" height="35">
-          </a>
-        </div>
+          <button class="paginator-page-btn">Вперед</button>
+        </section>
+      </section>
+
+    </div>
+  </main>
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-top">
+        <a href="#" class="footer-logo-link">
+          <span class="visually-hidden">Девайс-логотип</span>
+          <img src="img/footer-logo.png" alt="Девайс" width="164" height="36">
+        </a>
+        <ul class="user-block-footer">
+          <li class="user-block-item user-block-item-footer">
+            <button class="user-block-btn user-login-button user-login-button-footer footer-user-block-link">Выйти
+              <svg class="user-login-icon-footer" width="13" height="12">
+                <use xlink:href="#user-icon"></use>
+              </svg>
+            </button>
+          </li>
+          <li class="user-block-item user-block-item-footer">
+            <a href="#" class="user-block-link user-compare footer-user-block-link">Сравнить
+              <svg class="user-compare-icon-footer" width="10" height="10">
+                <use xlink:href="#compare-icon"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="user-block-item user-block-item-footer">
+            <a href="#" class="user-block-link user-basket footer-user-block-link">Корзина
+              <svg class="user-basket-icon-footer" width="12" height="12">
+                <use xlink:href="#basket-icon"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
       </div>
-    </footer>
-  </body>
+      <div class="footer-middle">
+        <p class="description footer-description">г. Москва,ул. Строителей, 15</p>
+        <div class="footer-services">
+          <a href="#" class="footer-button">Доставка</a>
+          <a href="#" class="footer-button">Гарантия</a>
+          <a href="#" class="footer-button">Контакты</a>
+        </div>
+        <p class="description footer-description">
+          Тел.:
+          <a href="tel:+7(495)495-95-95" class="number">+7 (495) 495-95-95</a>
+        </p>
+      </div>
+      <div class="footer-bottom">
+        <ul class="social-list">
+          <li class="social-item">
+            <a href="#" class="social-link social-link-fb">
+              <span class="visually-hidden">Фейсбук</span>
+              <img src="img/fb.svg" alt="facebook" class="social-img" width="32" height="32">
+            </a>
+          </li>
+          <li class="social-item">
+            <a href="#" class="social-link social-link-inst">
+              <span class="visually-hidden">Инстаграмм</span>
+              <img src="img/instagram.svg" alt="instagram" class="social-img" width="32" height="32">
+            </a>
+          </li>
+          <li class="social-item">
+            <a href="#" class="social-link social-link-tw">
+              <span class="visually-hidden">Твиттер</span>
+              <img src="img/twitter.svg" alt="twitter" width="32" height="32" class="social-img">
+            </a>
+          </li>
+        </ul>
+        <a href="https://htmlacademy.ru" target="_blank" class="copyright-link">
+          <img src="img/logo-html.svg" alt="HTML academy" width="27" height="35">
+        </a>
+      </div>
+    </div>
+  </footer>
+</body>
 
 </html>

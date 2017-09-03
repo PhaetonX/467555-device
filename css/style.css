@@ -159,7 +159,6 @@ body {
     padding-left: 27px;
 }
 
-
 .user-login-button-header {
     position: relative;
     margin-right: auto;
@@ -622,7 +621,6 @@ body {
     padding: 0;
     padding-bottom: 6px;
     width: 27.33%;
-    /*width: 160px;*/
     letter-spacing: 0.01em;
     font-size: 36px;
     font-family: 'Gilroy Light', 'Arial', sans-serif;
@@ -1384,7 +1382,6 @@ body {
     content: '';
 }
 
-
 .filter-bluetooth-label::before {
     position: absolute;
     top: 6px;
@@ -1394,7 +1391,6 @@ body {
     background-image: url(../img/radio-off.svg);
     content: '';
 }
-
 
 #bluetooth_yes:checked ~ .filter-bluetooth-label[for=bluetooth_yes]::after,
 #bluetooth_no:checked ~ .filter-bluetooth-label[for=bluetooth_no]::after {
@@ -1422,7 +1418,6 @@ body {
 .button-filter:active {
     color: rgba(0, 0, 0, 0.3);
 }
-
 
 
 /*breadcrumbs*/
@@ -1497,15 +1492,23 @@ body {
 
 /*catalog-left*/
 
-.catalog-left {
+.catalog-form {
     padding-left: 61px;
+}
+
+.catalog-left {
+    /*padding-left: 61px;*/
     background-color: #eee;
 
     flex-basis: 330px;
 }
 
 .catalog-filter {
-    margin-bottom: 72px;
+    margin: 0;
+    margin-bottom: 57px;
+    padding-top: 12px;
+    padding-bottom: 15px;
+    padding-left: 61px;
     background-color: #dbdbdb;
 }
 
@@ -1513,7 +1516,6 @@ body {
 /*catalog-right*/
 
 .catalog-right {
-    /*padding-right: 140px;*/
     flex-basis: 830px;
 }
 
@@ -1592,7 +1594,6 @@ body {
     opacity: 0.2;
 }
 
-
 .catalog-list {
     display: -webkit-flex;
     display:     -ms-flex;
@@ -1609,12 +1610,12 @@ body {
     margin-right: 40px;
 }
 
+
 /*cost-range*/
 
 .cost-range {
     margin-bottom: 25px;
 }
-
 
 .cost-range,
 .color-filter,
@@ -1703,6 +1704,7 @@ body {
     display: none;
 }
 
+
 /*Item*/
 
 .catalog-item {
@@ -1769,7 +1771,7 @@ body {
     justify-content: center;
     width: 360px;
     height: 380px;
-    background-color: rgba(238,238,238,0.7);
+    background-color: rgba(238, 238, 238, 0.7);
 }
 
 .item-name {
@@ -1790,7 +1792,6 @@ body {
 
 
 /*shape*/
-
 
 .shape-toBasket-button {
     margin: 0;
@@ -1819,10 +1820,9 @@ body {
     font-size: 13px;
     font-family: 'Open Sans Light', 'Arial', sans-serif;
     line-height: 36px;
-    opacity: 0.5;;
+    opacity: 0.5;
+    ;
 }
-
-
 
 .shape-compare:hover,
 .shape-compare:focus {
@@ -1853,6 +1853,7 @@ body {
     display:         flex;
     margin-left: 10px;
 }
+
 .paginator-page {
     margin: 0;
     padding: 0;
@@ -1862,7 +1863,6 @@ body {
 .paginator-page-btn {
     padding: 25px 30px;
 }
-
 
 .paginator-page-btn,
 .paginator-page {
