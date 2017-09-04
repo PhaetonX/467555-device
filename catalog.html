@@ -8,21 +8,6 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
 
-  <!-- <ul class="user-block">
-    <li class="user-block-item">
-      <a href="#" class="user-block-link user-name">Валентин Петухов</a>
-    </li>
-    <li class="user-block-item">
-      <button class="btn user-login-button">Выйти</button>
-    </li>
-    <li class="user-block-item">
-      <a href="#" class="user-block-link user-compare">Сравнить</a>
-    </li>
-    <li class="user-block-item">
-      <a href="#" class="user-block-link user-basket">Корзина</a>
-    </li>
-  </ul> -->
-
   <body>
     <svg class="visually-hidden">
       <symbol id="search-icon" viewBox="0 0 16 16">
@@ -49,11 +34,9 @@
           <img class="header-logo" src="img/header-logo.png" alt="Девайс" width="163" height="36">
         </a>
         <div class="header-userSettings">
-          <label class="visually-hidden" for="search">Поиск</label>
+
           <form action="#" class="search-form" method="get">
-            <svg class="user-serch-icon" width="16" height="16">
-              <use xlink:href="#search-icon"></use>
-            </svg>
+            <label class="visually-hidden" for="search">Поиск</label>
             <input type="search" name="user-search" id="search" class="input-search" placeholder="Поиск по сайту">
             <button type="submit" class="search-button">Найти</button>
           </form>
@@ -88,10 +71,7 @@
         <nav class="navigation">
           <ul class="navigation-list">
             <li class="navigation-item navigation-catalog">
-              <a href="#" class="navigation-button">Каталог товаров
-                <svg class="navaigation-catalog-icon">
-                  <use xlink:href="#plus-icon" width="16" height="16"></use>
-                </svg>
+              <a href="#" class="navigation-button navigation-button-catalog-list">Каталог товаров
               </a>
               <ul class="navigation-goods-list">
                 <li class="goods-item">
