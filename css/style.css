@@ -95,9 +95,6 @@ body {
     text-decoration: none;
 }
 
-
-/*header*/
-
 .header {
     position: relative;
     margin: 0 auto;
@@ -122,9 +119,6 @@ body {
     margin-bottom: 26px;
 }
 
-
-/*Logo*/
-
 .header-logo {
     position: absolute;
     top: -17px;
@@ -142,9 +136,6 @@ body {
 .footer-logo-link:active {
     opacity: 0.3;
 }
-
-
-/*user-block*/
 
 .user-block {
     display: -webkit-flex;
@@ -219,9 +210,6 @@ body {
     position: relative;
 }
 
-
-/*******SVG*********/
-
 .user-login-icon-header {
     position: absolute;
     right: 56px;
@@ -266,9 +254,6 @@ body {
     right: 69px;
     fill: #ffc600;
 }
-
-
-/****************************************/
 
 .input-search {
     padding: 15px 40px;
@@ -337,9 +322,6 @@ body {
     opacity: 0.3;
 }
 
-
-/*text*/
-
 .title {
     color: #000;
     letter-spacing: 0.01em;
@@ -365,9 +347,6 @@ body {
     height: 1px;
     border: 0;
 }
-
-
-/*Nav*/
 
 .navigation {
     color: #000;
@@ -477,13 +456,13 @@ body {
 
 .navigation-button-catalog-list {
     position: relative;
-    padding-right: 25px;
+    padding-right: 35px;
 }
 
 .navigation-button-catalog-list::after {
     position: absolute;
     top: 3px;
-    right: -4px;
+    right: 9px;
     width: 16px;
     height: 16px;
     background-image: url(../img/plus.svg);
@@ -500,9 +479,6 @@ body {
     line-height: 36px;
 }
 
-
-/*Main*/
-
 .slider-container,
 .company-info-container,
 .goods-container,
@@ -511,9 +487,6 @@ body {
     margin: 0 auto;
     width: 1160px;
 }
-
-
-/*slider*/
 
 .slider {
     margin-bottom: 74px;
@@ -526,7 +499,7 @@ body {
     background-image: linear-gradient(#f7e296 113px, transparent 113px);
 }
 
-.slider input[type=radio] {
+.slider .slider-input[type=radio] {
     display: none;
 }
 
@@ -676,9 +649,6 @@ body {
     color: rgba(0, 0, 0, 0.3);
 }
 
-
-/*goods*/
-
 .goods {
     margin-bottom: 144px;
 }
@@ -754,9 +724,6 @@ body {
     margin-top: 35px;
 }
 
-
-/*Service slider*/
-
 .services-slider {
     margin-bottom: 95px;
     background: linear-gradient(to bottom, transparent 39px, #e5e5e5 39px);
@@ -793,7 +760,6 @@ body {
     height: 319px;
     background-color: #000;
     content: '';
-    ;
 }
 
 .service-slide {
@@ -843,41 +809,34 @@ body {
             flex-direction: column;
 }
 
-#service-btn-1:checked ~ .services-slider-controls label[for='service-btn-1'],
-#service-btn-2:checked ~ .services-slider-controls label[for='service-btn-2'],
-#service-btn-3:checked ~ .services-slider-controls label[for='service-btn-3'] {
+#service-btn-1:checked ~ .services-slider-controls .service-button[for='service-btn-1'],
+#service-btn-2:checked ~ .services-slider-controls .service-button[for='service-btn-2'],
+#service-btn-3:checked ~ .services-slider-controls .service-button[for='service-btn-3'] {
+    padding: 2px 140px 2px 22px;
     width: 277px;
     background-color: #000;
     color: #f7e184;
 }
 
-#service-btn-1:checked ~ .services-slider-controls label[for='service-btn-1']::before,
-#service-btn-2:checked ~ .services-slider-controls label[for='service-btn-2']::before,
-#service-btn-3:checked ~ .services-slider-controls label[for='service-btn-3']::before,
-#service-btn-1:checked ~ .services-slider-controls label[for='service-btn-1']::after,
-#service-btn-2:checked ~ .services-slider-controls label[for='service-btn-2']::after,
-#service-btn-3:checked ~ .services-slider-controls label[for='service-btn-3']::after,
+#service-btn-1:checked ~ .services-slider-controls .service-button[for='service-btn-1']::before,
+#service-btn-2:checked ~ .services-slider-controls .service-button[for='service-btn-2']::before,
+#service-btn-3:checked ~ .services-slider-controls .service-button[for='service-btn-3']::before,
+#service-btn-1:checked ~ .services-slider-controls .service-button[for='service-btn-1']::after,
+#service-btn-2:checked ~ .services-slider-controls .service-button[for='service-btn-2']::after,
+#service-btn-3:checked ~ .services-slider-controls .service-button[for='service-btn-3']::after,
 .service-slider-controls label:active::before {
     display: none;
 }
 
 .service-button {
     z-index: 2;
-    margin-bottom: 24px;
-    padding: 2px 140px 2px 22px;
-    width: 160px;
-}
-
-.service-button::after {
+    margin-bottom: 27px;
     width: 160px;
 }
 
 .service-button:hover {
     background-color: #f0c52e;
 }
-
-
-/*brands-list*/
 
 .brands {
     padding-bottom: 102px;
@@ -910,23 +869,20 @@ body {
 }
 
 .brands-item-Dji .brands-item-link:hover::before {
-    background-image: url('../img/dji.jpg');
+    background-image: url(../img/dji.jpg);
 }
 
 .brands-item-spGadgets .brands-item-link:hover::before {
-    background-image: url('../img/spGadgets.jpg');
+    background-image: url(../img/spGadgets.jpg);
 }
 
 .brands-item-goPro .brands-item-link:hover::before {
-    background-image: url('../img/goPro.jpg');
+    background-image: url(../img/goPro.jpg);
 }
 
 .brands-item-vive .brands-item-link:hover::before {
-    background-image: url('../img/vive.jpg');
+    background-image: url(../img/vive.jpg);
 }
-
-
-/*company-info*/
 
 .company-info {
     margin-bottom: 85px;
@@ -974,9 +930,6 @@ body {
     background-color: #000;
     content: '';
 }
-
-
-/*company-aboutUs*/
 
 .company-aboutUs {
     flex-basis: 475px;
@@ -1038,9 +991,6 @@ body {
     color: rgba(0, 0, 0, 0.3);
 }
 
-
-/*contacts*/
-
 .contacts {
     flex-basis: 562px;
 }
@@ -1058,13 +1008,10 @@ body {
     color: #f7e184;
 }
 
-.map_link {
+.map-link {
     display: block;
     margin-bottom: 62px;
 }
-
-
-/*footer*/
 
 .user-block-footer {
     display: -webkit-flex;
@@ -1226,13 +1173,11 @@ body {
     opacity: 0.1;
 }
 
-
-/*Modal window*/
-
 .modal-close {
     position: absolute;
     top: 25px;
     right: 23px;
+    z-index: 10;
     width: 55px;
     height: 55px;
     border: none;
@@ -1255,10 +1200,7 @@ body {
     top: 50%;
     left: 50%;
     z-index: 10;
-    display: -webkit-flex;
-    display:     -ms-flex;
-    display:         flex;
-    align-items: center;
+    display: none;
     padding-top: 78px;
     padding-right: 100px;
     padding-left: 100px;
@@ -1268,9 +1210,53 @@ body {
     transform: translate(-50%, -50%);
 }
 
+.modal-show {
+    display: -webkit-flex;
+    display:     -ms-flex;
+    display:         flex;
+    /*align-items: center;*/
+    -webkit-animation: opening 0.5s;
+            animation: opening 0.5s;
+}
+
+@keyframes opening {
+    0% {
+        transform: scale(0);
+    }
+    10% {
+        transform: scale(0.1);
+    }
+    20% {
+        transform: scale(0.2);
+    }
+    30% {
+        transform: scale(0.3);
+    }
+    40% {
+        transform: scale(0.4);
+    }
+    50% {
+        transform: scale(0.5);
+    }
+    60% {
+        transform: scale(0.6);
+    }
+    70% {
+        transform: scale(0.7);
+    }
+    80% {
+        transform: scale(0.8);
+    }
+    90% {
+        transform: scale(0.9);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
 .modal-input-write {
     margin-top: 12px;
-    margin-bottom: 32px;
     padding-top: 15px;
     padding-left: 17px;
     width: 760px;
@@ -1285,6 +1271,10 @@ body {
     resize: none;
 }
 
+.feedback-write {
+    padding-bottom: 32px;
+}
+
 .feedback-top {
     display: -webkit-flex;
     display:     -ms-flex;
@@ -1292,6 +1282,10 @@ body {
     justify-content: space-between;
     margin-top: 20px;
     margin-bottom: 40px;
+}
+
+.feedback-bottom {
+    padding-bottom: 81px;
 }
 
 .modal-form {
@@ -1321,7 +1315,6 @@ body {
 }
 
 .feedback-button {
-    margin-bottom: 81px;
     padding: 0;
     padding-right: 32px;
     padding-left: 32px;
@@ -1337,6 +1330,10 @@ body {
     background-color: #f6dada;
 }
 
+.modal-input-invalid {
+    background-color: #f6dada;
+}
+
 .modal-input,
 .modal-input-write {
     outline-color: none;
@@ -1348,6 +1345,25 @@ body {
     background-color: #fff;
 }
 
+.modal-map {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    z-index: 2;
+    display: none;
+
+    width: 965px;
+    height: 559px;
+    box-shadow: 0 10px 20px rgba(4, 6, 6, 0.2);
+    transform: translate(-50%, -50%);
+}
+
+.map-iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
 .feedback-button:hover,
 .feedback-button:active {
     background-color: #f0c52e;
@@ -1356,9 +1372,6 @@ body {
 .feedback-button:active {
     color: rgba(0, 0, 0, 0.3);
 }
-
-
-/*Catalog */
 
 .user-login-button-out {
     opacity: 0.3;
@@ -1390,8 +1403,9 @@ body {
     color: #000;
     text-transform: uppercase;
     letter-spacing: 0.2em;
+    font-weight: 800;
     font-size: 16px;
-    font-family: 'Gilroy ExtraBold', 'Arial', sans-serif;
+    font-family: 'Gilroy', 'Arial', sans-serif;
     line-height: 43px;
 }
 
@@ -1399,8 +1413,9 @@ body {
     margin-bottom: 0;
     color: #000;
     letter-spacing: 0.01em;
+    font-weight: 800;
     font-size: 18px;
-    font-family: 'Gilroy ExtraBold', 'Arial', sans-serif;
+    font-family: 'Gilroy', 'Arial', sans-serif;
     line-height: 36px;
 }
 
@@ -1438,17 +1453,15 @@ body {
     content: '';
 }
 
-.color-input:checked + .filter-color-label::after {
-    position: absolute;
+.color-input:checked + .filter-color-label::before {
     top: 8px;
     left: 0;
     width: 27px;
     height: 23px;
     background-image: url(../img/checkbox-on.svg);
-    content: '';
 }
 
-.color-input:checked + .filter-color-label:hover::after {
+.color-input:checked + .filter-color-label:hover::before {
     opacity: 0.6;
 }
 
@@ -1467,15 +1480,13 @@ body {
     opacity: 0.6;
 }
 
-#bluetooth_yes:checked ~ .filter-bluetooth-label[for=bluetooth_yes]::after,
-#bluetooth_no:checked ~ .filter-bluetooth-label[for=bluetooth_no]::after {
-    position: absolute;
+#bluetooth_yes:checked ~ .filter-bluetooth-label[for=bluetooth_yes]::before,
+#bluetooth_no:checked ~ .filter-bluetooth-label[for=bluetooth_no]::before {
     top: 6px;
     left: 0;
     width: 25px;
     height: 25px;
     background-image: url(../img/radio-on.svg);
-    content: '';
 }
 
 .button-filter {
@@ -1493,9 +1504,6 @@ body {
 .button-filter:active {
     color: rgba(0, 0, 0, 0.3);
 }
-
-
-/*breadcrumbs*/
 
 .breadcrumbs {
     display: -webkit-flex;
@@ -1548,9 +1556,6 @@ body {
     opacity: 0.1;
 }
 
-
-/*catalog-top*/
-
 .catalog-top {
     margin: 0 auto;
     margin-top: 40px;
@@ -1564,9 +1569,6 @@ body {
     padding: 0;
     padding-left: 61px;
 }
-
-
-/*catalog-left*/
 
 .catalog-form {
     padding-left: 58px;
@@ -1584,9 +1586,6 @@ body {
     padding-bottom: 15px;
     padding-left: 61px;
 }
-
-
-/*catalog-right*/
 
 .catalog-right {
     background-color: #fff;
@@ -1607,6 +1606,9 @@ body {
     display: -webkit-flex;
     display:     -ms-flex;
     display:         flex;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
     margin-bottom: 31px;
 }
 
@@ -1693,9 +1695,6 @@ body {
     margin-right: 40px;
 }
 
-
-/*cost-range*/
-
 .cost-range {
     margin-bottom: 25px;
 }
@@ -1766,9 +1765,6 @@ body {
     content: '';
 }
 
-
-/*color-filter*/
-
 .color-filter {
     display: -webkit-flex;
     display:     -ms-flex;
@@ -1786,9 +1782,6 @@ body {
 .bluetooth-input[type=radio] {
     display: none;
 }
-
-
-/*Item*/
 
 .catalog-item {
     margin-bottom: 25px;
@@ -1839,7 +1832,6 @@ body {
     font-family: 'Gilroy', 'Arial', sans-serif;
     line-height: 17px;
     opacity: 0.2;
-    ;
 }
 
 .catalog-item-shape {
@@ -1863,21 +1855,20 @@ body {
 .item-name {
     color: #000;
     letter-spacing: 0.01em;
+    font-weight: 800;
     font-size: 18px;
-    font-family: 'Gilroy ExtraBold', 'Arial', sans-serif;
+    font-family: 'Gilroy', 'Arial', sans-serif;
     line-height: 22px;
 }
 
 .item-price-value {
     color: #464646;
     letter-spacing: 0.01em;
+    font-weight: 300;
     font-size: 16px;
-    font-family: 'Gilroy Light', 'Arial', sans-serif;
-    line-height: 1.2;
+    font-family: 'Gilroy', 'Arial', sans-serif;
+    line-height: 19px;
 }
-
-
-/*shape*/
 
 .shape-toBasket-button {
     margin: 0;
@@ -1903,8 +1894,9 @@ body {
     background-color: transparent;
     letter-spacing: 0.01em;
     font-weight: 300;
+    font-weight: 300;
     font-size: 13px;
-    font-family: 'Open Sans Light', 'Arial', sans-serif;
+    font-family: 'Open Sans', 'Arial', sans-serif;
     line-height: 36px;
     opacity: 0.5;
     ;
@@ -1918,9 +1910,6 @@ body {
 .shape-compare:active {
     opacity: 0.2;
 }
-
-
-/*catalog-paginator*/
 
 .catalog-paginator {
     display: -webkit-flex;
@@ -1957,8 +1946,9 @@ body {
     color: #000;
     text-transform: uppercase;
     letter-spacing: 0.2em;
+    font-weight: 800;
     font-size: 16px;
-    font-family: 'Gilroy ExtraBold', 'Arial', sans-serif;
+    font-family: 'Gilroy', 'Arial', sans-serif;
     line-height: 19px;
     cursor: pointer;
 }
