@@ -163,7 +163,7 @@
                 <input class="bluetooth-input" type="radio" id="bluetooth_no" value="no" name="bluetooth-btn">
                 <label class="filter-bluetooth-label" for="bluetooth_no">Нет</label>
               </fieldset>
-              <button type="button" class="btn button-filter">Показать</button>
+              <button type="submit" class="btn button-filter">Показать</button>
             </form>
           </div>
         </section>
@@ -174,8 +174,12 @@
             <button type="button" class="sort-btn">По типу</button>
             <button type="button" class="sort-btn">По популярности</button>
             <div class="sort-tabs">
-              <button type="button" class="sort-tab sort-to-less"></button>
-              <button type="button" class="sort-tab sort-to-more"></button>
+              <button type="button" class="sort-tab sort-to-less">
+                <span class="visually-hidden">Отсортировать от большего</span>
+              </button>
+              <button type="button" class="sort-tab sort-to-more">
+                <span class="visually-hidden">Отсортировать от меньшего</span>
+              </button>
             </div>
           </div>
           <ul class="catalog-list">
@@ -220,7 +224,8 @@
                 <span class="item-price-value">2 500 руб.</span>
               </div>
             <li class="catalog-item">
-              <div class="catalog-item-container"><img class="catalog-item-img" src="img/item-4.png" alt="Селфи-палка Следуй за мной" height="380" width="360">
+              <div class="catalog-item-container">
+                <img class="catalog-item-img" src="img/item-4.png" alt="Селфи-палка Следуй за мной" height="380" width="360">
                 <div class="catalog-item-shape">
                   <button type="button" class="btn shape-toBasket-button">В корзину</button>
                   <button type="button" class="shape-compare">Добавить к сравнению</button>
@@ -314,6 +319,7 @@
             </li>
           </ul>
           <a href="https://htmlacademy.ru/intensive/htmlcss" target="_blank" class="copyright-link">
+            <span class="visually-hidden">HTML Academy</span>
             <img src="img/logo-html.svg" alt="HTML academy" width="27" height="35">
           </a>
         </div>

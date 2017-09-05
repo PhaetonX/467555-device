@@ -40,7 +40,6 @@ body {
     margin: 0;
     color: #464646;
     font-weight: 300;
-    font-weight: 300;
     font-size: 15px;
     font-family: 'Open Sans', 'Arial', sans-serif;
     line-height: 30px;
@@ -199,7 +198,6 @@ body {
 .user-login-button {
     text-transform: capitalize;
     letter-spacing: 0.01em;
-    font-weight: 300;
     font-weight: 300;
     font-size: 15px;
     font-family: 'Open Sans', 'Arial', sans-serif;
@@ -1031,7 +1029,7 @@ body {
 
 .footer-container {
     margin: 0 auto;
-    padding-top: 46px;
+    padding-top: 47px;
     width: 1160px;
 }
 
@@ -1090,7 +1088,7 @@ body {
 
 .footer-bottom::before {
     position: absolute;
-    top: 13px;
+    top: 16px;
     width: 80px;
     height: 6px;
     background-color: #ffc600;
@@ -1195,6 +1193,24 @@ body {
     opacity: 0.3;
 }
 
+.modal-map {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    z-index: 2;
+    display: none;
+    width: 965px;
+    height: 559px;
+    box-shadow: 0 10px 20px rgba(4, 6, 6, 0.2);
+    transform: translate(-50%, -50%);
+}
+
+.map-iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
 .modal-feedback {
     position: fixed;
     top: 50%;
@@ -1214,44 +1230,54 @@ body {
     display: -webkit-flex;
     display:     -ms-flex;
     display:         flex;
-    /*align-items: center;*/
     -webkit-animation: opening 0.5s;
             animation: opening 0.5s;
 }
 
 @keyframes opening {
     0% {
-        transform: scale(0);
+        -webkit-transform: translate(-50%, -50%) scale(0);
+                transform: translate(-50%, -50%) scale(0);
     }
     10% {
-        transform: scale(0.1);
+        -webkit-transform: translate(-50%, -50%) scale(0.1);
+                transform: translate(-50%, -50%) scale(0.1);
     }
     20% {
-        transform: scale(0.2);
+        -webkit-transform: translate(-50%, -50%) scale(0.2);
+                transform: translate(-50%, -50%) scale(0.2);
     }
     30% {
-        transform: scale(0.3);
+        -webkit-transform: translate(-50%, -50%) scale(0.3);
+                transform: translate(-50%, -50%) scale(0.3);
     }
     40% {
-        transform: scale(0.4);
+        -webkit-transform: translate(-50%, -50%) scale(0.4);
+                transform: translate(-50%, -50%) scale(0.4);
     }
     50% {
-        transform: scale(0.5);
+        -webkit-transform: translate(-50%, -50%) scale(0.5);
+                transform: translate(-50%, -50%) scale(0.5);
     }
     60% {
-        transform: scale(0.6);
+        -webkit-transform: translate(-50%, -50%) scale(0.6);
+                transform: translate(-50%, -50%) scale(0.6);
     }
     70% {
-        transform: scale(0.7);
+        -webkit-transform: translate(-50%, -50%) scale(0.7);
+                transform: translate(-50%, -50%) scale(0.7);
     }
     80% {
-        transform: scale(0.8);
+        -webkit-transform: translate(-50%, -50%) scale(0.8);
+                transform: translate(-50%, -50%) scale(0.8);
     }
     90% {
-        transform: scale(0.9);
+        -webkit-transform: translate(-50%, -50%) scale(0.9);
+                transform: translate(-50%, -50%) scale(0.9);
     }
     100% {
-        transform: scale(1);
+        -webkit-transform: translate(-50%, -50%) scale(1);
+                transform: translate(-50%, -50%) scale(1);
     }
 }
 
@@ -1334,34 +1360,10 @@ body {
     background-color: #f6dada;
 }
 
-.modal-input,
-.modal-input-write {
-    outline-color: none;
-}
-
 .modal-input:focus,
 .modal-input-write:focus {
     outline: 2px solid #f7e296;
     background-color: #fff;
-}
-
-.modal-map {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    z-index: 2;
-    display: none;
-
-    width: 965px;
-    height: 559px;
-    box-shadow: 0 10px 20px rgba(4, 6, 6, 0.2);
-    transform: translate(-50%, -50%);
-}
-
-.map-iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
 }
 
 .feedback-button:hover,
@@ -1894,12 +1896,10 @@ body {
     background-color: transparent;
     letter-spacing: 0.01em;
     font-weight: 300;
-    font-weight: 300;
     font-size: 13px;
     font-family: 'Open Sans', 'Arial', sans-serif;
     line-height: 36px;
     opacity: 0.5;
-    ;
 }
 
 .shape-compare:hover,
@@ -1917,7 +1917,7 @@ body {
     display:         flex;
     align-items: center;
     justify-content: space-between;
-    margin-bottom: 75px;
+    margin-bottom: 70px;
     margin-left: 70px;
     background-color: #ebebeb;
 }
