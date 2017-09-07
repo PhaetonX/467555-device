@@ -1027,6 +1027,19 @@ body {
     margin-right: 0;
 }
 
+.user-block-item-footer {
+    opacity: 0.7;
+}
+
+.user-block-item-footer:hover {
+    opacity: 1;
+}
+
+.user-block-item-footer:active,
+.user-block-item-footer:focus {
+    opacity: 0.3;
+}
+
 .footer-container {
     margin: 0 auto;
     padding-top: 47px;
@@ -1045,7 +1058,7 @@ body {
     display:     -ms-flex;
     display:         flex;
     justify-content: space-between;
-    margin-bottom: 9px;
+    margin-bottom: 10px;
 }
 
 .footer-middle {
@@ -1060,7 +1073,7 @@ body {
 
 .footer-services {
     position: absolute;
-    top: 50%;
+    top: 52%;
     left: 50%;
     display: -webkit-flex;
     display:     -ms-flex;
@@ -1088,7 +1101,7 @@ body {
 
 .footer-bottom::before {
     position: absolute;
-    top: 16px;
+    top: 15px;
     width: 80px;
     height: 6px;
     background-color: #ffc600;
@@ -1105,6 +1118,7 @@ body {
 .footer-user-block-link {
     position: relative;
 }
+
 
 .social-link,
 .number,
@@ -1164,7 +1178,7 @@ body {
 
 .social-img:hover,
 .social-img:focus {
-    opacity: 1;
+    opacity: 0.6;
 }
 
 .social-img:active {
@@ -1362,7 +1376,7 @@ body {
 
 .modal-input:focus,
 .modal-input-write:focus {
-    outline: 2px solid #f7e296;
+    outline: 3px solid #f7e296;
     background-color: #fff;
 }
 
@@ -1729,6 +1743,7 @@ body {
     cursor: pointer;
 }
 
+
 .toggle-min {
     top: 72px;
     left: -5px;
@@ -1786,7 +1801,7 @@ body {
 }
 
 .catalog-item {
-    margin-bottom: 25px;
+    margin-bottom: 44px;
     width: 360px;
 }
 
@@ -1805,7 +1820,7 @@ body {
 
 .catalog-item-container {
     position: relative;
-    margin-bottom: 8px;
+    margin-bottom: 25px;
 }
 
 .item-new::before {
@@ -1856,6 +1871,7 @@ body {
 
 .item-name {
     color: #000;
+    text-decoration: none;
     letter-spacing: 0.01em;
     font-weight: 800;
     font-size: 18px;
@@ -1889,7 +1905,8 @@ body {
 
 .shape-compare {
     position: absolute;
-    top: 220px;
+    top: 215px;
+    left: 110px;
     margin: 0;
     padding: 0;
     border: none;
@@ -1959,7 +1976,7 @@ body {
 }
 
 .paginator-page-btn:active {
-    opacity: 0.3;
+    color: rgba(0, 0, 0, 0.3);
 }
 
 .paginator-page {
