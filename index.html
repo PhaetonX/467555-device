@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <title>Девайс: Главная страница.</title>
     <link rel="stylesheet" href="css/normalize.min.css">
-    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <svg class="visually-hidden">
@@ -102,13 +102,13 @@
 
       <section class="slider">
         <div class="slider-container">
-          <input class="slider-input" type="radio" id="btn-1" name="slider-toggle" checked>
-          <input class="slider-input" type="radio" id="btn-2" name="slider-toggle">
-          <input class="slider-input" type="radio" id="btn-3" name="slider-toggle">
+          <input class="visually-hidden slider-input-1" type="radio" id="btn-1" name="slider-toggle" checked>
+          <input class="visually-hidden slider-input-2" type="radio" id="btn-2" name="slider-toggle">
+          <input class="visually-hidden slider-input-3" type="radio" id="btn-3" name="slider-toggle">
           <div class="slider-controls">
-            <label class="slider-controls-btn" for="btn-1"></label>
-            <label class="slider-controls-btn" for="btn-2"></label>
-            <label class="slider-controls-btn" for="btn-3"></label>
+            <label tabindex="0 tabindex=" 0"" class="slider-controls-btn" for="btn-1"></label>
+            <label tabindex="0 tabindex=" 0"" class="slider-controls-btn" for="btn-2"></label>
+            <label tabindex="0 tabindex=" 0"" class="slider-controls-btn" for="btn-3"></label>
           </div>
           <div class="slider-slides">
             <div class="slider-slide">
@@ -116,9 +116,7 @@
               <span class="slider-slide-number">01</span>
               <h2 class="title slider-title">Делай селфи,<br>
                 как Бен Стиллер!</h2>
-              <p class="descripton slider-description">Самая длинная палка для селфи доступна в нашем магазине.
-                <br>
-                Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
+              <p class="descripton slider-description">Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
               <a href="#" class="btn slider-button">подробнее</a>
               <table class="slider-info">
                 <tr class="slider-parametrs-value-row">
@@ -139,18 +137,16 @@
               <h2 class="title slider-title">Худеем
                 <br>
                 правильно!</h2>
-              <p class="descripton slider-description">Мотивирующие фитнес-браслеты помогут найти в себе силы
-                <br>
-                не пропускать занятия и соблюдать диету.</p>
+              <p class="descripton slider-description">Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
               <a href="#" class="btn slider-button">подробнее</a>
               <table class="slider-info">
                 <tr class="slider-parametrs-value-row">
                   <td class="slider-parametrs-value">48 часов</td>
-                  <td class="slider-parametrs-value"></td>
+                  <!-- <td class="slider-parametrs-value"></td> -->
                 </tr>
                 <tr class="slider-parametrs-name-row">
                   <td class="slider-parametrs-name">Без подзарядки</td>
-                  <td class="slider-parametrs-value"></td>
+                  <!-- <td class="slider-parametrs-value"></td> -->
                 </tr>
               </table>
             </div>
@@ -158,9 +154,7 @@
               <img src="img/slider-3.png" alt="Квадрокоптер" class="slider-image slider-quadrocopter-img" width="526" height="334">
               <span class="slider-slide-number">03</span>
               <h2 class="title slider-title">Порхает как бабочка, жалит как пчела!</h2>
-              <p class="descripton slider-description slider-description-quadrocopter">Этот обычный, на первый взгляд, квадрокоптер оснащён
-                <br>
-                мощным лазером, замаскированным под стандартную камеру.</p>
+              <p class="descripton slider-description slider-description-quadrocopter">Этот обычный, на первый взгляд, квадрокоптер оснащён мощным лазером, замаскированным под стандартную камеру.</p>
               <a href="#" class="btn slider-button">подробнее</a>
               <table class="slider-info">
                 <tr class="slider-parametrs-value-row">
@@ -197,9 +191,7 @@
                 <div class="goods-catalog-img-container">
                   <img src="img/monopods.svg" alt="Моноподы для селфи" class="goods-catalog-img monopod-icon" width="86" height="117">
                 </div>
-                <b class="goods-catalog-title">Моноподы
-                  <br>
-                  для селфи</b>
+                <b class="goods-catalog-title">Моноподы для селфи</b>
               </a>
             </li>
             <li class="goods-catalog-item">
@@ -243,38 +235,28 @@
       </section>
       <section class="services-slider">
         <div class="services-slider-container">
-          <input class="slider-input" type="radio" id="service-btn-1" name="service-slider-toggle" checked>
-          <input class="slider-input" type="radio" id="service-btn-2" name="service-slider-toggle">
-          <input class="slider-input" type="radio" id="service-btn-3" name="service-slider-toggle">
+          <input class="visually-hidden slider-input" type="radio" id="service-btn-1" name="service-slider-toggle" checked>
+          <input class="visually-hidden slider-input" type="radio" id="service-btn-2" name="service-slider-toggle">
+          <input class="visually-hidden slider-input" type="radio" id="service-btn-3" name="service-slider-toggle">
           <div class="services-slider-controls">
-            <label class="btn service-button" for="service-btn-1">Доставка</label>
-            <label class="btn service-button" for="service-btn-2">Гарантия</label>
-            <label class="btn service-button" for="service-btn-3">Кредит</label>
+            <label tabindex="0" class="btn service-button" for="service-btn-1">Доставка</label>
+            <label tabindex="0" class="btn service-button" for="service-btn-2">Гарантия</label>
+            <label tabindex="0" class="btn service-button" for="service-btn-3">Кредит</label>
           </div>
           <div class="service-slides">
             <div class="service-slide service-slide-1">
               <h2 class="title services-title">Доставка</h2>
-              <p class="description services-description">Мы с удовольствием доставим ваш товар прямо к вашему
-                <br>
-                подъезду совершенно бесплатно! Ведь мы неплохо
-                <br>
-                заработаем, поднимая его на ваш этаж.</p>
+              <p class="description services-description">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
             </div>
             <div class="service-slide service-slide-2">
               <h2 class="title services-title">Гарантия</h2>
-              <p class="description services-description">Если из-за возгорания купленного у нас товара у вас сгорит
-                <br>
-                дом — не переживайте, мы выдадим вам новый.
+              <p class="description services-description">Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый.
                 <br>
                 Товар, не дом, конечно же.</p>
             </div>
             <div class="service-slide service-slide-3">
               <h2 class="title services-title">Кредит</h2>
-              <p class="description services-description">Залезть в долговую яму стало проще! Кредитные
-                <br>
-                консультанты подберут для вас наиболее выгодные
-                <br>
-                условия кредита. Выгодные длч нашего банка, разумеется.</p>
+              <p class="description services-description">Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные длч нашего банка, разумеется.</p>
             </div>
           </div>
         </div>
@@ -315,14 +297,10 @@
           <div class="company-aboutUs">
             <h2 class="title company-title">О нас</h2>
             <p class="description company-description">
-              Огромный выбор гаджетов не оставит равнодушным гика,
-              <br>
-              который есть в каждом из нас.
+              Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.
             </p>
             <p class="description company-description">
-              Мы можем доставить ваш товар в самые отдаленные точки
-              <br>
-              России! DEVICE работает со многими транспортными компаниями:
+              Мы можем доставить ваш товар в самые отдаленные точки России! DEVICE работает со многими транспортными компаниями:
             </p>
             <ul class="workingWith-list">
               <li class="workingWith-item">Деловые Линии</li>
@@ -459,7 +437,7 @@
         style="border:0"
         allowfullscreen></iframe>
     </section>
-    <script src="js/scripts.min.js"></script>
+    <script src="js/scripts.js"></script>
   </body>
 
 </html>

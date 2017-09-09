@@ -53,6 +53,7 @@ body {
     border: none;
     background-color: transparent;
     color: #000;
+    vertical-align: middle;
     text-align: center;
     text-decoration: none;
     text-transform: uppercase;
@@ -495,9 +496,11 @@ body {
     background-image: linear-gradient(#f7e296 113px, transparent 113px);
 }
 
+
+/*
 .slider .slider-input[type=radio] {
-    display: none;
-}
+    visibility: hidden;
+}*/
 
 .slider-controls {
     position: absolute;
@@ -577,8 +580,11 @@ body {
 .slider-description {
     margin: 0;
     margin-bottom: 44px;
+    padding-right: 80px;
     letter-spacing: 0.01em;
+    font-weight: 300;
     font-size: 15px;
+    font-family: 'Open Sans', 'Arial', sans-serif;
     line-height: 30px;
 }
 
@@ -612,15 +618,22 @@ body {
 }
 
 .slider-info {
+    display: block;
     padding-right: 100px;
     width: 100%;
+}
+
+.slider-parametrs-value-row {
+    display: -webkit-flex;
+    display:     -ms-flex;
+    display:         flex;
 }
 
 .slider-parametrs-value {
     margin: 0;
     padding: 0;
-    padding-bottom: 6px;
-    width: 27.33%;
+    padding-bottom: 8px;
+    width: 160px;
     letter-spacing: 0.01em;
     font-weight: 300;
     font-size: 36px;
@@ -628,12 +641,27 @@ body {
     line-height: 43px;
 }
 
+.slider-parametrs-value:nth-child(2) {
+    width: 140px;
+}
+
+.slider-parametrs-name-row {
+    display: -webkit-flex;
+    display:     -ms-flex;
+    display:         flex;
+}
+
 .slider-parametrs-name {
+    width: 160px;
     letter-spacing: 0.01em;
     font-weight: 300;
     font-size: 13px;
     font-family: 'Open Sans', 'Arial', sans-serif;
     line-height: 20px;
+}
+
+.slider-parametrs-name:nth-last-child(2) {
+    width: 140px;
 }
 
 .slider-button:hover {
@@ -646,7 +674,7 @@ body {
 }
 
 .goods {
-    margin-bottom: 144px;
+    margin-bottom: 124px;
 }
 
 .goods-container {
@@ -693,6 +721,7 @@ body {
 
 .goods-catalog-item {
     margin-right: 40px;
+    margin-bottom: 20px;
 }
 
 .goods-catalog-item:nth-child(6n) {
@@ -718,6 +747,10 @@ body {
 
 .goods-catalog-title {
     margin-top: 35px;
+    letter-spacing: 0.01em;
+    font-weight: 800;
+    font-size: 18px;
+    font-family: 'Gilroy', 'Arial', sans-serif;
 }
 
 .services-slider {
@@ -744,9 +777,10 @@ body {
     padding-top: 19px;
 }
 
-.slider-input[type=radio] {
+
+/*.slider-input[type=radio] {
     display: none;
-}
+}*/
 
 .services-slider-controls::after {
     position: absolute;
@@ -790,6 +824,7 @@ body {
     margin-left: 126px;
     padding: 0;
     padding-top: 18px;
+    padding-right: 320px;
     padding-bottom: 20px;
     letter-spacing: 0.01em;
 }
@@ -879,7 +914,7 @@ body {
 }
 
 .company-info {
-    margin-bottom: 85px;
+    margin-bottom: 77px;
 }
 
 .company-title {
@@ -936,7 +971,7 @@ body {
 
 .workingWith-list {
     margin: 0;
-    margin-top: 67px;
+    margin-top: 65px;
     margin-bottom: 55px;
     padding: 0;
     padding-left: 35px;
@@ -965,11 +1000,15 @@ body {
 }
 
 .aboutUs-button {
-    padding: 12px 22px;
+    display: inline-block;
+    padding: 5px 22px;
+    vertical-align: middle;
 }
 
 .contacts-button {
-    padding: 12px 40px;
+    display: inline-block;
+    padding: 5px 40px;
+    vertical-align: middle;
 }
 
 .aboutUs-button:hover,
@@ -1004,7 +1043,7 @@ body {
 
 .map-link {
     display: block;
-    margin-bottom: 62px;
+    margin-bottom: 60px;
 }
 
 .user-block-footer {
@@ -1068,13 +1107,16 @@ body {
 }
 
 .footer-services {
-    position: absolute;
+    /*position: absolute;
     top: 52%;
-    left: 50%;
+    left: 50%;*/
     display: -webkit-flex;
     display:     -ms-flex;
     display:         flex;
-    transform: translate(-50%, -50%);
+    /*transform: translate(-50%, -50%);*/
+    margin-right: 30px;
+
+    flex-wrap: wrap;
 }
 
 .footer-button {
@@ -1093,11 +1135,13 @@ body {
     display:     -ms-flex;
     display:         flex;
     align-items: center;
+    justify-content: flex-end;
 }
 
 .footer-bottom::before {
     position: absolute;
-    top: 15px;
+    top: 12px;
+    left: 0;
     width: 80px;
     height: 6px;
     background-color: #ffc600;
@@ -1113,7 +1157,6 @@ body {
 .footer-user-block-link {
     position: relative;
 }
-
 
 .social-link,
 .number,
@@ -1135,7 +1178,7 @@ body {
 }
 
 .copyright-link {
-    margin-left: auto;
+    margin-left: 482px;
 }
 
 .copyright-link:hover,
@@ -1148,15 +1191,20 @@ body {
 }
 
 .social-list {
-    position: absolute;
+    /*position: absolute;
     top: 0;
-    left: 50%;
+    left: 50%;*/
     display: -webkit-flex;
     display:     -ms-flex;
     display:         flex;
     margin: 0;
+    /*margin-right: auto;*/
+    margin-left: auto;
     padding: 0;
-    transform: translateX(-50%);
+    width: 140px;
+
+    flex-wrap: wrap;
+    /*transform: translateX(-50%);*/
 }
 
 .social-item {
@@ -1288,6 +1336,30 @@ body {
         -webkit-transform: translate(-50%, -50%) scale(1);
                 transform: translate(-50%, -50%) scale(1);
     }
+}
+
+@keyframes shake {
+    0%,
+    100% {
+        transform: translate(-50%, -50%);
+    }
+    10%,
+    30%,
+    50%,
+    70%,
+    90% {
+        transform: translate(-45%, -50%);
+    }
+    20%,
+    40%,
+    60%,
+    80% {
+        transform: translate(-50%, -50%);
+    }
+}
+
+.modal-error {
+    animation: shake 0.6s;
 }
 
 .modal-input-write {
@@ -1610,6 +1682,8 @@ body {
     align-items: center;
     padding-left: 70px;
     background-color: #ebebeb;
+
+    flex-wrap: wrap;
 }
 
 .bluetooth-filter {
@@ -1654,12 +1728,17 @@ body {
 }
 
 .sort-tabs {
+    display: -webkit-flex;
+    display:     -ms-flex;
+    display:         flex;
     margin-left: auto;
+
+    flex-wrap: wrap;
 }
 
 .sort-tab {
     margin: 0;
-    margin-right: 15px;
+    margin-right: 20px;
     padding: 0;
     width: 11px;
     height: 10px;
@@ -1733,10 +1812,19 @@ body {
     position: absolute;
     width: 20px;
     height: 23px;
+    outline: none;
+    border: none;
+    background-color: transparent;
     background-image: url(../img/filter-button.svg);
+    -webkit-background-size: cover;
+            background-size: cover;
     cursor: pointer;
 }
 
+.toggle:active {
+    width: 23px;
+    height: 24px;
+}
 
 .toggle-min {
     top: 72px;
@@ -1938,6 +2026,8 @@ body {
     display:     -ms-flex;
     display:         flex;
     margin-left: 10px;
+
+    flex-wrap: wrap;
 }
 
 .paginator-page {
