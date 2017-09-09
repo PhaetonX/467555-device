@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <title>Девайс: Каталог</title>
     <link rel="stylesheet" href="css/normalize.min.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
   </head>
 
   <body>
@@ -137,30 +137,30 @@
                   <button type="button" class="toggle toggle-max"></button>
                 </div>
                 <div class="price-controls">
-                  <label class="price-label min-price">от
+                  <label tabindex="0" class="price-label min-price">от
                     <input class="price-input" name="min-price" type="text" value="0"></label>
                   <label class="price-label max-price">до
-                    <input class="price-input" name="max-price" type="text" value="5000"></label>
+                    <input tabindex="0" class="price-input" name="max-price" type="text" value="5000"></label>
                 </div>
               </fieldset>
               <fieldset class="color-filter">
                 <h3 class="filter-title filter-title-color">Цвет</h3>
-                <input class="color-input" type="checkbox" id="color_black" name="black" checked>
+                <input class="visually-hidden color-input" type="checkbox" id="color_black" name="black" checked>
                 <label for="color_black" class="filter-color-label">Черный</label>
-                <input class="color-input" type="checkbox" id="color_white" name="white">
+                <input class="visually-hidden color-input" type="checkbox" id="color_white" name="white">
                 <label for="color_white" class="filter-color-label">Белый</label>
-                <input class="color-input" type="checkbox" id="color_blue" name="blue" checked>
+                <input class="visually-hidden color-input" type="checkbox" id="color_blue" name="blue" checked>
                 <label for="color_blue" class="filter-color-label">Синий</label>
-                <input class="color-input" type="checkbox" id="color_red" name="red" checked>
+                <input class="visually-hidden color-input" type="checkbox" id="color_red" name="red" checked>
                 <label for="color_red" class="filter-color-label">Красный</label>
-                <input class="color-input" type="checkbox" id="color_pink" name="pink">
+                <input class="visually-hidden color-input" type="checkbox" id="color_pink" name="pink">
                 <label for="color_pink" class="filter-color-label">Розовый</label>
               </fieldset>
               <fieldset class="bluetooth-filter">
                 <h3 class="filter-title bluetooth-filter-title">Bluetooth</h3>
-                <input class="bluetooth-input" type="radio" id="bluetooth_yes" value="yes" name="bluetooth-btn" checked>
+                <input class="visually-hidden bluetooth-input" type="radio" id="bluetooth_yes" value="yes" name="bluetooth-btn" checked>
                 <label class="filter-bluetooth-label" for="bluetooth_yes">Есть</label>
-                <input class="bluetooth-input" type="radio" id="bluetooth_no" value="no" name="bluetooth-btn">
+                <input class="visually-hidden bluetooth-input" type="radio" id="bluetooth_no" value="no" name="bluetooth-btn">
                 <label class="filter-bluetooth-label" for="bluetooth_no">Нет</label>
               </fieldset>
               <button type="submit" class="btn button-filter">Показать</button>

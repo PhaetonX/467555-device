@@ -23,16 +23,16 @@ writeUsClose.addEventListener('click', function(evt) {
 	writeUsName.classList.remove('modal-input-invalid');
 	writeUsEmail.classList.remove('modal-input-invalid');
 	writeUsMessage.classList.remove('modal-input-invalid');
-  writeUsPopup.classList.remove('modal-error');
+	writeUsPopup.classList.remove('modal-error');
 });
 
 writeUsForm.addEventListener('submit', function(evt) {
 	if (!writeUsName.value) {
 		evt.preventDefault();
 		writeUsName.classList.add('modal-input-invalid');
-    writeUsPopup.classList.remove("modal-error");
-    writeUsPopup.offsetWidth = writeUsPopup.offsetWidth;
-    writeUsPopup.classList.add('modal-error');
+		writeUsPopup.classList.remove("modal-error");
+		writeUsPopup.offsetWidth = writeUsPopup.offsetWidth;
+		writeUsPopup.classList.add('modal-error');
 	} else {
 		writeUsName.classList.remove('modal-input-invalid');
 	}
@@ -40,9 +40,9 @@ writeUsForm.addEventListener('submit', function(evt) {
 	if (!writeUsEmail.value) {
 		evt.preventDefault();
 		writeUsEmail.classList.add('modal-input-invalid');
-    writeUsPopup.classList.remove("modal-error");
-    writeUsPopup.offsetWidth = writeUsPopup.offsetWidth;
-    writeUsPopup.classList.add('modal-error');
+		writeUsPopup.classList.remove("modal-error");
+		writeUsPopup.offsetWidth = writeUsPopup.offsetWidth;
+		writeUsPopup.classList.add('modal-error');
 	} else {
 		writeUsEmail.classList.remove('modal-input-invalid');
 	}
@@ -50,9 +50,9 @@ writeUsForm.addEventListener('submit', function(evt) {
 	if (!writeUsMessage.value) {
 		evt.preventDefault();
 		writeUsMessage.classList.add('modal-input-invalid');
-    writeUsPopup.classList.remove("modal-error");
-    writeUsPopup.offsetWidth = writeUsPopup.offsetWidth;
-    writeUsPopup.classList.add('modal-error');
+		writeUsPopup.classList.remove("modal-error");
+		writeUsPopup.offsetWidth = writeUsPopup.offsetWidth;
+		writeUsPopup.classList.add('modal-error');
 	} else {
 		writeUsMessage.classList.remove('modal-input-invalid');
 	}
@@ -67,7 +67,7 @@ window.addEventListener('keydown', function(evt) {
 			writeUsName.classList.remove('modal-input-invalid');
 			writeUsEmail.classList.remove('modal-input-invalid');
 			writeUsMessage.classList.remove('modal-input-invalid');
-      writeUsPopup.classList.remove('modal-error');
+			writeUsPopup.classList.remove('modal-error');
 		}
 	}
 });

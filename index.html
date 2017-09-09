@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <title>Девайс: Главная страница.</title>
     <link rel="stylesheet" href="css/normalize.min.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body>
     <svg class="visually-hidden">
@@ -102,13 +102,13 @@
 
       <section class="slider">
         <div class="slider-container">
-          <input class="visually-hidden slider-input-1" type="radio" id="btn-1" name="slider-toggle" checked>
-          <input class="visually-hidden slider-input-2" type="radio" id="btn-2" name="slider-toggle">
-          <input class="visually-hidden slider-input-3" type="radio" id="btn-3" name="slider-toggle">
+          <input class="visually-hidden slider-input" type="radio" id="btn-1" name="slider-toggle" checked>
+          <input class="visually-hidden slider-input" type="radio" id="btn-2" name="slider-toggle">
+          <input class="visually-hidden slider-input" type="radio" id="btn-3" name="slider-toggle">
           <div class="slider-controls">
-            <label tabindex="0 tabindex=" 0"" class="slider-controls-btn" for="btn-1"></label>
-            <label tabindex="0 tabindex=" 0"" class="slider-controls-btn" for="btn-2"></label>
-            <label tabindex="0 tabindex=" 0"" class="slider-controls-btn" for="btn-3"></label>
+            <label class="slider-controls-btn" for="btn-1"></label>
+            <label class="slider-controls-btn" for="btn-2"></label>
+            <label class="slider-controls-btn" for="btn-3"></label>
           </div>
           <div class="slider-slides">
             <div class="slider-slide">
@@ -142,11 +142,9 @@
               <table class="slider-info">
                 <tr class="slider-parametrs-value-row">
                   <td class="slider-parametrs-value">48 часов</td>
-                  <!-- <td class="slider-parametrs-value"></td> -->
                 </tr>
                 <tr class="slider-parametrs-name-row">
                   <td class="slider-parametrs-name">Без подзарядки</td>
-                  <!-- <td class="slider-parametrs-value"></td> -->
                 </tr>
               </table>
             </div>
@@ -239,9 +237,9 @@
           <input class="visually-hidden slider-input" type="radio" id="service-btn-2" name="service-slider-toggle">
           <input class="visually-hidden slider-input" type="radio" id="service-btn-3" name="service-slider-toggle">
           <div class="services-slider-controls">
-            <label tabindex="0" class="btn service-button" for="service-btn-1">Доставка</label>
-            <label tabindex="0" class="btn service-button" for="service-btn-2">Гарантия</label>
-            <label tabindex="0" class="btn service-button" for="service-btn-3">Кредит</label>
+            <label class="btn service-button" for="service-btn-1">Доставка</label>
+            <label class="btn service-button" for="service-btn-2">Гарантия</label>
+            <label class="btn service-button" for="service-btn-3">Кредит</label>
           </div>
           <div class="service-slides">
             <div class="service-slide service-slide-1">
@@ -437,7 +435,7 @@
         style="border:0"
         allowfullscreen></iframe>
     </section>
-    <script src="js/scripts.js"></script>
+    <script src="js/scripts.min.js"></script>
   </body>
 
 </html>

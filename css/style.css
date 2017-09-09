@@ -496,16 +496,16 @@ body {
     background-image: linear-gradient(#f7e296 113px, transparent 113px);
 }
 
-
-/*
-.slider .slider-input[type=radio] {
-    visibility: hidden;
-}*/
+#btn-1:focus ~ .slider-controls .slider-controls-btn[for='btn-1'],
+#btn-2:focus ~ .slider-controls .slider-controls-btn[for='btn-2'],
+#btn-3:focus ~ .slider-controls .slider-controls-btn[for='btn-3'] {
+    outline: 2px solid grey;
+}
 
 .slider-controls {
     position: absolute;
-    top: 328px;
     right: 80px;
+    bottom: 125px;
 }
 
 .slider-slide {
@@ -777,10 +777,11 @@ body {
     padding-top: 19px;
 }
 
-
-/*.slider-input[type=radio] {
-    display: none;
-}*/
+#service-btn-1:focus ~ .services-slider-controls .service-button[for='service-btn-1'],
+#service-btn-2:focus ~ .services-slider-controls .service-button[for='service-btn-2'],
+#service-btn-3:focus ~ .services-slider-controls .service-button[for='service-btn-3'] {
+    outline: 2px solid grey;
+}
 
 .services-slider-controls::after {
     position: absolute;
@@ -1107,13 +1108,9 @@ body {
 }
 
 .footer-services {
-    /*position: absolute;
-    top: 52%;
-    left: 50%;*/
     display: -webkit-flex;
     display:     -ms-flex;
     display:         flex;
-    /*transform: translate(-50%, -50%);*/
     margin-right: 30px;
 
     flex-wrap: wrap;
@@ -1140,7 +1137,7 @@ body {
 
 .footer-bottom::before {
     position: absolute;
-    top: 12px;
+    top: 15px;
     left: 0;
     width: 80px;
     height: 6px;
@@ -1191,20 +1188,15 @@ body {
 }
 
 .social-list {
-    /*position: absolute;
-    top: 0;
-    left: 50%;*/
     display: -webkit-flex;
     display:     -ms-flex;
     display:         flex;
     margin: 0;
-    /*margin-right: auto;*/
     margin-left: auto;
     padding: 0;
     width: 140px;
 
     flex-wrap: wrap;
-    /*transform: translateX(-50%);*/
 }
 
 .social-item {
@@ -1544,6 +1536,10 @@ body {
     background-image: url(../img/checkbox-on.svg);
 }
 
+.color-input:focus + .filter-color-label {
+    outline: 2px solid grey;
+}
+
 .color-input:checked + .filter-color-label:hover::before {
     opacity: 0.6;
 }
@@ -1570,6 +1566,11 @@ body {
     width: 25px;
     height: 25px;
     background-image: url(../img/radio-on.svg);
+}
+
+#bluetooth_yes:focus ~ .filter-bluetooth-label[for=bluetooth_yes],
+#bluetooth_no:focus ~ .filter-bluetooth-label[for=bluetooth_no] {
+    outline: 2px solid grey;
 }
 
 .button-filter {
@@ -1821,6 +1822,10 @@ body {
     cursor: pointer;
 }
 
+.toggle:focus {
+    outline: 2px solid grey;
+}
+
 .toggle:active {
     width: 23px;
     height: 24px;
@@ -1872,14 +1877,6 @@ body {
         -ms-flex-direction: column;
             flex-direction: column;
     margin-bottom: 20px;
-}
-
-.color-input[type=checkbox] {
-    display: none;
-}
-
-.bluetooth-input[type=radio] {
-    display: none;
 }
 
 .catalog-item {
