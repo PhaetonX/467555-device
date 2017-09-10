@@ -1974,6 +1974,10 @@ body {
     line-height: 22px;
 }
 
+.no-wrap {
+    white-space: nowrap;
+}
+
 .item-price-value {
     color: #464646;
     letter-spacing: 0.01em;
