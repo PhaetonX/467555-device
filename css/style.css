@@ -1131,7 +1131,6 @@ body {
     display: -webkit-flex;
     display:     -ms-flex;
     display:         flex;
-    align-items: center;
     justify-content: flex-end;
 }
 
@@ -1146,8 +1145,11 @@ body {
 }
 
 .footer-description {
+    max-width: 200px;
     letter-spacing: 0;
     line-height: 30px;
+
+    flex-shrink: 0;
 }
 
 .user-login-button-footer,
@@ -1203,7 +1205,7 @@ body {
     margin-right: 22px;
 }
 
-.social-item:last-child {
+.social-item:nth-child(3n) {
     margin-right: 0;
 }
 
@@ -1333,25 +1335,29 @@ body {
 @keyframes shake {
     0%,
     100% {
-        transform: translate(-50%, -50%);
+        -webkit-transform: translate(-50%, -50%);
+                transform: translate(-50%, -50%);
     }
     10%,
     30%,
     50%,
     70%,
     90% {
-        transform: translate(-45%, -50%);
+        -webkit-transform: translate(-45%, -50%);
+                transform: translate(-45%, -50%);
     }
     20%,
     40%,
     60%,
     80% {
-        transform: translate(-50%, -50%);
+        -webkit-transform: translate(-50%, -50%);
+                transform: translate(-50%, -50%);
     }
 }
 
 .modal-error {
-    animation: shake 0.6s;
+    -webkit-animation: shake 0.6s;
+            animation: shake 0.6s;
 }
 
 .modal-input-write {
@@ -1495,7 +1501,7 @@ body {
 }
 
 .filter-title-cost-range {
-    margin-bottom: 30px;
+    margin-bottom: 29px;
 }
 
 .filter-title-color {
@@ -1536,7 +1542,7 @@ body {
     background-image: url(../img/checkbox-on.svg);
 }
 
-.color-input:focus + .filter-color-label {
+.color-input:focus + .filter-color-label::before {
     outline: 2px solid grey;
 }
 
@@ -1568,8 +1574,8 @@ body {
     background-image: url(../img/radio-on.svg);
 }
 
-#bluetooth_yes:focus ~ .filter-bluetooth-label[for=bluetooth_yes],
-#bluetooth_no:focus ~ .filter-bluetooth-label[for=bluetooth_no] {
+#bluetooth_yes:focus ~ .filter-bluetooth-label[for=bluetooth_yes]::before,
+#bluetooth_no:focus ~ .filter-bluetooth-label[for=bluetooth_no]::before {
     outline: 2px solid grey;
 }
 
@@ -1786,7 +1792,11 @@ body {
 }
 
 .cost-range {
-    margin-bottom: 25px;
+    margin-bottom: 21px;
+}
+
+.range-controls {
+    margin-bottom: 5px;
 }
 
 .cost-range,
@@ -1829,16 +1839,21 @@ body {
 .toggle:active {
     width: 23px;
     height: 24px;
+    outline: none;
 }
 
 .toggle-min {
-    top: 72px;
+    top: 74px;
     left: -5px;
 }
 
 .toggle-max {
-    top: 72px;
+    top: 74px;
     left: 108px;
+}
+
+.price-controls {
+    margin-left: 2px;
 }
 
 .price-label {
@@ -1904,7 +1919,7 @@ body {
 
 .item-new::before {
     position: absolute;
-    top: 30px;
+    top: 33px;
     right: 28px;
     visibility: visible;
     width: 58px;
@@ -1917,7 +1932,7 @@ body {
 
 .item-new::after {
     position: absolute;
-    top: 50px;
+    top: 53px;
     right: 40px;
     visibility: visible;
     color: #000;
@@ -1949,6 +1964,7 @@ body {
 }
 
 .item-name {
+    max-width: 260px;
     color: #000;
     text-decoration: none;
     letter-spacing: 0.01em;
