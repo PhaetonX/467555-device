@@ -2050,7 +2050,7 @@ body {
 .paginator-page {
     margin: 0;
     padding: 0;
-    width: 38px;
+    min-width: 38px;
 }
 
 .paginator-page-btn {
